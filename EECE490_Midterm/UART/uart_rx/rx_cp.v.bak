@@ -1,0 +1,16 @@
+module rx_dp
+(
+	input wire			rst,
+	input wire			rx_en,
+	input wire			baud_clk,
+	input wire [9:0]  bit_cnto,
+	
+	output reg [9:0] bit_cntn
+);
+
+always @ *
+begin
+
+	casex ({rst, rx_en, baud_clk, bit_cnto})
+	
+	{1

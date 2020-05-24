@@ -1,0 +1,492 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do M0_Simulation_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/M0_Simulation.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:41:58 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/M0_Simulation.v 
+# -- Compiling module M0_Simulation
+# 
+# Top level modules:
+# 	M0_Simulation
+# End time: 00:41:58 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/CORTEXM0INTEGRATION.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:41:58 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/CORTEXM0INTEGRATION.v 
+# -- Compiling module CORTEXM0INTEGRATION
+# 
+# Top level modules:
+# 	CORTEXM0INTEGRATION
+# End time: 00:41:58 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cortexm0ds_logic.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:41:58 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cortexm0ds_logic.v 
+# -- Compiling module cortexm0ds_logic
+# 
+# Top level modules:
+# 	cortexm0ds_logic
+# End time: 00:41:59 on Nov 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/CORTEXM0DS.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:41:59 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/CORTEXM0DS.v 
+# -- Compiling module CORTEXM0DS
+# 
+# Top level modules:
+# 	CORTEXM0DS
+# End time: 00:41:59 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/CORTEXM0DAP.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:41:59 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/CORTEXM0DAP.v 
+# -- Compiling module CORTEXM0DAP
+# 
+# Top level modules:
+# 	CORTEXM0DAP
+# End time: 00:41:59 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cortexm0_wic.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:41:59 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cortexm0_wic.v 
+# -- Compiling module cortexm0_wic
+# 
+# Top level modules:
+# 	cortexm0_wic
+# End time: 00:41:59 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_uart_capture.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:00 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_uart_capture.v 
+# -- Compiling module cmsdk_uart_capture
+# 
+# Top level modules:
+# 	cmsdk_uart_capture
+# End time: 00:42:00 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_stclkctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:00 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_stclkctrl.v 
+# -- Compiling module cmsdk_mcu_stclkctrl
+# 
+# Top level modules:
+# 	cmsdk_mcu_stclkctrl
+# End time: 00:42:00 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_pin_mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:00 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_pin_mux.v 
+# -- Compiling module cmsdk_mcu_pin_mux
+# 
+# Top level modules:
+# 	cmsdk_mcu_pin_mux
+# End time: 00:42:00 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_iop_gpio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:00 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_iop_gpio.v 
+# -- Compiling module cmsdk_iop_gpio
+# 
+# Top level modules:
+# 	cmsdk_iop_gpio
+# End time: 00:42:00 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_clkreset.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:00 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_clkreset.v 
+# -- Compiling module cmsdk_clkreset
+# 
+# Top level modules:
+# 	cmsdk_clkreset
+# End time: 00:42:00 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_watchdog_defs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:00 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_watchdog_defs.v 
+# End time: 00:42:00 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_uart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:00 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_uart.v 
+# -- Compiling module cmsdk_apb_uart
+# 
+# Top level modules:
+# 	cmsdk_apb_uart
+# End time: 00:42:00 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_timer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:00 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_timer.v 
+# -- Compiling module cmsdk_apb_timer
+# 
+# Top level modules:
+# 	cmsdk_apb_timer
+# End time: 00:42:01 on Nov 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_test_slave.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:01 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_test_slave.v 
+# -- Compiling module cmsdk_apb_test_slave
+# 
+# Top level modules:
+# 	cmsdk_apb_test_slave
+# End time: 00:42:01 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_subsystem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:01 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_subsystem.v 
+# -- Compiling module cmsdk_apb_subsystem
+# 
+# Top level modules:
+# 	cmsdk_apb_subsystem
+# End time: 00:42:01 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_slave_mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:01 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_slave_mux.v 
+# -- Compiling module cmsdk_apb_slave_mux
+# 
+# Top level modules:
+# 	cmsdk_apb_slave_mux
+# End time: 00:42:01 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_dualtimers_defs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:01 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_dualtimers_defs.v 
+# End time: 00:42:01 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_to_iop.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:01 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_to_iop.v 
+# -- Compiling module cmsdk_ahb_to_iop
+# 
+# Top level modules:
+# 	cmsdk_ahb_to_iop
+# End time: 00:42:01 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_to_apb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:01 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_to_apb.v 
+# -- Compiling module cmsdk_ahb_to_apb
+# 
+# Top level modules:
+# 	cmsdk_ahb_to_apb
+# End time: 00:42:01 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_slave_mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:01 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_slave_mux.v 
+# -- Compiling module cmsdk_ahb_slave_mux
+# 
+# Top level modules:
+# 	cmsdk_ahb_slave_mux
+# End time: 00:42:01 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_ram_beh.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:01 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_ram_beh.v 
+# -- Compiling module cmsdk_ahb_ram_beh
+# 
+# Top level modules:
+# 	cmsdk_ahb_ram_beh
+# End time: 00:42:01 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_memory_models_defs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:01 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_memory_models_defs.v 
+# End time: 00:42:01 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_gpio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:02 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_gpio.v 
+# -- Compiling module cmsdk_ahb_gpio
+# 
+# Top level modules:
+# 	cmsdk_ahb_gpio
+# End time: 00:42:02 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_default_slave.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:02 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_default_slave.v 
+# -- Compiling module cmsdk_ahb_default_slave
+# 
+# Top level modules:
+# 	cmsdk_ahb_default_slave
+# End time: 00:42:02 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_cs_rom_table.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:02 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_cs_rom_table.v 
+# -- Compiling module cmsdk_ahb_cs_rom_table
+# 
+# Top level modules:
+# 	cmsdk_ahb_cs_rom_table
+# End time: 00:42:02 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cm0_dbg_reset_sync.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:02 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cm0_dbg_reset_sync.v 
+# -- Compiling module cm0_dbg_reset_sync
+# 
+# Top level modules:
+# 	cm0_dbg_reset_sync
+# End time: 00:42:02 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_defs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:02 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_defs.v 
+# End time: 00:42:02 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_watchdog_frc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:02 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_watchdog_frc.v 
+# -- Compiling module cmsdk_apb_watchdog_frc
+# 
+# Top level modules:
+# 	cmsdk_apb_watchdog_frc
+# End time: 00:42:02 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_watchdog.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:02 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_watchdog.v 
+# -- Compiling module cmsdk_apb_watchdog
+# 
+# Top level modules:
+# 	cmsdk_apb_watchdog
+# End time: 00:42:02 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_dualtimers_frc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:02 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_dualtimers_frc.v 
+# -- Compiling module cmsdk_apb_dualtimers_frc
+# 
+# Top level modules:
+# 	cmsdk_apb_dualtimers_frc
+# End time: 00:42:02 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_dualtimers.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:02 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_apb_dualtimers.v 
+# -- Compiling module cmsdk_apb_dualtimers
+# 
+# Top level modules:
+# 	cmsdk_apb_dualtimers
+# End time: 00:42:02 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_rom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:03 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_rom.v 
+# -- Compiling module cmsdk_ahb_rom
+# 
+# Top level modules:
+# 	cmsdk_ahb_rom
+# End time: 00:42:03 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:03 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_ram.v 
+# -- Compiling module cmsdk_ahb_ram
+# 
+# Top level modules:
+# 	cmsdk_ahb_ram
+# End time: 00:42:03 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_system.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:03 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_system.v 
+# -- Compiling module cmsdk_mcu_system
+# 
+# Top level modules:
+# 	cmsdk_mcu_system
+# End time: 00:42:03 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_sysctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:03 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_sysctrl.v 
+# -- Compiling module cmsdk_mcu_sysctrl
+# 
+# Top level modules:
+# 	cmsdk_mcu_sysctrl
+# End time: 00:42:03 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_clkctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:03 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_clkctrl.v 
+# -- Compiling module cmsdk_mcu_clkctrl
+# 
+# Top level modules:
+# 	cmsdk_mcu_clkctrl
+# End time: 00:42:03 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_addr_decode.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:03 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu_addr_decode.v 
+# -- Compiling module cmsdk_mcu_addr_decode
+# 
+# Top level modules:
+# 	cmsdk_mcu_addr_decode
+# End time: 00:42:03 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:03 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu.v 
+# -- Compiling module cmsdk_mcu
+# 
+# Top level modules:
+# 	cmsdk_mcu
+# End time: 00:42:03 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation {D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/tb_cmsdk_mcu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:42:03 on Nov 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation" D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/tb_cmsdk_mcu.v 
+# -- Compiling module tb_cmsdk_mcu
+# 
+# Top level modules:
+# 	tb_cmsdk_mcu
+# End time: 00:42:03 on Nov 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_cmsdk_mcu
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_cmsdk_mcu 
+# Start time: 00:42:04 on Nov 18,2019
+# Loading work.tb_cmsdk_mcu
+# Loading work.M0_Simulation
+# Loading work.cmsdk_mcu
+# Loading work.cmsdk_mcu_clkctrl
+# Loading work.cmsdk_mcu_system
+# Loading work.CORTEXM0INTEGRATION
+# Loading work.cm0_dbg_reset_sync
+# Loading work.CORTEXM0DS
+# Loading work.cortexm0ds_logic
+# Loading work.CORTEXM0DAP
+# Loading work.cortexm0_wic
+# Loading work.cmsdk_mcu_addr_decode
+# Loading work.cmsdk_ahb_slave_mux
+# Loading work.cmsdk_ahb_default_slave
+# Loading work.cmsdk_ahb_cs_rom_table
+# Loading work.cmsdk_mcu_sysctrl
+# Loading work.cmsdk_ahb_gpio
+# Loading work.cmsdk_ahb_to_iop
+# Loading work.cmsdk_iop_gpio
+# Loading work.cmsdk_apb_subsystem
+# Loading work.cmsdk_ahb_to_apb
+# Loading work.cmsdk_apb_slave_mux
+# Loading work.cmsdk_mcu_stclkctrl
+# Loading work.cmsdk_ahb_rom
+# Loading work.cmsdk_ahb_ram
+# Loading work.cmsdk_mcu_pin_mux
+# Loading work.cmsdk_clkreset
+# Loading work.cmsdk_uart_capture
+# Loading work.cmsdk_apb_timer
+# Loading work.cmsdk_apb_dualtimers
+# Loading work.cmsdk_apb_dualtimers_frc
+# Loading work.cmsdk_apb_watchdog
+# Loading work.cmsdk_apb_watchdog_frc
+# Loading work.cmsdk_apb_uart
+# Loading work.cmsdk_apb_test_slave
+# Loading work.cmsdk_ahb_ram_beh
+# ** Warning: (vsim-3017) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/tb_cmsdk_mcu.v(41): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1 File: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/M0_Simulation.v
+# ** Warning: (vsim-3722) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/tb_cmsdk_mcu.v(41): [TFMPC] - Missing connection for port 'TDO'.
+# ** Warning: (vsim-3015) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu.v(308): [PCDPC] - Port size (14) does not match connection size (16) for port 'HADDR'. The port definition is at: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_rom.v(65).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_rom File: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_rom.v
+# ** Warning: (vsim-3015) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu.v(332): [PCDPC] - Port size (14) does not match connection size (16) for port 'HADDR'. The port definition is at: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_ram.v(61).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram File: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_ram.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint  \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/WS_S
+add wave -position insertpoint sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/*
+restart
+# ** Warning: (vsim-3017) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/tb_cmsdk_mcu.v(41): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1 File: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/M0_Simulation.v
+# ** Warning: (vsim-3722) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/tb_cmsdk_mcu.v(41): [TFMPC] - Missing connection for port 'TDO'.
+# ** Warning: (vsim-3015) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu.v(308): [PCDPC] - Port size (14) does not match connection size (16) for port 'HADDR'. The port definition is at: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_rom.v(65).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_rom File: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_rom.v
+# ** Warning: (vsim-3015) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu.v(332): [PCDPC] - Port size (14) does not match connection size (16) for port 'HADDR'. The port definition is at: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_ram.v(61).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram File: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_ram.v
+run -all
+add wave -position insertpoint  \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/MEM_TYPE \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/AW \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/filename \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/WS_N \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/WS_S \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HCLK \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HRESETn \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HSEL \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HADDR \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HTRANS \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HSIZE \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HWRITE \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HWDATA \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HREADY \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HREADYOUT \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HRDATA \
+sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/HRESP
+restart
+# ** Warning: (vsim-3017) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/tb_cmsdk_mcu.v(41): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1 File: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/M0_Simulation.v
+# ** Warning: (vsim-3722) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/tb_cmsdk_mcu.v(41): [TFMPC] - Missing connection for port 'TDO'.
+# ** Warning: (vsim-3015) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu.v(308): [PCDPC] - Port size (14) does not match connection size (16) for port 'HADDR'. The port definition is at: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_rom.v(65).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_rom File: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_rom.v
+# ** Warning: (vsim-3015) D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_mcu.v(332): [PCDPC] - Port size (14) does not match connection size (16) for port 'HADDR'. The port definition is at: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_ram.v(61).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram File: D:/Verilog/EECE490_Lab/D5_Bulbasaur/M0_Simulation/cmsdk_ahb_ram.v
+run -all
+# End time: 00:46:53 on Nov 18,2019, Elapsed time: 0:04:49
+# Errors: 0, Warnings: 12

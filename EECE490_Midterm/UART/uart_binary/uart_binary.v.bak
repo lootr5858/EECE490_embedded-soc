@@ -1,0 +1,16 @@
+module uart_binary
+(
+	input wire			clk,
+	input wire			rst,
+	input wire			sel,
+	input wire [11:2] addr,
+	input wire			enable,
+	input wire [31:0] data_out,
+	input wire			rx_in,
+	
+	output wire [31:0] data_in,
+	output wire			 ready,
+	output wire			 tx_out,
+	output wire			 tx_en
+);
+	

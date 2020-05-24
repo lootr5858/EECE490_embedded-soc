@@ -1,0 +1,117 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do tx_eight_ten_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten {D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/baud_counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:48:28 on Oct 30,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten" D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/baud_counter.v 
+# -- Compiling module baud_counter
+# 
+# Top level modules:
+# 	baud_counter
+# End time: 01:48:28 on Oct 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/common {D:/Verilog/common/REGISTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:48:29 on Oct 30,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/common" D:/Verilog/common/REGISTER.v 
+# -- Compiling module REG
+# -- Compiling module LatchN
+# -- Compiling module LatchN_gate
+# -- Compiling module SyncRegN
+# -- Compiling module PipeRegS
+# -- Compiling module PipeReg
+# 
+# Top level modules:
+# 	REG
+# 	LatchN
+# 	LatchN_gate
+# 	SyncRegN
+# 	PipeRegS
+# 	PipeReg
+# End time: 01:48:29 on Oct 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten {D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:48:29 on Oct 30,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten" D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten.v 
+# -- Compiling module tx_eight_ten
+# 
+# Top level modules:
+# 	tx_eight_ten
+# End time: 01:48:29 on Oct 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten {D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_cp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:48:29 on Oct 30,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten" D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_cp.v 
+# -- Compiling module tx_eight_ten_cp
+# 
+# Top level modules:
+# 	tx_eight_ten_cp
+# End time: 01:48:29 on Oct 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten {D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_dp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:48:29 on Oct 30,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten" D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_dp.v 
+# -- Compiling module tx_eight_ten_dp
+# 
+# Top level modules:
+# 	tx_eight_ten_dp
+# End time: 01:48:29 on Oct 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten {D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/eight_ten.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:48:29 on Oct 30,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten" D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/eight_ten.v 
+# -- Compiling module eight_ten
+# 
+# Top level modules:
+# 	eight_ten
+# End time: 01:48:30 on Oct 30,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten {D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:48:30 on Oct 30,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten" D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_tb.v 
+# -- Compiling module tx_eight_ten_tb
+# 
+# Top level modules:
+# 	tx_eight_ten_tb
+# End time: 01:48:30 on Oct 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tx_eight_ten_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tx_eight_ten_tb 
+# Start time: 01:48:30 on Oct 30,2019
+# Loading work.tx_eight_ten_tb
+# Loading work.tx_eight_ten
+# Loading work.tx_eight_ten_cp
+# Loading work.tx_eight_ten_dp
+# Loading work.eight_ten
+# Loading work.baud_counter
+# Loading work.PipeReg
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_tb.v(71)
+#    Time: 2460 ps  Iteration: 0  Instance: /tx_eight_ten_tb
+# 1
+# Break in Module tx_eight_ten_tb at D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_tb.v line 71
+# End time: 01:51:17 on Oct 30,2019, Elapsed time: 0:02:47
+# Errors: 0, Warnings: 0

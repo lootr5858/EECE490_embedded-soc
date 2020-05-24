@@ -1,0 +1,11 @@
+.\objects\uart_api.o: Lib\UART_API.c
+.\objects\uart_api.o: .\software\cmsis\Device\ARM\CMSDK_CM0\Include\CMSDK_CM0.h
+.\objects\uart_api.o: .\software\cmsis\CMSIS\Include\core_cm0.h
+.\objects\uart_api.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart_api.o: .\software\cmsis\CMSIS\Include\core_cmInstr.h
+.\objects\uart_api.o: .\software\cmsis\CMSIS\Include\core_cmFunc.h
+.\objects\uart_api.o: .\software\cmsis\Device\ARM\CMSDK_CM0\Include\system_CMSDK_CM0.h
+.\objects\uart_api.o: .\software\cmsis\CMSIS\Include\core_cm0.h
+.\objects\uart_api.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\uart_api.o: Lib\uart.h
+.\objects\uart_api.o: .\software\cmsis\CMSIS\Include\core_cm0.h

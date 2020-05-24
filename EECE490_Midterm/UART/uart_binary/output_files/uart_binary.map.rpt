@@ -1,0 +1,769 @@
+Analysis & Synthesis report for uart_binary
+Wed Oct 30 14:02:55 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt
+ 13. Parameter Settings for User Entity Instance: uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt
+ 14. Parameter Settings for User Entity Instance: uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:bit_cnt
+ 15. Parameter Settings for User Entity Instance: uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:baud_cnt
+ 16. Port Connectivity Checks: "uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:baud_cnt"
+ 17. Port Connectivity Checks: "uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:bit_cnt"
+ 18. Port Connectivity Checks: "uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt"
+ 19. Port Connectivity Checks: "uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+ 23. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Oct 30 14:02:55 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; uart_binary                                 ;
+; Top-level Entity Name           ; uart_binary                                 ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 48                                          ;
+; Total pins                      ; 92                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; uart_binary        ; uart_binary        ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; baud_counter.v                   ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Midterm/UART/uart_binary/baud_counter.v ;         ;
+; uart_tx.v                        ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v      ;         ;
+; uart_rx.v                        ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_rx.v      ;         ;
+; tx_dp.v                          ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_dp.v        ;         ;
+; tx_cp.v                          ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v        ;         ;
+; rx_dp.v                          ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v        ;         ;
+; rx_cp.v                          ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v        ;         ;
+; ../../../common/REGISTER.v       ; yes             ; User Verilog HDL File  ; D:/Verilog/common/REGISTER.v                               ;         ;
+; uart_binary.v                    ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v  ;         ;
+; uart_b_cp.v                      ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v    ;         ;
+; uart_b_dp.v                      ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v    ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 158       ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 260       ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 55        ;
+;     -- 5 input functions                    ; 27        ;
+;     -- 4 input functions                    ; 31        ;
+;     -- <=3 input functions                  ; 147       ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 48        ;
+;                                             ;           ;
+; I/O pins                                    ; 92        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; rst~input ;
+; Maximum fan-out                             ; 49        ;
+; Total fan-out                               ; 1203      ;
+; Average fan-out                             ; 2.45      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                    ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name  ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+--------------+--------------+
+; |uart_binary                         ; 260 (0)             ; 48 (0)                    ; 0                 ; 0          ; 92   ; 0            ; |uart_binary                                                             ; uart_binary  ; work         ;
+;    |uart_b_cp:uart_cp|               ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_cp:uart_cp                                           ; uart_b_cp    ; work         ;
+;    |uart_b_dp:uart_dp|               ; 248 (53)            ; 48 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp                                           ; uart_b_dp    ; work         ;
+;       |uart_rx:uart_rx|              ; 91 (0)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_rx:uart_rx                           ; uart_rx      ; work         ;
+;          |PipeReg:baud_cnt|          ; 1 (1)               ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:baud_cnt          ; PipeReg      ; work         ;
+;          |PipeReg:bit_cnt|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:bit_cnt           ; PipeReg      ; work         ;
+;          |baud_counter:baud_counter| ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_rx:uart_rx|baud_counter:baud_counter ; baud_counter ; work         ;
+;          |rx_cp:rx_cp|               ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp               ; rx_cp        ; work         ;
+;          |rx_dp:rx_dp|               ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp               ; rx_dp        ; work         ;
+;       |uart_tx:uart_tx|              ; 104 (0)             ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_tx:uart_tx                           ; uart_tx      ; work         ;
+;          |PipeReg:baud_cnt|          ; 1 (1)               ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt          ; PipeReg      ; work         ;
+;          |PipeReg:bit_cnt|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt           ; PipeReg      ; work         ;
+;          |baud_counter:baud_counter| ; 59 (59)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_tx:uart_tx|baud_counter:baud_counter ; baud_counter ; work         ;
+;          |tx_cp:tx_cp|               ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp               ; tx_cp        ; work         ;
+;          |tx_dp:tx_dp|               ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |uart_binary|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_dp:tx_dp               ; tx_dp        ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                         ;
++-----------------------------------------------------------+--------------------------------------------------------+------------------------+
+; Latch Name                                                ; Latch Enable Signal                                    ; Free of Timing Hazards ;
++-----------------------------------------------------------+--------------------------------------------------------+------------------------+
+; uart_b_dp:uart_dp|data_in[0]                              ; uart_b_dp:uart_dp|data_in[31]                          ; yes                    ;
+; uart_b_dp:uart_dp|data_in[1]                              ; uart_b_dp:uart_dp|data_in[31]                          ; yes                    ;
+; uart_b_dp:uart_dp|data_in[2]                              ; uart_b_dp:uart_dp|data_in[31]                          ; yes                    ;
+; uart_b_dp:uart_dp|data_in[3]                              ; uart_b_dp:uart_dp|data_in[31]                          ; yes                    ;
+; uart_b_dp:uart_dp|data_in[4]                              ; uart_b_dp:uart_dp|data_in[31]                          ; yes                    ;
+; uart_b_dp:uart_dp|data_in[5]                              ; uart_b_dp:uart_dp|data_in[31]                          ; yes                    ;
+; uart_b_dp:uart_dp|data_in[6]                              ; uart_b_dp:uart_dp|data_in[31]                          ; yes                    ;
+; uart_b_dp:uart_dp|data_in[7]                              ; uart_b_dp:uart_dp|data_in[31]                          ; yes                    ;
+; uart_b_cp:uart_cp|ready                                   ; uart_b_cp:uart_cp|WideNor1                             ; yes                    ;
+; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_dp:tx_dp|tx_out      ; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_dp:tx_dp|WideNor1 ; yes                    ;
+; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|tx_en       ; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor4 ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|rx_data[0]  ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr8  ; yes                    ;
+; uart_b_cp:uart_cp|sel_tr                                  ; uart_b_cp:uart_cp|WideNor1                             ; yes                    ;
+; uart_b_dp:uart_dp|tr_ctrl[0]                              ; uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; uart_b_dp:uart_dp|tr_ctrl[1]                              ; uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; uart_b_dp:uart_dp|tr_ctrl[2]                              ; uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; uart_b_dp:uart_dp|tr_ctrl[3]                              ; uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; uart_b_dp:uart_dp|tr_ctrl[4]                              ; uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; uart_b_dp:uart_dp|tr_ctrl[5]                              ; uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; uart_b_dp:uart_dp|tr_ctrl[6]                              ; uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|rx_data[1]  ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr8  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|rx_data[2]  ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr8  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|rx_data[3]  ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr8  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|rx_data[4]  ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr8  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|rx_data[5]  ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr8  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|rx_data[6]  ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr8  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|rx_data[7]  ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr8  ; yes                    ;
+; uart_b_dp:uart_dp|din[7]                                  ; uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; uart_b_dp:uart_dp|din[6]                                  ; uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; uart_b_dp:uart_dp|din[5]                                  ; uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; uart_b_dp:uart_dp|din[4]                                  ; uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; uart_b_dp:uart_dp|din[3]                                  ; uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; uart_b_dp:uart_dp|din[2]                                  ; uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; uart_b_dp:uart_dp|din[1]                                  ; uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; uart_b_dp:uart_dp|din[0]                                  ; uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; uart_b_dp:uart_dp|sel_t                                   ; uart_b_dp:uart_dp|sel_t                                ; yes                    ;
+; uart_b_dp:uart_dp|baud[4]                                 ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[5]                                 ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[6]                                 ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[7]                                 ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[8]                                 ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[9]                                 ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[10]                                ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[11]                                ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[12]                                ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[13]                                ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[14]                                ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[15]                                ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[16]                                ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[17]                                ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[18]                                ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[19]                                ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[0]                                 ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[1]                                 ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[2]                                 ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|baud[3]                                 ; uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|bit_cntn[0] ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|WideNor4 ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|bit_cntn[1] ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|WideNor4 ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|bit_cntn[2] ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|WideNor4 ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|bit_cntn[3] ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|WideNor4 ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|d0          ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr0  ; yes                    ;
+; uart_b_cp:uart_cp|sel_ctrl                                ; uart_b_cp:uart_cp|WideNor1                             ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|d1          ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr1  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|d2          ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr2  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|d3          ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr3  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|d4          ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr4  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|d5          ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr5  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|d6          ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr6  ; yes                    ;
+; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|d7          ; uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp|WideOr7  ; yes                    ;
+; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[0] ; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor4 ; yes                    ;
+; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[2] ; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor4 ; yes                    ;
+; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[3] ; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor4 ; yes                    ;
+; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[1] ; uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor4 ; yes                    ;
+; uart_b_cp:uart_cp|sel_baud                                ; uart_b_cp:uart_cp|WideNor1                             ; yes                    ;
+; uart_b_dp:uart_dp|sel_r                                   ; uart_b_dp:uart_dp|sel_t                                ; yes                    ;
+; Number of user-specified and inferred latches = 75        ;                                                        ;                        ;
++-----------------------------------------------------------+--------------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++----------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                 ;
++-----------------------------------------------------------+----------------------------------------+
+; Register name                                             ; Reason for Removal                     ;
++-----------------------------------------------------------+----------------------------------------+
+; uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:bit_cnt|Q[4..9] ; Stuck at GND due to stuck port data_in ;
+; uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt|Q[4..9] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 12                    ;                                        ;
++-----------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 48    ;
+; Number of registers using Synchronous Clear  ; 48    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; 4:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |uart_binary|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt|Q[1]  ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |uart_binary|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:baud_cnt|Q[19] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; BITWIDTH       ; 10    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; BITWIDTH       ; 20    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:bit_cnt ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; BITWIDTH       ; 10    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:baud_cnt ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; BITWIDTH       ; 20    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:baud_cnt" ;
++------+-------+----------+------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                              ;
++------+-------+----------+------------------------------------------------------+
+; EN   ; Input ; Info     ; Stuck at VCC                                         ;
++------+-------+----------+------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:bit_cnt" ;
++------+-------+----------+-----------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                             ;
++------+-------+----------+-----------------------------------------------------+
+; EN   ; Input ; Info     ; Stuck at VCC                                        ;
++------+-------+----------+-----------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt" ;
++------+-------+----------+------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                              ;
++------+-------+----------+------------------------------------------------------+
+; EN   ; Input ; Info     ; Stuck at VCC                                         ;
++------+-------+----------+------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt" ;
++------+-------+----------+-----------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                             ;
++------+-------+----------+-----------------------------------------------------+
+; EN   ; Input ; Info     ; Stuck at VCC                                        ;
++------+-------+----------+-----------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 48                          ;
+;     SCLR              ; 48                          ;
+; arriav_lcell_comb     ; 261                         ;
+;     arith             ; 60                          ;
+;         1 data inputs ; 60                          ;
+;     normal            ; 201                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 72                          ;
+;         4 data inputs ; 31                          ;
+;         5 data inputs ; 27                          ;
+;         6 data inputs ; 55                          ;
+; boundary_port         ; 92                          ;
+;                       ;                             ;
+; Max LUT depth         ; 9.30                        ;
+; Average LUT depth     ; 4.66                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed Oct 30 14:02:45 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart_binary -c uart_binary
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file baud_counter.v
+    Info (12023): Found entity 1: baud_counter File: D:/Verilog/EECE490_Midterm/UART/uart_binary/baud_counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart_tx.v
+    Info (12023): Found entity 1: uart_tx File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart_rx.v
+    Info (12023): Found entity 1: uart_rx File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_rx.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tx_dp.v
+    Info (12023): Found entity 1: tx_dp File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_dp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tx_cp.v
+    Info (12023): Found entity 1: tx_cp File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rx_dp.v
+    Info (12023): Found entity 1: rx_dp File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rx_cp.v
+    Info (12023): Found entity 1: rx_cp File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 1
+Info (12021): Found 6 design units, including 6 entities, in source file /verilog/common/register.v
+    Info (12023): Found entity 1: REG File: D:/Verilog/common/REGISTER.v Line: 29
+    Info (12023): Found entity 2: LatchN File: D:/Verilog/common/REGISTER.v Line: 46
+    Info (12023): Found entity 3: LatchN_gate File: D:/Verilog/common/REGISTER.v Line: 60
+    Info (12023): Found entity 4: SyncRegN File: D:/Verilog/common/REGISTER.v Line: 78
+    Info (12023): Found entity 5: PipeRegS File: D:/Verilog/common/REGISTER.v Line: 92
+    Info (12023): Found entity 6: PipeReg File: D:/Verilog/common/REGISTER.v Line: 109
+Info (12021): Found 1 design units, including 1 entities, in source file uart_binary.v
+    Info (12023): Found entity 1: uart_binary File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart_b_cp.v
+    Info (12023): Found entity 1: uart_b_cp File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart_b_dp.v
+    Info (12023): Found entity 1: uart_b_dp File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file binary_tb.v
+    Info (12023): Found entity 1: binary_tb File: D:/Verilog/EECE490_Midterm/UART/uart_binary/binary_tb.v Line: 1
+Info (12127): Elaborating entity "uart_binary" for the top level hierarchy
+Info (12128): Elaborating entity "uart_b_cp" for hierarchy "uart_b_cp:uart_cp" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 33
+Warning (10270): Verilog HDL Case Statement warning at uart_b_cp.v(17): incomplete case statement has no default case item File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at uart_b_cp.v(17): inferring latch(es) for variable "sel_tr", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at uart_b_cp.v(17): inferring latch(es) for variable "sel_ctrl", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at uart_b_cp.v(17): inferring latch(es) for variable "sel_baud", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at uart_b_cp.v(17): inferring latch(es) for variable "ready", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 17
+Info (10041): Inferred latch for "ready" at uart_b_cp.v(17) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 17
+Info (10041): Inferred latch for "sel_baud" at uart_b_cp.v(17) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 17
+Info (10041): Inferred latch for "sel_ctrl" at uart_b_cp.v(17) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 17
+Info (10041): Inferred latch for "sel_tr" at uart_b_cp.v(17) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 17
+Info (12128): Elaborating entity "uart_b_dp" for hierarchy "uart_b_dp:uart_dp" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 50
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "data_in", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "sel_t", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "sel_r", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "din", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "tr_ctrl", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "baud", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 55
+Info (10041): Inferred latch for "tr_ctrl[0]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[1]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[2]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[3]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[4]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[5]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[6]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "sel_r" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "sel_t" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[0]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[1]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[2]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[3]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[4]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[5]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[6]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[7]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[8]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[9]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[10]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[11]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[12]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[13]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[14]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[15]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[16]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[17]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[18]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[19]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[0]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[1]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[2]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[3]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[4]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[5]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[6]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[7]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[8]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[9]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[10]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[11]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[12]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[13]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[14]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[15]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[16]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[17]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[18]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[19]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[20]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[21]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[22]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[23]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[24]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[25]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[26]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[27]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[28]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[29]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[30]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[31]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[0]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[1]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[2]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[3]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[4]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[5]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[6]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[7]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_b_dp:uart_dp|uart_tx:uart_tx" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 37
+Info (12128): Elaborating entity "tx_cp" for hierarchy "uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v Line: 31
+Warning (10270): Verilog HDL Case Statement warning at tx_cp.v(21): incomplete case statement has no default case item File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at tx_cp.v(21): inferring latch(es) for variable "tx_en", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at tx_cp.v(21): inferring latch(es) for variable "bit_cntn", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[0]" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[1]" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[2]" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[3]" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[4]" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[5]" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[6]" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[7]" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[8]" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[9]" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (10041): Inferred latch for "tx_en" at tx_cp.v(21) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+Info (12128): Elaborating entity "tx_dp" for hierarchy "uart_b_dp:uart_dp|uart_tx:uart_tx|tx_dp:tx_dp" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v Line: 41
+Warning (10270): Verilog HDL Case Statement warning at tx_dp.v(14): incomplete case statement has no default case item File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_dp.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at tx_dp.v(14): inferring latch(es) for variable "tx_out", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_dp.v Line: 14
+Info (10041): Inferred latch for "tx_out" at tx_dp.v(14) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_dp.v Line: 14
+Info (12128): Elaborating entity "baud_counter" for hierarchy "uart_b_dp:uart_dp|uart_tx:uart_tx|baud_counter:baud_counter" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v Line: 52
+Warning (10036): Verilog HDL or VHDL warning at baud_counter.v(14): object "valid_baud" assigned a value but never read File: D:/Verilog/EECE490_Midterm/UART/uart_binary/baud_counter.v Line: 14
+Info (12128): Elaborating entity "PipeReg" for hierarchy "uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v Line: 61
+Info (12128): Elaborating entity "PipeReg" for hierarchy "uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v Line: 70
+Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_b_dp:uart_dp|uart_rx:uart_rx" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 50
+Info (12128): Elaborating entity "rx_cp" for hierarchy "uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_rx.v Line: 32
+Warning (10270): Verilog HDL Case Statement warning at rx_cp.v(20): incomplete case statement has no default case item File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at rx_cp.v(20): inferring latch(es) for variable "bit_cntn", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[0]" at rx_cp.v(20) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[1]" at rx_cp.v(20) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[2]" at rx_cp.v(20) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[3]" at rx_cp.v(20) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[4]" at rx_cp.v(20) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[5]" at rx_cp.v(20) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[6]" at rx_cp.v(20) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[7]" at rx_cp.v(20) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[8]" at rx_cp.v(20) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[9]" at rx_cp.v(20) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+Info (12128): Elaborating entity "rx_dp" for hierarchy "uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_rx.v Line: 41
+Warning (10199): Verilog HDL Case Statement warning at rx_dp.v(25): case item expression never matches the case expression File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 25
+Warning (10270): Verilog HDL Case Statement warning at rx_dp.v(23): incomplete case statement has no default case item File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at rx_dp.v(23): inferring latch(es) for variable "d0", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at rx_dp.v(23): inferring latch(es) for variable "d1", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at rx_dp.v(23): inferring latch(es) for variable "d2", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at rx_dp.v(23): inferring latch(es) for variable "d3", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at rx_dp.v(23): inferring latch(es) for variable "d4", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at rx_dp.v(23): inferring latch(es) for variable "d5", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at rx_dp.v(23): inferring latch(es) for variable "d6", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at rx_dp.v(23): inferring latch(es) for variable "d7", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at rx_dp.v(23): inferring latch(es) for variable "rx_data", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "rx_data[0]" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "rx_data[1]" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "rx_data[2]" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "rx_data[3]" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "rx_data[4]" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "rx_data[5]" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "rx_data[6]" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "rx_data[7]" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "d7" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "d6" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "d5" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "d4" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "d3" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "d2" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "d1" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Info (10041): Inferred latch for "d0" at rx_dp.v(23) File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v Line: 23
+Warning (13012): Latch uart_b_cp:uart_cp|ready has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_b_cp:uart_cp|WideNor0 File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 21
+Warning (13012): Latch uart_b_dp:uart_dp|uart_tx:uart_tx|tx_dp:tx_dp|tx_out has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_dp.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rst File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 4
+Warning (13012): Latch uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|tx_en has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rst File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 4
+Warning (13012): Latch uart_b_cp:uart_cp|sel_tr has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rst File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 4
+Warning (13012): Latch uart_b_dp:uart_dp|sel_t has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_b_dp:uart_dp|tr_ctrl[0] File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Warning (13012): Latch uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|bit_cntn[0] has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_b_dp:uart_dp|sel_r File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 19
+Warning (13012): Latch uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|bit_cntn[1] has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|WideNor3 File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 60
+Warning (13012): Latch uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|bit_cntn[2] has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_b_dp:uart_dp|sel_r File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 19
+Warning (13012): Latch uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|bit_cntn[3] has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp|WideNor3 File: D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v Line: 60
+Warning (13012): Latch uart_b_cp:uart_cp|sel_ctrl has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rst File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 4
+Warning (13012): Latch uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[0] has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal enable File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 6
+Warning (13012): Latch uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[2] has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal enable File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 6
+Warning (13012): Latch uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[3] has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor3 File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 61
+Warning (13012): Latch uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[1] has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor3 File: D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v Line: 61
+Warning (13012): Latch uart_b_cp:uart_cp|sel_baud has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rst File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 4
+Warning (13012): Latch uart_b_dp:uart_dp|sel_r has unsafe behavior File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 19
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_b_dp:uart_dp|tr_ctrl[0] File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v Line: 70
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "data_in[8]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[9]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[10]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[11]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[12]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[13]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[14]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[15]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[16]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[17]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[18]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[19]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[20]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[21]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[22]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[23]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[24]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[25]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[26]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[27]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[28]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[29]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[30]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "data_in[31]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 11
+    Warning (13410): Pin "bit_cnt[4]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 16
+    Warning (13410): Pin "bit_cnt[5]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 16
+    Warning (13410): Pin "bit_cnt[6]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 16
+    Warning (13410): Pin "bit_cnt[7]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 16
+    Warning (13410): Pin "bit_cnt[8]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 16
+    Warning (13410): Pin "bit_cnt[9]" is stuck at GND File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 16
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file D:/Verilog/EECE490_Midterm/UART/uart_binary/output_files/uart_binary.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "data_out[20]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[21]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[22]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[23]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[24]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[25]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[26]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[27]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[28]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[29]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[30]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+    Warning (15610): No output dependent on input pin "data_out[31]" File: D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v Line: 8
+Info (21057): Implemented 360 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 47 input pins
+    Info (21059): Implemented 45 output pins
+    Info (21061): Implemented 268 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 107 warnings
+    Info: Peak virtual memory: 4872 megabytes
+    Info: Processing ended: Wed Oct 30 14:02:55 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/Verilog/EECE490_Midterm/UART/uart_binary/output_files/uart_binary.map.smsg.
+
+

@@ -1,0 +1,37 @@
+module uart_combine
+(
+	input wire			clk,
+	input wire			rst,
+	input wire			sel,
+	input wire			enable,
+	input wire [11:2] addr,
+	input wire [31:0] data_out,
+	input wire			rx_in,
+	
+	output wire [31:0] data_in,
+	output wire			 ready,
+	output wire			 tx_out,
+	output wire			 tx_en,
+	output wire	[9:0]  bit-cnt,
+	output wire [9:0]  rx_d,
+	output wire [9:0]  tx_d
+);
+
+wire sel_tr;		// addr: 0x00
+wire sel_ctrl;		// addr: 0x04
+wire sel_baud;		// addr: 0x08
+wire sel_encode;
+
+uart_combine_cp uart_combine_cp
+(
+	.rst	  (rst),
+	.sel	  (sel),
+	.enable (enable),
+	.addr	  (addr),
+	
+	.sel_tr	 (sel_tr),
+	.sel_
+	.sel_ctrl (sel_ctrl),
+	.sel_baud (sel_baud),
+	.ready	 (ready)
+);

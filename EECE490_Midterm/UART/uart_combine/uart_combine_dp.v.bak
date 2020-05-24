@@ -1,0 +1,59 @@
+module uart_combine_dp
+(
+	input wire			clk,
+	input wire			rst,
+	input wire			data_ptr,		// Data reg. 			addr: 0x00
+	input wire			ctrl_ptr,		// T/R Control reg.  addr: 0x08
+	input wire			baud_ptr,		// Bauddiv reg.		addr: 0x10
+	input wire			eencode_ptr,	// Binary/8b10b reg. addr: 0x14
+	input wire			enable,
+	input wire [31:0] data_out,
+	input wire			rx_in,
+	
+	output reg [31:0] data_in,
+	output wire	      tx_en,
+	output wire			tx_out,
+	output wire	[9:0] bit_cnt,
+	output wire [9:0] tx_d,
+	output wire [9:0] rx_d
+);
+
+reg		 btx_ptr;
+reg		 brx_ptr;
+reg		 etx_ptr;
+reg		 erx_ptr;
+reg [7:0] din;
+reg [6:0] tr_ctrl;
+reg [19:0] baud;
+
+wire [7:0] dout;
+//wire [9:0] bit_cnt
+
+tx_eight_ten tx_eight_ten
+(
+	.clk	(clk),
+	.rst	(rst),
+	.sel	(sel_t),
+	.set	(enable),
+	.din	(din),
+	.baud (baud),
+	
+	.tx_en  (tx_en),
+	.tx_out (tx_out),
+	.tx_d	  (tx_d)
+);
+
+rx_ten_eight rx_ten_eight
+(
+	.clk	 (clk),
+	.rst	 (rst),
+	.sel	 (sel_r),
+	.baud  (baud),
+	.rx_en (enable),
+	.rx_in (rx_in),
+	
+	.bit_cnt_out (bit_cnt),
+	.rx_data (dout),
+	.data_o  (rx_d)
+);
+

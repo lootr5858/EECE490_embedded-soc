@@ -1,0 +1,1351 @@
+Analysis & Synthesis report for M0_Simulation
+Wed Nov 13 14:48:16 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |M0_Simulation
+ 11. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu
+ 12. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_clkctrl:u_cmsdk_mcu_clkctrl
+ 13. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system
+ 14. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration
+ 15. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|cm0_dbg_reset_sync:u_dpreset_sync
+ 16. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_addr_decode:u_addr_decode
+ 17. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_slave_mux:u_ahb_slave_mux_sys_bus
+ 18. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|example:ex0
+ 19. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_cs_rom_table:u_system_rom_table
+ 20. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_sysctrl:u_cmsdk_mcu_sysctrl
+ 21. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_0
+ 22. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_0|cmsdk_iop_gpio:u_iop_gpio
+ 23. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_1
+ 24. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_1|cmsdk_iop_gpio:u_iop_gpio
+ 25. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem
+ 26. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_ahb_to_apb:u_ahb_to_apb
+ 27. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_slave_mux:u_apb_slave_mux
+ 28. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_stclkctrl:u_cmsdk_mcu_stclkctrl
+ 29. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_rom:u_ahb_rom
+ 30. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_rom:u_ahb_rom|cmsdk_ahb_ram_beh:u_ahb_ram_beh
+ 31. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_ram:u_ahb_ram
+ 32. Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_ram:u_ahb_ram|cmsdk_ahb_ram_beh:u_ahb_ram_beh
+ 33. Port Connectivity Checks: "cmsdk_uart_capture:u_cmsdk_uart_capture"
+ 34. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_pin_mux:u_pin_mux"
+ 35. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_ram:u_ahb_ram"
+ 36. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_rom:u_ahb_rom|cmsdk_ahb_ram_beh:u_ahb_ram_beh"
+ 37. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_rom:u_ahb_rom"
+ 38. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_uart:gen_apb_uart_2.u_apb_uart_2"
+ 39. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_uart:gen_apb_uart_1.u_apb_uart_1"
+ 40. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_uart:gen_apb_uart_0.u_apb_uart_0"
+ 41. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_watchdog:gen_apb_watchdog.u_apb_watchdog"
+ 42. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_dualtimers:gen_apb_dualtimers_2.u_apb_dualtimers_2"
+ 43. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_timer:gen_apb_timer_1.u_apb_timer_1"
+ 44. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_timer:gen_apb_timer_0.u_apb_timer_0"
+ 45. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_slave_mux:u_apb_slave_mux"
+ 46. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_ahb_to_apb:u_ahb_to_apb"
+ 47. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem"
+ 48. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_1"
+ 49. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_0"
+ 50. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_sysctrl:u_cmsdk_mcu_sysctrl"
+ 51. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_cs_rom_table:u_system_rom_table"
+ 52. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|example:ex0"
+ 53. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_slave_mux:u_ahb_slave_mux_sys_bus"
+ 54. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_addr_decode:u_addr_decode"
+ 55. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|cortexm0_wic:u_wic"
+ 56. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|CORTEXM0DAP:u_dap"
+ 57. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|CORTEXM0DS:u_cortexm0|cortexm0ds_logic:u_logic"
+ 58. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration"
+ 59. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system"
+ 60. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_clkctrl:u_cmsdk_mcu_clkctrl"
+ 61. Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu"
+ 62. Post-Synthesis Netlist Statistics for Top Partition
+ 63. Elapsed Time Per Partition
+ 64. Analysis & Synthesis Messages
+ 65. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Nov 13 14:48:15 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; M0_Simulation                               ;
+; Top-level Entity Name           ; M0_Simulation                               ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 7                                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA7F23C8        ;                    ;
+; Top-level entity name                                                           ; M0_Simulation      ; M0_Simulation      ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Iteration limit for constant Verilog loops                                      ; 70000              ; 5000               ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; M0_Simulation.v                  ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v                ;         ;
+; Example.v                        ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/Example.v                      ;         ;
+; CORTEXM0INTEGRATION.v            ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v          ;         ;
+; cortexm0ds_logic.v               ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v             ;         ;
+; CORTEXM0DS.v                     ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v                   ;         ;
+; CORTEXM0DAP.v                    ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DAP.v                  ;         ;
+; cortexm0_wic.v                   ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0_wic.v                 ;         ;
+; cmsdk_uart_capture.v             ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v           ;         ;
+; cmsdk_mcu_system.v               ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v             ;         ;
+; cmsdk_mcu_sysctrl.v              ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_sysctrl.v            ;         ;
+; cmsdk_mcu_stclkctrl.v            ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_stclkctrl.v          ;         ;
+; cmsdk_mcu_pin_mux.v              ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_pin_mux.v            ;         ;
+; cmsdk_mcu_defs.v                 ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_defs.v               ;         ;
+; cmsdk_mcu_clkctrl.v              ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_clkctrl.v            ;         ;
+; cmsdk_mcu_addr_decode.v          ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_addr_decode.v        ;         ;
+; cmsdk_mcu.v                      ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v                    ;         ;
+; cmsdk_iop_gpio.v                 ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_iop_gpio.v               ;         ;
+; cmsdk_clkreset.v                 ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_clkreset.v               ;         ;
+; cmsdk_apb_watchdog_frc.v         ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog_frc.v       ;         ;
+; cmsdk_apb_watchdog_defs.v        ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog_defs.v      ;         ;
+; cmsdk_apb_watchdog.v             ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog.v           ;         ;
+; cmsdk_apb_uart.v                 ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_uart.v               ;         ;
+; cmsdk_apb_timer.v                ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_timer.v              ;         ;
+; cmsdk_apb_test_slave.v           ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_test_slave.v         ;         ;
+; cmsdk_apb_subsystem.v            ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v          ;         ;
+; cmsdk_apb_slave_mux.v            ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_slave_mux.v          ;         ;
+; cmsdk_apb_dualtimers_frc.v       ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers_frc.v     ;         ;
+; cmsdk_apb_dualtimers_defs.v      ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers_defs.v    ;         ;
+; cmsdk_apb_dualtimers.v           ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers.v         ;         ;
+; cmsdk_ahb_to_iop.v               ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_iop.v             ;         ;
+; cmsdk_ahb_to_apb.v               ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_apb.v             ;         ;
+; cmsdk_ahb_slave_mux.v            ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_slave_mux.v          ;         ;
+; cmsdk_ahb_rom.v                  ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_rom.v                ;         ;
+; cmsdk_ahb_ram_beh.v              ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram_beh.v            ;         ;
+; cmsdk_ahb_ram.v                  ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram.v                ;         ;
+; cmsdk_ahb_memory_models_defs.v   ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_memory_models_defs.v ;         ;
+; cmsdk_ahb_gpio.v                 ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_gpio.v               ;         ;
+; cmsdk_ahb_default_slave.v        ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_default_slave.v      ;         ;
+; cmsdk_ahb_cs_rom_table.v         ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_cs_rom_table.v       ;         ;
+; cm0_dbg_reset_sync.v             ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cm0_dbg_reset_sync.v           ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                         ;
++---------------------------------------------+---------------------------------------+
+; Resource                                    ; Usage                                 ;
++---------------------------------------------+---------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1                                     ;
+;                                             ;                                       ;
+; Combinational ALUT usage for logic          ; 1                                     ;
+;     -- 7 input functions                    ; 0                                     ;
+;     -- 6 input functions                    ; 0                                     ;
+;     -- 5 input functions                    ; 0                                     ;
+;     -- 4 input functions                    ; 0                                     ;
+;     -- <=3 input functions                  ; 1                                     ;
+;                                             ;                                       ;
+; Dedicated logic registers                   ; 0                                     ;
+;                                             ;                                       ;
+; I/O pins                                    ; 7                                     ;
+;                                             ;                                       ;
+; Total DSP Blocks                            ; 0                                     ;
+;                                             ;                                       ;
+; Maximum fan-out node                        ; cmsdk_clkreset:u_cmsdk_clkreset|CLK~0 ;
+; Maximum fan-out                             ; 2                                     ;
+; Total fan-out                               ; 9                                     ;
+; Average fan-out                             ; 0.60                                  ;
++---------------------------------------------+---------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Entity Name    ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+----------------+--------------+
+; |M0_Simulation                       ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 7    ; 0            ; |M0_Simulation                                 ; M0_Simulation  ; work         ;
+;    |cmsdk_clkreset:u_cmsdk_clkreset| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |M0_Simulation|cmsdk_clkreset:u_cmsdk_clkreset ; cmsdk_clkreset ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; cmsdk_clkreset:u_cmsdk_clkreset|CLK                    ;   ;
+; Number of logic cells representing combinational loops ; 1 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |M0_Simulation ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; BE             ; 0     ; Signed Integer                                       ;
+; BKPT           ; 4     ; Signed Integer                                       ;
+; DBG            ; 1     ; Signed Integer                                       ;
+; NUMIRQ         ; 32    ; Signed Integer                                       ;
+; SMUL           ; 0     ; Signed Integer                                       ;
+; SYST           ; 1     ; Signed Integer                                       ;
+; WIC            ; 1     ; Signed Integer                                       ;
+; WICLINES       ; 34    ; Signed Integer                                       ;
+; WPT            ; 2     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; BE             ; 0     ; Signed Integer                            ;
+; BKPT           ; 4     ; Signed Integer                            ;
+; DBG            ; 1     ; Signed Integer                            ;
+; NUMIRQ         ; 32    ; Signed Integer                            ;
+; SMUL           ; 0     ; Signed Integer                            ;
+; SYST           ; 1     ; Signed Integer                            ;
+; WIC            ; 1     ; Signed Integer                            ;
+; WICLINES       ; 34    ; Signed Integer                            ;
+; WPT            ; 2     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_clkctrl:u_cmsdk_mcu_clkctrl ;
++-----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                                           ;
++-----------------+-------+--------------------------------------------------------------------------------+
+; CLKGATE_PRESENT ; 0     ; Signed Integer                                                                 ;
++-----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system ;
++----------------------+----------------------------------+----------------------------------------------+
+; Parameter Name       ; Value                            ; Type                                         ;
++----------------------+----------------------------------+----------------------------------------------+
+; BASEADDR_GPIO0       ; 01000000000000010000000000000000 ; Unsigned Binary                              ;
+; BASEADDR_GPIO1       ; 01000000000000010001000000000000 ; Unsigned Binary                              ;
+; BE                   ; 0                                ; Signed Integer                               ;
+; BKPT                 ; 4                                ; Signed Integer                               ;
+; DBG                  ; 1                                ; Signed Integer                               ;
+; NUMIRQ               ; 32                               ; Signed Integer                               ;
+; SMUL                 ; 0                                ; Signed Integer                               ;
+; SYST                 ; 1                                ; Signed Integer                               ;
+; WIC                  ; 1                                ; Signed Integer                               ;
+; WICLINES             ; 34                               ; Signed Integer                               ;
+; WPT                  ; 2                                ; Signed Integer                               ;
+; BASEADDR_SYSROMTABLE ; 11110000000000000000000000000000 ; Unsigned Binary                              ;
++----------------------+----------------------------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; ACG            ; 0     ; Signed Integer                                                                                                          ;
+; BE             ; 0     ; Signed Integer                                                                                                          ;
+; BKPT           ; 0     ; Signed Integer                                                                                                          ;
+; DBG            ; 0     ; Signed Integer                                                                                                          ;
+; JTAGnSW        ; 1     ; Signed Integer                                                                                                          ;
+; NUMIRQ         ; 32    ; Signed Integer                                                                                                          ;
+; RAR            ; 0     ; Signed Integer                                                                                                          ;
+; SMUL           ; 0     ; Signed Integer                                                                                                          ;
+; SYST           ; 1     ; Signed Integer                                                                                                          ;
+; WIC            ; 0     ; Signed Integer                                                                                                          ;
+; WICLINES       ; 34    ; Signed Integer                                                                                                          ;
+; WPT            ; 0     ; Signed Integer                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|cm0_dbg_reset_sync:u_dpreset_sync ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; PRESENT        ; 0     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_addr_decode:u_addr_decode ;
++----------------------+----------------------------------+----------------------------------------------------------------------------------+
+; Parameter Name       ; Value                            ; Type                                                                             ;
++----------------------+----------------------------------+----------------------------------------------------------------------------------+
+; BASEADDR_GPIO0       ; 01000000000000010000000000000000 ; Unsigned Binary                                                                  ;
+; BASEADDR_GPIO1       ; 01000000000000010001000000000000 ; Unsigned Binary                                                                  ;
+; BOOT_LOADER_PRESENT  ; 0                                ; Unsigned Binary                                                                  ;
+; BASEADDR_SYSROMTABLE ; 11110000000000000000000000000000 ; Unsigned Binary                                                                  ;
++----------------------+----------------------------------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_slave_mux:u_ahb_slave_mux_sys_bus ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                      ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------+
+; PORT0_ENABLE   ; 1     ; Signed Integer                                                                                                            ;
+; PORT1_ENABLE   ; 1     ; Signed Integer                                                                                                            ;
+; PORT2_ENABLE   ; 0     ; Signed Integer                                                                                                            ;
+; PORT3_ENABLE   ; 1     ; Signed Integer                                                                                                            ;
+; PORT4_ENABLE   ; 1     ; Signed Integer                                                                                                            ;
+; PORT5_ENABLE   ; 1     ; Signed Integer                                                                                                            ;
+; PORT6_ENABLE   ; 1     ; Signed Integer                                                                                                            ;
+; PORT7_ENABLE   ; 1     ; Signed Integer                                                                                                            ;
+; PORT8_ENABLE   ; 1     ; Signed Integer                                                                                                            ;
+; PORT9_ENABLE   ; 0     ; Signed Integer                                                                                                            ;
+; PORT10_ENABLE  ; 1     ; Signed Integer                                                                                                            ;
+; DW             ; 32    ; Signed Integer                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|example:ex0 ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; AW             ; 5     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_cs_rom_table:u_system_rom_table ;
++-----------------+----------------------------------+---------------------------------------------------------------------------------------------+
+; Parameter Name  ; Value                            ; Type                                                                                        ;
++-----------------+----------------------------------+---------------------------------------------------------------------------------------------+
+; BASE            ; 11110000000000000000000000000000 ; Unsigned Binary                                                                             ;
+; JEPID           ; 0000000                          ; Unsigned Binary                                                                             ;
+; JEPCONTINUATION ; 0000                             ; Unsigned Binary                                                                             ;
+; PARTNUMBER      ; 000000000000                     ; Unsigned Binary                                                                             ;
+; REVISION        ; 0000                             ; Unsigned Binary                                                                             ;
+; ENTRY0BASEADDR  ; 11100000000011111111000000000000 ; Unsigned Binary                                                                             ;
+; ENTRY0PRESENT   ; 1                                ; Unsigned Binary                                                                             ;
+; ENTRY1BASEADDR  ; 11110000001000000000000000000000 ; Unsigned Binary                                                                             ;
+; ENTRY1PRESENT   ; 0                                ; Signed Integer                                                                              ;
+; ENTRY2BASEADDR  ; 00000000000000000000000000000000 ; Unsigned Binary                                                                             ;
+; ENTRY2PRESENT   ; 0                                ; Unsigned Binary                                                                             ;
+; ENTRY3BASEADDR  ; 00000000000000000000000000000000 ; Unsigned Binary                                                                             ;
+; ENTRY3PRESENT   ; 0                                ; Unsigned Binary                                                                             ;
++-----------------+----------------------------------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_sysctrl:u_cmsdk_mcu_sysctrl ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+; BE             ; 0     ; Signed Integer                                                                                                      ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_0 ;
++------------------------+------------------+----------------------------------------------------------------------------------------+
+; Parameter Name         ; Value            ; Type                                                                                   ;
++------------------------+------------------+----------------------------------------------------------------------------------------+
+; ALTERNATE_FUNC_MASK    ; 0000000000000000 ; Unsigned Binary                                                                        ;
+; ALTERNATE_FUNC_DEFAULT ; 0000000000000000 ; Unsigned Binary                                                                        ;
+; BE                     ; 0                ; Signed Integer                                                                         ;
++------------------------+------------------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_0|cmsdk_iop_gpio:u_iop_gpio ;
++------------------------+------------------+------------------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value            ; Type                                                                                                             ;
++------------------------+------------------+------------------------------------------------------------------------------------------------------------------+
+; ALTERNATE_FUNC_MASK    ; 0000000000000000 ; Unsigned Binary                                                                                                  ;
+; ALTERNATE_FUNC_DEFAULT ; 0000000000000000 ; Unsigned Binary                                                                                                  ;
+; BE                     ; 0                ; Signed Integer                                                                                                   ;
++------------------------+------------------+------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_1 ;
++------------------------+------------------+----------------------------------------------------------------------------------------+
+; Parameter Name         ; Value            ; Type                                                                                   ;
++------------------------+------------------+----------------------------------------------------------------------------------------+
+; ALTERNATE_FUNC_MASK    ; 0000000000101010 ; Unsigned Binary                                                                        ;
+; ALTERNATE_FUNC_DEFAULT ; 0000000000000000 ; Unsigned Binary                                                                        ;
+; BE                     ; 0                ; Signed Integer                                                                         ;
++------------------------+------------------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_1|cmsdk_iop_gpio:u_iop_gpio ;
++------------------------+------------------+------------------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value            ; Type                                                                                                             ;
++------------------------+------------------+------------------------------------------------------------------------------------------------------------------+
+; ALTERNATE_FUNC_MASK    ; 0000000000101010 ; Unsigned Binary                                                                                                  ;
+; ALTERNATE_FUNC_DEFAULT ; 0000000000000000 ; Unsigned Binary                                                                                                  ;
+; BE                     ; 0                ; Signed Integer                                                                                                   ;
++------------------------+------------------+------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem ;
++--------------------------+-------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name           ; Value ; Type                                                                                                    ;
++--------------------------+-------+---------------------------------------------------------------------------------------------------------+
+; APB_EXT_PORT12_ENABLE    ; 0     ; Signed Integer                                                                                          ;
+; APB_EXT_PORT13_ENABLE    ; 0     ; Signed Integer                                                                                          ;
+; APB_EXT_PORT14_ENABLE    ; 0     ; Signed Integer                                                                                          ;
+; APB_EXT_PORT15_ENABLE    ; 0     ; Signed Integer                                                                                          ;
+; INCLUDE_IRQ_SYNCHRONIZER ; 0     ; Signed Integer                                                                                          ;
+; INCLUDE_APB_TEST_SLAVE   ; 1     ; Signed Integer                                                                                          ;
+; INCLUDE_APB_TIMER0       ; 1     ; Signed Integer                                                                                          ;
+; INCLUDE_APB_TIMER1       ; 1     ; Signed Integer                                                                                          ;
+; INCLUDE_APB_DUALTIMER0   ; 1     ; Signed Integer                                                                                          ;
+; INCLUDE_APB_UART0        ; 1     ; Signed Integer                                                                                          ;
+; INCLUDE_APB_UART1        ; 1     ; Signed Integer                                                                                          ;
+; INCLUDE_APB_UART2        ; 1     ; Signed Integer                                                                                          ;
+; INCLUDE_APB_WATCHDOG     ; 1     ; Signed Integer                                                                                          ;
+; BE                       ; 0     ; Signed Integer                                                                                          ;
++--------------------------+-------+---------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_ahb_to_apb:u_ahb_to_apb ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; ADDRWIDTH      ; 16    ; Signed Integer                                                                                                                                  ;
+; REGISTER_RDATA ; 1     ; Signed Integer                                                                                                                                  ;
+; REGISTER_WDATA ; 0     ; Signed Integer                                                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_slave_mux:u_apb_slave_mux ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; PORT0_ENABLE   ; 1     ; Signed Integer                                                                                                                                        ;
+; PORT1_ENABLE   ; 1     ; Signed Integer                                                                                                                                        ;
+; PORT2_ENABLE   ; 1     ; Signed Integer                                                                                                                                        ;
+; PORT3_ENABLE   ; 0     ; Signed Integer                                                                                                                                        ;
+; PORT4_ENABLE   ; 1     ; Signed Integer                                                                                                                                        ;
+; PORT5_ENABLE   ; 1     ; Signed Integer                                                                                                                                        ;
+; PORT6_ENABLE   ; 1     ; Signed Integer                                                                                                                                        ;
+; PORT7_ENABLE   ; 0     ; Signed Integer                                                                                                                                        ;
+; PORT8_ENABLE   ; 1     ; Signed Integer                                                                                                                                        ;
+; PORT9_ENABLE   ; 0     ; Signed Integer                                                                                                                                        ;
+; PORT10_ENABLE  ; 0     ; Signed Integer                                                                                                                                        ;
+; PORT11_ENABLE  ; 1     ; Signed Integer                                                                                                                                        ;
+; PORT12_ENABLE  ; 0     ; Signed Integer                                                                                                                                        ;
+; PORT13_ENABLE  ; 0     ; Signed Integer                                                                                                                                        ;
+; PORT14_ENABLE  ; 0     ; Signed Integer                                                                                                                                        ;
+; PORT15_ENABLE  ; 0     ; Signed Integer                                                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_stclkctrl:u_cmsdk_mcu_stclkctrl ;
++----------------+----------------------------------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value                            ; Type                                                                                         ;
++----------------+----------------------------------+----------------------------------------------------------------------------------------------+
+; DIV_RATIO      ; 000000001111101000               ; Unsigned Binary                                                                              ;
+; DIVIDER_RELOAD ; 00000000000000000000000111110011 ; Unsigned Binary                                                                              ;
++----------------+----------------------------------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_rom:u_ahb_rom ;
++----------------+--------------------------------------------------+------------------------+
+; Parameter Name ; Value                                            ; Type                   ;
++----------------+--------------------------------------------------+------------------------+
+; MEM_TYPE       ; 1                                                ; Unsigned Binary        ;
+; AW             ; 14                                               ; Signed Integer         ;
+; filename       ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/test.hex ; String                 ;
+; WS_N           ; 0                                                ; Signed Integer         ;
+; WS_S           ; 0                                                ; Signed Integer         ;
+; BE             ; 0                                                ; Signed Integer         ;
++----------------+--------------------------------------------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_rom:u_ahb_rom|cmsdk_ahb_ram_beh:u_ahb_ram_beh ;
++----------------+--------------------------------------------------+--------------------------------------------------------+
+; Parameter Name ; Value                                            ; Type                                                   ;
++----------------+--------------------------------------------------+--------------------------------------------------------+
+; AW             ; 14                                               ; Signed Integer                                         ;
+; filename       ; D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/test.hex ; String                                                 ;
+; WS_N           ; 0                                                ; Signed Integer                                         ;
+; WS_S           ; 0                                                ; Signed Integer                                         ;
++----------------+--------------------------------------------------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_ram:u_ahb_ram ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; MEM_TYPE       ; 1     ; Unsigned Binary                                                   ;
+; AW             ; 14    ; Signed Integer                                                    ;
+; filename       ;       ; String                                                            ;
+; WS_N           ; 0     ; Signed Integer                                                    ;
+; WS_S           ; 0     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_ram:u_ahb_ram|cmsdk_ahb_ram_beh:u_ahb_ram_beh ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; AW             ; 14    ; Signed Integer                                                                                    ;
+; filename       ;       ; String                                                                                            ;
+; WS_N           ; 0     ; Signed Integer                                                                                    ;
+; WS_S           ; 0     ; Signed Integer                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_uart_capture:u_cmsdk_uart_capture"                                                           ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; DEBUG_TESTER_ENABLE ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; SIMULATIONEND       ; Output ; Info     ; Explicitly unconnected                                                              ;
+; AUXCTRL             ; Output ; Info     ; Explicitly unconnected                                                              ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_pin_mux:u_pin_mux"                                        ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_trst_n   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; i_swditms  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; i_swclktck ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; i_tdi      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_ram:u_ahb_ram"                                                                                                                                     ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; HADDR ; Input ; Warning  ; Input port expression (16 bits) is wider than the input port (14 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_rom:u_ahb_rom|cmsdk_ahb_ram_beh:u_ahb_ram_beh" ;
++--------+-------+----------+-------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                       ;
++--------+-------+----------+-------------------------------------------------------------------------------+
+; HWRITE ; Input ; Info     ; Stuck at GND                                                                  ;
+; HWDATA ; Input ; Info     ; Stuck at GND                                                                  ;
++--------+-------+----------+-------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_rom:u_ahb_rom"                                                                                                                                     ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; HADDR ; Input ; Warning  ; Input port expression (16 bits) is wider than the input port (14 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_uart:gen_apb_uart_2.u_apb_uart_2" ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                              ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------+
+; ECOREVNUM ; Input  ; Info     ; Stuck at GND                                                                                                                         ;
+; BAUDTICK  ; Output ; Info     ; Explicitly unconnected                                                                                                               ;
+; UARTINT   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                  ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_uart:gen_apb_uart_1.u_apb_uart_1" ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                              ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------+
+; ECOREVNUM ; Input  ; Info     ; Stuck at GND                                                                                                                         ;
+; BAUDTICK  ; Output ; Info     ; Explicitly unconnected                                                                                                               ;
+; UARTINT   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                  ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_uart:gen_apb_uart_0.u_apb_uart_0" ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                              ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------+
+; ECOREVNUM ; Input  ; Info     ; Stuck at GND                                                                                                                         ;
+; BAUDTICK  ; Output ; Info     ; Explicitly unconnected                                                                                                               ;
+; UARTINT   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                  ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_watchdog:gen_apb_watchdog.u_apb_watchdog" ;
++-----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                       ;
++-----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; WDOGCLKEN ; Input ; Info     ; Stuck at VCC                                                                                                                                  ;
+; ECOREVNUM ; Input ; Info     ; Stuck at GND                                                                                                                                  ;
++-----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_dualtimers:gen_apb_dualtimers_2.u_apb_dualtimers_2" ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                                                ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; TIMCLKEN1 ; Input  ; Info     ; Stuck at VCC                                                                                                                                           ;
+; TIMCLKEN2 ; Input  ; Info     ; Stuck at VCC                                                                                                                                           ;
+; ECOREVNUM ; Input  ; Info     ; Stuck at GND                                                                                                                                           ;
+; TIMINT1   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                    ;
+; TIMINT2   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                    ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_timer:gen_apb_timer_1.u_apb_timer_1" ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------+
+; ECOREVNUM ; Input ; Info     ; Stuck at GND                                                                                                                             ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_timer:gen_apb_timer_0.u_apb_timer_0" ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------+
+; ECOREVNUM ; Input ; Info     ; Stuck at GND                                                                                                                             ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_slave_mux:u_apb_slave_mux" ;
++-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                       ;
++-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; PREADY2   ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
+; PSLVERR2  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
+; PSEL3     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                           ;
+; PREADY3   ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
+; PRDATA3   ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
+; PSLVERR3  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
+; PSEL7     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                           ;
+; PREADY7   ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
+; PRDATA7   ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
+; PSLVERR7  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
+; PREADY8   ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
+; PSLVERR8  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
+; PSEL9     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                           ;
+; PREADY9   ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
+; PRDATA9   ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
+; PSLVERR9  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
+; PSEL10    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                           ;
+; PREADY10  ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
+; PRDATA10  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
+; PSLVERR10 ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
++-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_ahb_to_apb:u_ahb_to_apb" ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                     ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; PPROT ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                         ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem" ;
++---------------+--------+----------+---------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                               ;
++---------------+--------+----------+---------------------------------------------------------------------------------------+
+; PADDR         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.   ;
+; PWRITE        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.   ;
+; PWDATA        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.   ;
+; PENABLE       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.   ;
+; ext12_psel    ; Output ; Info     ; Explicitly unconnected                                                                ;
+; ext13_psel    ; Output ; Info     ; Explicitly unconnected                                                                ;
+; ext14_psel    ; Output ; Info     ; Explicitly unconnected                                                                ;
+; ext15_psel    ; Output ; Info     ; Explicitly unconnected                                                                ;
+; ext12_prdata  ; Input  ; Info     ; Stuck at GND                                                                          ;
+; ext12_pready  ; Input  ; Info     ; Stuck at VCC                                                                          ;
+; ext12_pslverr ; Input  ; Info     ; Stuck at GND                                                                          ;
+; ext13_prdata  ; Input  ; Info     ; Stuck at GND                                                                          ;
+; ext13_pready  ; Input  ; Info     ; Stuck at VCC                                                                          ;
+; ext13_pslverr ; Input  ; Info     ; Stuck at GND                                                                          ;
+; ext14_prdata  ; Input  ; Info     ; Stuck at GND                                                                          ;
+; ext14_pready  ; Input  ; Info     ; Stuck at VCC                                                                          ;
+; ext14_pslverr ; Input  ; Info     ; Stuck at GND                                                                          ;
+; ext15_prdata  ; Input  ; Info     ; Stuck at GND                                                                          ;
+; ext15_pready  ; Input  ; Info     ; Stuck at VCC                                                                          ;
+; ext15_pslverr ; Input  ; Info     ; Stuck at GND                                                                          ;
++---------------+--------+----------+---------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_1" ;
++-----------+--------+----------+-----------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                           ;
++-----------+--------+----------+-----------------------------------------------------------------------------------+
+; ECOREVNUM ; Input  ; Info     ; Stuck at GND                                                                      ;
+; GPIOINT   ; Output ; Info     ; Explicitly unconnected                                                            ;
++-----------+--------+----------+-----------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_0" ;
++-----------+-------+----------+------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------+
+; ECOREVNUM ; Input ; Info     ; Stuck at GND                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_sysctrl:u_cmsdk_mcu_sysctrl" ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                      ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------+
+; ECOREVNUM ; Input ; Info     ; Stuck at GND                                                                                 ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_cs_rom_table:u_system_rom_table" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                          ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+; ECOREVNUM ; Input ; Info     ; Stuck at GND                                                                                     ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|example:ex0"                                                                                                             ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; HADDR ; Input ; Warning  ; Input port expression (16 bits) is wider than the input port (5 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_slave_mux:u_ahb_slave_mux_sys_bus" ;
++------------+-------+----------+---------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                           ;
++------------+-------+----------+---------------------------------------------------------------------------------------------------+
+; HRDATA3    ; Input ; Info     ; Stuck at GND                                                                                      ;
+; HREADYOUT9 ; Input ; Info     ; Stuck at GND                                                                                      ;
+; HRESP9     ; Input ; Info     ; Stuck at GND                                                                                      ;
+; HRDATA9    ; Input ; Info     ; Stuck at GND                                                                                      ;
++------------+-------+----------+---------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_addr_decode:u_addr_decode" ;
++---------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                     ;
++---------+--------+----------+---------------------------------------------------------------------------------------------+
+; hselram ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
+; hselsfr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++---------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|cortexm0_wic:u_wic" ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                            ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------+
+; WICDSREQn ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                ;
+; WICLOAD   ; Input  ; Info     ; Stuck at GND                                                                                                       ;
+; WICCLEAR  ; Input  ; Info     ; Stuck at GND                                                                                                       ;
+; WICMASK   ; Input  ; Info     ; Stuck at GND                                                                                                       ;
+; WICDSACKn ; Input  ; Info     ; Stuck at VCC                                                                                                       ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|CORTEXM0DAP:u_dap" ;
++------------------+--------+----------+------------------------------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                                                    ;
++------------------+--------+----------+------------------------------------------------------------------------------------------------------------+
+; SWDO             ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                        ;
+; SWDOEN           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                        ;
+; nTDOEN           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                        ;
+; CDBGPWRUPREQ     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                        ;
+; SLVADDR          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                        ;
+; SLVWDATA         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                        ;
+; SLVTRANS         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                        ;
+; SLVWRITE         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                        ;
+; SLVSIZE          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                        ;
+; SWDITMS          ; Input  ; Info     ; Stuck at VCC                                                                                               ;
+; TDI              ; Input  ; Info     ; Stuck at GND                                                                                               ;
+; CDBGPWRUPACK     ; Input  ; Info     ; Stuck at GND                                                                                               ;
+; DEVICEEN         ; Input  ; Info     ; Stuck at GND                                                                                               ;
+; SLVRDATA         ; Input  ; Info     ; Stuck at GND                                                                                               ;
+; SLVREADY         ; Input  ; Info     ; Stuck at GND                                                                                               ;
+; SLVRESP          ; Input  ; Info     ; Stuck at GND                                                                                               ;
+; BASEADDR[31..29] ; Input  ; Info     ; Stuck at VCC                                                                                               ;
+; BASEADDR[19..12] ; Input  ; Info     ; Stuck at VCC                                                                                               ;
+; BASEADDR[1..0]   ; Input  ; Info     ; Stuck at VCC                                                                                               ;
+; BASEADDR[28..20] ; Input  ; Info     ; Stuck at GND                                                                                               ;
+; BASEADDR[11..2]  ; Input  ; Info     ; Stuck at GND                                                                                               ;
++------------------+--------+----------+------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|CORTEXM0DS:u_cortexm0|cortexm0ds_logic:u_logic" ;
++---------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                                                                    ;
++---------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; vis_r0_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r1_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r2_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r3_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r4_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r5_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r6_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r7_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r8_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r9_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r10_o     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r11_o     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r12_o     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_msp_o     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_psp_o     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_r14_o     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_pc_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_apsr_o    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_tbit_o    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_ipsr_o    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_control_o ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
+; vis_primask_o ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                        ;
++---------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration" ;
++---------------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                     ;
++---------------+--------+----------+---------------------------------------------------------------------------------------------+
+; DCLK          ; Input  ; Info     ; Explicitly unconnected                                                                      ;
+; DBGRESETn     ; Input  ; Info     ; Explicitly unconnected                                                                      ;
+; SWCLKTCK      ; Input  ; Info     ; Explicitly unconnected                                                                      ;
+; nTRST         ; Input  ; Info     ; Explicitly unconnected                                                                      ;
+; HMASTER       ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; CODENSEQ      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
+; CODEHINTDE    ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; SPECHTRANS    ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; SWDITMS       ; Input  ; Info     ; Stuck at GND                                                                                ;
+; TDI           ; Input  ; Info     ; Stuck at GND                                                                                ;
+; SWDO          ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; SWDOEN        ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; TDO           ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; nTDOEN        ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; DBGRESTART    ; Input  ; Info     ; Stuck at GND                                                                                ;
+; DBGRESTARTED  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
+; EDBGRQ        ; Input  ; Info     ; Stuck at GND                                                                                ;
+; HALTED        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
+; TXEV          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
+; RXEV          ; Input  ; Info     ; Stuck at GND                                                                                ;
+; IRQLATENCY    ; Input  ; Info     ; Stuck at GND                                                                                ;
+; ECOREVNUM     ; Input  ; Info     ; Stuck at GND                                                                                ;
+; GATEHCLK      ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; WAKEUP        ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; WICSENSE      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
+; SLEEPHOLDREQn ; Input  ; Info     ; Stuck at VCC                                                                                ;
+; SLEEPHOLDACKn ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; WICENREQ      ; Input  ; Info     ; Stuck at GND                                                                                ;
+; WICENACK      ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; CDBGPWRUPREQ  ; Output ; Info     ; Explicitly unconnected                                                                      ;
+; CDBGPWRUPACK  ; Input  ; Info     ; Stuck at GND                                                                                ;
+; SE            ; Input  ; Info     ; Stuck at GND                                                                                ;
+; RSTBYPASS     ; Input  ; Info     ; Stuck at GND                                                                                ;
++---------------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system"                                    ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; HADDR[31..14]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; boot_hsel      ; Output ; Info     ; Explicitly unconnected                                                              ;
+; boot_hreadyout ; Input  ; Info     ; Stuck at GND                                                                        ;
+; boot_hrdata    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; boot_hresp     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; PMUENABLE      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; DFTSE          ; Input  ; Info     ; Stuck at GND                                                                        ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_clkctrl:u_cmsdk_mcu_clkctrl" ;
++-------------+-------+----------+--------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                ;
++-------------+-------+----------+--------------------------------------------------------+
+; DBGRESETREQ ; Input ; Info     ; Stuck at GND                                           ;
++-------------+-------+----------+--------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_mcu:u_cmsdk_mcu"                                                                  ;
++-----------+-------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                             ;
++-----------+-------+----------+-------------------------------------------------------------------------------------+
+; P0        ; Bidir ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; P1[15..6] ; Bidir ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; P1[4]     ; Bidir ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; SWDIOTMS  ; Bidir ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+-------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 3                           ;
+;     normal            ; 3                           ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+; boundary_port         ; 7                           ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.75                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed Nov 13 14:45:58 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M0_Simulation -c M0_Simulation
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file tb_cmsdk_mcu.v
+    Info (12023): Found entity 1: tb_cmsdk_mcu File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/tb_cmsdk_mcu.v Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file m0_simulation.v
+    Info (12023): Found entity 1: M0_Simulation File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file example.v
+    Info (12023): Found entity 1: example File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/Example.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cortexm0integration.v
+    Info (12023): Found entity 1: CORTEXM0INTEGRATION File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file cortexm0ds_logic.v
+    Info (12023): Found entity 1: cortexm0ds_logic File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file cortexm0ds.v
+    Info (12023): Found entity 1: CORTEXM0DS File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file cortexm0dap.v
+    Info (12023): Found entity 1: CORTEXM0DAP File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DAP.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file cortexm0_wic.v
+    Info (12023): Found entity 1: cortexm0_wic File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0_wic.v Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file cortexm0_rst_ctl.v
+    Info (12023): Found entity 1: cortexm0_rst_ctl File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0_rst_ctl.v Line: 33
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_uart_capture.v
+    Info (12023): Found entity 1: cmsdk_uart_capture File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_mcu_system.v
+    Info (12023): Found entity 1: cmsdk_mcu_system File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_mcu_sysctrl.v
+    Info (12023): Found entity 1: cmsdk_mcu_sysctrl File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_sysctrl.v Line: 45
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_mcu_stclkctrl.v
+    Info (12023): Found entity 1: cmsdk_mcu_stclkctrl File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_stclkctrl.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_mcu_pin_mux.v
+    Info (12023): Found entity 1: cmsdk_mcu_pin_mux File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_pin_mux.v Line: 29
+Info (12021): Found 0 design units, including 0 entities, in source file cmsdk_mcu_defs.v
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_mcu_clkctrl.v
+    Info (12023): Found entity 1: cmsdk_mcu_clkctrl File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_clkctrl.v Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_mcu_addr_decode.v
+    Info (12023): Found entity 1: cmsdk_mcu_addr_decode File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_addr_decode.v Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_mcu.v
+    Info (12023): Found entity 1: cmsdk_mcu File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_irq_sync.v
+    Info (12023): Found entity 1: cmsdk_irq_sync File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_irq_sync.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_iop_gpio.v
+    Info (12023): Found entity 1: cmsdk_iop_gpio File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_iop_gpio.v Line: 47
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_clock_gate.v
+    Info (12023): Found entity 1: cmsdk_clock_gate File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_clock_gate.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_clkreset.v
+    Info (12023): Found entity 1: cmsdk_clkreset File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_clkreset.v Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb4_eg_slave_reg.v
+    Info (12023): Found entity 1: cmsdk_apb4_eg_slave_reg File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb4_eg_slave_reg.v Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb4_eg_slave_interface.v
+    Info (12023): Found entity 1: cmsdk_apb4_eg_slave_interface File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb4_eg_slave_interface.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb4_eg_slave.v
+    Info (12023): Found entity 1: cmsdk_apb4_eg_slave File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb4_eg_slave.v Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb_watchdog_frc.v
+    Info (12023): Found entity 1: cmsdk_apb_watchdog_frc File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog_frc.v Line: 34
+Info (12021): Found 0 design units, including 0 entities, in source file cmsdk_apb_watchdog_defs.v
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb_watchdog.v
+    Info (12023): Found entity 1: cmsdk_apb_watchdog File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog.v Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb_uart.v
+    Info (12023): Found entity 1: cmsdk_apb_uart File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_uart.v Line: 53
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb_timer.v
+    Info (12023): Found entity 1: cmsdk_apb_timer File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_timer.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb_test_slave.v
+    Info (12023): Found entity 1: cmsdk_apb_test_slave File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_test_slave.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb_subsystem.v
+    Info (12023): Found entity 1: cmsdk_apb_subsystem File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb_slave_mux.v
+    Info (12023): Found entity 1: cmsdk_apb_slave_mux File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_slave_mux.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb_dualtimers_frc.v
+    Info (12023): Found entity 1: cmsdk_apb_dualtimers_frc File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers_frc.v Line: 35
+Info (12021): Found 0 design units, including 0 entities, in source file cmsdk_apb_dualtimers_defs.v
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_apb_dualtimers.v
+    Info (12023): Found entity 1: cmsdk_apb_dualtimers File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers.v Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_ahb_to_iop.v
+    Info (12023): Found entity 1: cmsdk_ahb_to_iop File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_iop.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_ahb_to_apb.v
+    Info (12023): Found entity 1: cmsdk_ahb_to_apb File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_apb.v Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_ahb_slave_mux.v
+    Info (12023): Found entity 1: cmsdk_ahb_slave_mux File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_slave_mux.v Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_ahb_rom.v
+    Info (12023): Found entity 1: cmsdk_ahb_rom File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_rom.v Line: 50
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_ahb_ram_beh.v
+    Info (12023): Found entity 1: cmsdk_ahb_ram_beh File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram_beh.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_ahb_ram.v
+    Info (12023): Found entity 1: cmsdk_ahb_ram File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram.v Line: 49
+Info (12021): Found 0 design units, including 0 entities, in source file cmsdk_ahb_memory_models_defs.v
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_ahb_gpio.v
+    Info (12023): Found entity 1: cmsdk_ahb_gpio File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_gpio.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_ahb_default_slave.v
+    Info (12023): Found entity 1: cmsdk_ahb_default_slave File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_default_slave.v Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file cmsdk_ahb_cs_rom_table.v
+    Info (12023): Found entity 1: cmsdk_ahb_cs_rom_table File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_cs_rom_table.v Line: 66
+Info (12021): Found 1 design units, including 1 entities, in source file cm0_dbg_reset_sync.v
+    Info (12023): Found entity 1: cm0_dbg_reset_sync File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cm0_dbg_reset_sync.v Line: 23
+Info (12127): Elaborating entity "M0_Simulation" for the top level hierarchy
+Info (12128): Elaborating entity "cmsdk_mcu" for hierarchy "cmsdk_mcu:u_cmsdk_mcu" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v Line: 66
+Info (12128): Elaborating entity "cmsdk_mcu_clkctrl" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_clkctrl:u_cmsdk_mcu_clkctrl" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v Line: 184
+Warning (10036): Verilog HDL or VHDL warning at cmsdk_mcu_clkctrl.v(64): object "dbgrst_reg" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_clkctrl.v Line: 64
+Warning (10036): Verilog HDL or VHDL warning at cmsdk_mcu_clkctrl.v(68): object "i_pclkgen" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_clkctrl.v Line: 68
+Info (12128): Elaborating entity "cmsdk_mcu_system" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v Line: 294
+Warning (10036): Verilog HDL or VHDL warning at cmsdk_mcu_system.v(179): object "sys_hmaster" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 179
+Warning (10036): Verilog HDL or VHDL warning at cmsdk_mcu_system.v(235): object "sys_hmaster_i" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 235
+Warning (10036): Verilog HDL or VHDL warning at cmsdk_mcu_system.v(257): object "IOMATCH" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 257
+Warning (10036): Verilog HDL or VHDL warning at cmsdk_mcu_system.v(258): object "IORDATA" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 258
+Info (12128): Elaborating entity "CORTEXM0INTEGRATION" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 365
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0INTEGRATION.v(222): object "slv_addr" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v Line: 222
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0INTEGRATION.v(223): object "slv_wdata" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v Line: 223
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0INTEGRATION.v(224): object "slv_trans" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v Line: 224
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0INTEGRATION.v(225): object "slv_write" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v Line: 225
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0INTEGRATION.v(226): object "slv_size" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v Line: 226
+Info (12128): Elaborating entity "cm0_dbg_reset_sync" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|cm0_dbg_reset_sync:u_dpreset_sync" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v Line: 247
+Info (12128): Elaborating entity "CORTEXM0DS" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|CORTEXM0DS:u_cortexm0" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v Line: 313
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0DS.v(76): object "cm0_msp" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v Line: 76
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0DS.v(77): object "cm0_psp" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v Line: 77
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0DS.v(79): object "cm0_pc" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v Line: 79
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0DS.v(80): object "cm0_xpsr" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v Line: 80
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0DS.v(81): object "cm0_control" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v Line: 81
+Warning (10036): Verilog HDL or VHDL warning at CORTEXM0DS.v(82): object "cm0_primask" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v Line: 82
+Info (12128): Elaborating entity "cortexm0ds_logic" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|CORTEXM0DS:u_cortexm0|cortexm0ds_logic:u_logic" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v Line: 146
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1213): object "Al2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1213
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1213): object "Yl2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1213
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1213): object "Wm2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1213
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1213): object "Un2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1213
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1213): object "So2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1213
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1213): object "Qp2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1213
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1213): object "Oq2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1213
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1213): object "Mr2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1213
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1213): object "Ks2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1213
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1213): object "It2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1213
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1214): object "Gu2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1214
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1214): object "Fv2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1214
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1214): object "Ew2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1214
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1214): object "Dx2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1214
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1214): object "Cy2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1214
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1214): object "Bz2l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1214
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1214): object "A03l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1214
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1214): object "Z03l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1214
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1214): object "Y13l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1214
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1214): object "X23l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1214
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1215): object "W33l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1215
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1215): object "V43l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1215
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1215): object "U53l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1215
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1215): object "T63l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1215
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1215): object "S73l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1215
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1215): object "R83l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1215
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1215): object "Q93l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1215
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1215): object "Pa3l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1215
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1215): object "Ob3l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1215
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1215): object "Nc3l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1215
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1216): object "Md3l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1216
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1216): object "Le3l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1216
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1216): object "Kf3l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1216
+Warning (10036): Verilog HDL or VHDL warning at cortexm0ds_logic.v(1216): object "Jg3l85" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v Line: 1216
+Info (12128): Elaborating entity "CORTEXM0DAP" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|CORTEXM0DAP:u_dap" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v Line: 367
+Info (12128): Elaborating entity "cortexm0_wic" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|CORTEXM0INTEGRATION:u_cortexm0integration|cortexm0_wic:u_wic" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v Line: 389
+Info (12128): Elaborating entity "cmsdk_mcu_addr_decode" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_addr_decode:u_addr_decode" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 449
+Info (12128): Elaborating entity "cmsdk_ahb_slave_mux" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_slave_mux:u_ahb_slave_mux_sys_bus" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 523
+Info (12128): Elaborating entity "cmsdk_ahb_default_slave" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_default_slave:u_ahb_default_slave_1" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 535
+Info (12128): Elaborating entity "example" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|example:ex0" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 560
+Info (12128): Elaborating entity "cmsdk_ahb_cs_rom_table" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_cs_rom_table:u_system_rom_table" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 598
+Warning (10036): Verilog HDL or VHDL warning at cmsdk_ahb_cs_rom_table.v(171): object "unused" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_cs_rom_table.v Line: 171
+Info (12128): Elaborating entity "cmsdk_mcu_sysctrl" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_sysctrl:u_cmsdk_mcu_sysctrl" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 633
+Info (12128): Elaborating entity "cmsdk_ahb_gpio" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_0" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 668
+Info (12128): Elaborating entity "cmsdk_ahb_to_iop" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_0|cmsdk_ahb_to_iop:u_ahb_to_gpio" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_gpio.v Line: 111
+Info (12128): Elaborating entity "cmsdk_iop_gpio" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_0|cmsdk_iop_gpio:u_iop_gpio" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_gpio.v Line: 142
+Info (12128): Elaborating entity "cmsdk_ahb_gpio" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_1" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 702
+Info (12128): Elaborating entity "cmsdk_iop_gpio" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_gpio:u_ahb_gpio_1|cmsdk_iop_gpio:u_iop_gpio" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_gpio.v Line: 142
+Info (12128): Elaborating entity "cmsdk_apb_subsystem" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 802
+Info (12128): Elaborating entity "cmsdk_ahb_to_apb" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_ahb_to_apb:u_ahb_to_apb" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v Line: 339
+Info (12128): Elaborating entity "cmsdk_apb_slave_mux" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_slave_mux:u_apb_slave_mux" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v Line: 450
+Info (12128): Elaborating entity "cmsdk_apb_timer" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_timer:gen_apb_timer_0.u_apb_timer_0" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v Line: 476
+Info (12128): Elaborating entity "cmsdk_apb_dualtimers" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_dualtimers:gen_apb_dualtimers_2.u_apb_dualtimers_2" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v Line: 541
+Info (12128): Elaborating entity "cmsdk_apb_dualtimers_frc" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_dualtimers:gen_apb_dualtimers_2.u_apb_dualtimers_2|cmsdk_apb_dualtimers_frc:u_apb_timer_frc_1" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers.v Line: 308
+Info (12128): Elaborating entity "cmsdk_apb_watchdog" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_watchdog:gen_apb_watchdog.u_apb_watchdog" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v Line: 581
+Info (12128): Elaborating entity "cmsdk_apb_watchdog_frc" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_watchdog:gen_apb_watchdog.u_apb_watchdog|cmsdk_apb_watchdog_frc:u_apb_watchdog_frc" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog.v Line: 331
+Info (12128): Elaborating entity "cmsdk_apb_uart" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_uart:gen_apb_uart_0.u_apb_uart_0" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v Line: 626
+Warning (10034): Output port "PRDATA" at cmsdk_apb_uart.v(69) has no driver File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_uart.v Line: 69
+Warning (10034): Output port "TXD" at cmsdk_apb_uart.v(74) has no driver File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_uart.v Line: 74
+Info (12128): Elaborating entity "cmsdk_apb_test_slave" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_apb_subsystem:u_apb_subsystem|cmsdk_apb_test_slave:gen_apb_test_slave.u_apb_test_slave" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v Line: 749
+Info (12128): Elaborating entity "cmsdk_mcu_stclkctrl" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_mcu_stclkctrl:u_cmsdk_mcu_stclkctrl" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v Line: 846
+Warning (10230): Verilog HDL assignment warning at cmsdk_mcu_stclkctrl.v(51): truncated value with size 32 to match size of target (18) File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_stclkctrl.v Line: 51
+Info (12128): Elaborating entity "cmsdk_ahb_rom" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_rom:u_ahb_rom" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v Line: 322
+Info (12128): Elaborating entity "cmsdk_ahb_ram_beh" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_rom:u_ahb_rom|cmsdk_ahb_ram_beh:u_ahb_ram_beh" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_rom.v Line: 111
+Warning (10850): Verilog HDL warning at cmsdk_ahb_ram_beh.v(78): number of words (600) in memory file does not match the number of elements in the address range [0:16383] File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram_beh.v Line: 78
+Info (12128): Elaborating entity "cmsdk_ahb_ram" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_ram:u_ahb_ram" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v Line: 346
+Info (12128): Elaborating entity "cmsdk_ahb_ram_beh" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_ahb_ram:u_ahb_ram|cmsdk_ahb_ram_beh:u_ahb_ram_beh" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram.v Line: 106
+Info (12128): Elaborating entity "cmsdk_mcu_pin_mux" for hierarchy "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_pin_mux:u_pin_mux" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v Line: 399
+Info (12128): Elaborating entity "cmsdk_clkreset" for hierarchy "cmsdk_clkreset:u_cmsdk_clkreset" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v Line: 74
+Warning (10755): Verilog HDL warning at cmsdk_clkreset.v(42): assignments to clock_q create a combinational loop File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_clkreset.v Line: 42
+Info (12128): Elaborating entity "cmsdk_uart_capture" for hierarchy "cmsdk_uart_capture:u_cmsdk_uart_capture" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v Line: 88
+Warning (10036): Verilog HDL or VHDL warning at cmsdk_uart_capture.v(56): object "text_char" assigned a value but never read File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 56
+Warning (10175): Verilog HDL warning at cmsdk_uart_capture.v(158): ignoring unsupported system task File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 158
+Warning (10175): Verilog HDL warning at cmsdk_uart_capture.v(163): ignoring unsupported system task File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 163
+Warning (10175): Verilog HDL warning at cmsdk_uart_capture.v(166): ignoring unsupported system task File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 166
+Warning (10230): Verilog HDL assignment warning at cmsdk_uart_capture.v(172): truncated value with size 32 to match size of target (7) File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 172
+Warning (10175): Verilog HDL warning at cmsdk_uart_capture.v(176): ignoring unsupported system task File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 176
+Warning (10175): Verilog HDL warning at cmsdk_uart_capture.v(181): ignoring unsupported system task File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 181
+Warning (10175): Verilog HDL warning at cmsdk_uart_capture.v(184): ignoring unsupported system task File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 184
+Warning (10175): Verilog HDL warning at cmsdk_uart_capture.v(207): ignoring unsupported system task File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 207
+Warning (10175): Verilog HDL warning at cmsdk_uart_capture.v(208): ignoring unsupported system task File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 208
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13030): Reduced the following open-drain buffers that are fed by GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_pin_mux:u_pin_mux|TDO" to the output pin "TDO" to GND File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_pin_mux.v Line: 78
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "TDO" is stuck at GND File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v Line: 9
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/output_files/M0_Simulation.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "NRST" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v Line: 2
+    Warning (15610): No output dependent on input pin "nTRST" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v Line: 3
+    Warning (15610): No output dependent on input pin "TDI" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v Line: 4
+    Warning (15610): No output dependent on input pin "SWDIOTMS" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v Line: 5
+    Warning (15610): No output dependent on input pin "SWCLKTCK" File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v Line: 6
+Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 1 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 79 warnings
+    Info: Peak virtual memory: 7106 megabytes
+    Info: Processing ended: Wed Nov 13 14:48:16 2019
+    Info: Elapsed time: 00:02:18
+    Info: Total CPU time (on all processors): 00:02:31
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/output_files/M0_Simulation.map.smsg.
+
+

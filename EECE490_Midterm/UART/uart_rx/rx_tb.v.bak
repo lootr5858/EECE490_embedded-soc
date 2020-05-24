@@ -1,0 +1,105 @@
+module rx_tb();
+
+localparam period = 5;
+localparam cycle = period * 2;
+
+reg		  clk;
+reg		  rst;
+reg [19:0] baud;
+reg		  rx_en;
+reg		  rx_in;
+
+wire [7:0] rx_data;
+
+uart_rx uart_rx
+(
+	.clk		(clk),
+	.rst		(rst),
+	.baud		(baud),
+	.rx_en	(rx_en),
+	.rx_in	(rx_in),
+	.rx_data (rx_data)
+);
+
+/* ------ !! ------
+	Clock generation
+	------ !! ------ */
+initial clk <= 1'b1;
+always #(period) clk <= ~clk;
+
+/* ------ !! ------
+	 Reset COntrol
+	------ !! ------ */
+initial
+begin
+	
+	rst <= 1'b1;
+	
+	#(cycle * 2)
+	
+	rst <= 1'b0;
+
+end
+
+/* ------ !! ------
+	 SIMULATION !!!
+	------ !! ------ */
+initial
+begin
+
+	baud <= 20'd20;	// set baddiv
+	rx_in <= 1'b1;
+	
+	#(cycle * 4)
+	
+	rx_en <= 1'b1;
+	rx_in <= 1'b0;
+	
+	#(cycle)
+	
+	rx_in <= 1'b1;
+	
+	#(cycle)
+	
+	rx_in <= 1'b0;
+	
+	#(cycle)
+	
+	rx_in <= 1'b1;
+	
+	#(cycle)
+	
+	rx_in <= 1'b0;
+	
+	#(cycle)
+	
+	rx_in <= 1'b1;
+	
+	#(cycle)
+	
+	rx_in <= 1'b0;
+	
+	#(cycle)
+	
+	rx_in <= 1'b1;
+	
+	#(cycle)
+	
+	rx_in <= 1'b0;
+	
+	#(cycle)
+	
+	rx_in <= 1'b1;
+	
+	#(cycle)
+	
+	rx_en <= 1'b0;
+	
+	#(cycle * 4)
+	
+	$finish();
+	
+end
+
+endmodule	
+	

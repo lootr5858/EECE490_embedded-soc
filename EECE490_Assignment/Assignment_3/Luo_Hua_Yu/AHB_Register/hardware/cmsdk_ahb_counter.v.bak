@@ -1,0 +1,97 @@
+//cmsdk_ahb_counter
+
+/*
+Register map
+
+0x0	CNT 		R/W
+0x1	ARR 		R/W
+0x2	ONOFF 	R/W active-high
+0x4	OVERFLOW R
+*/
+module AHB_Counter (
+
+
+  // Inputs
+ input  wire          HCLK,      // Clock
+ input  wire          HRESETn,   // Reset
+ input  wire          HSEL,      // Slave select
+ input  wire [1:0]    HTRANS,    // Transfer type
+ input  wire          HREADY,    // System ready
+ input  wire [11:0] 	 HADDR,   // Address
+ input  wire [2:0]    HSIZE,   // Transfer size
+ input  wire          HWRITE,  // Write control
+ input  wire [31:0]   HWDATA,  // Write data
+
+  // Outputs
+ output wire       	 HREADYOUT, // Slave ready
+ output wire       	 HRESP,      // Slave response
+ output wire [31:0]   HRDATA  // Read data output
+ 
+
+);
+
+reg [31:0]	CNT;
+reg [31:0]	ARR;//auto reload register
+reg 			ONOFF;
+reg			OVERFLOW;
+
+
+//HTRANS is always 10
+assign HREADYOUT = 1'b1;
+assign HRESP 	  = 1'b0;
+
+initial
+begin
+	CNT		<=	{32{1'b0}};
+	ARR		<=	{32{1'b1}};
+	ONOFF		<=	1'b0;
+	OVERFLOW	<=	1'b0;
+end
+
+always @(posedge HCLK)
+begin
+	
+	if(~HRESETn)
+	begin
+		CNT		=	{32{1'b0}};
+		ARR		=	{32{1'b1}};
+		ONOFF		=	1'b0;
+		OVERFLOW	=	1'b0;
+	end
+	
+	
+	if(ONOFF)
+	begin
+		if(CNT==ARR)
+		begin
+			OVERFLOW	=	1'b1;
+			CNT		=	{32{1'b0}};
+		end
+		else
+			CNT=CNT+1'b1;
+	end
+
+// AHB control	
+	if(SEL)
+	begin
+	//master write
+	if(HWRITE)
+	begin
+	
+	
+	end
+	//master read
+	else
+	begin
+	
+	
+	end
+	//CNT写的同时把OVERFLOW给清掉
+	end
+end
+
+
+
+
+
+endmodule

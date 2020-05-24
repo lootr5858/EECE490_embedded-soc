@@ -1,0 +1,13 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "XTAL2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

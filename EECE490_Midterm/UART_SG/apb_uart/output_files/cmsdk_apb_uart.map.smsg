@@ -1,0 +1,27 @@
+Warning (10273): Verilog HDL warning at uart_b_dp.v(154): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/uart_b_dp.v Line: 154
+Warning (10273): Verilog HDL warning at uart_b_dp.v(157): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/uart_b_dp.v Line: 157
+Warning (10273): Verilog HDL warning at uart_b_dp.v(159): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/uart_b_dp.v Line: 159
+Warning (10273): Verilog HDL warning at uart_b_cp.v(19): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/uart_b_cp.v Line: 19
+Warning (10273): Verilog HDL warning at uart_b_cp.v(21): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/uart_b_cp.v Line: 21
+Warning (10273): Verilog HDL warning at tx_dp.v(16): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/tx_dp.v Line: 16
+Warning (10273): Verilog HDL warning at tx_dp.v(18): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/tx_dp.v Line: 18
+Warning (10273): Verilog HDL warning at tx_cp.v(23): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/tx_cp.v Line: 23
+Warning (10273): Verilog HDL warning at tx_cp.v(25): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/tx_cp.v Line: 25
+Warning (10273): Verilog HDL warning at tx_cp.v(27): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/tx_cp.v Line: 27
+Warning (10273): Verilog HDL warning at tx_cp.v(29): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/tx_cp.v Line: 29
+Warning (10273): Verilog HDL warning at sg_uart_tx.v(37): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/sg_uart_tx.v Line: 37
+Warning (10273): Verilog HDL warning at sg_uart_tx.v(41): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/sg_uart_tx.v Line: 41
+Warning (10273): Verilog HDL warning at sg_uart_tx.v(45): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/sg_uart_tx.v Line: 45
+Warning (10273): Verilog HDL warning at sg_uart_tx.v(49): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/sg_uart_tx.v Line: 49
+Warning (10273): Verilog HDL warning at sg_uart_rx.v(45): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/sg_uart_rx.v Line: 45
+Warning (10273): Verilog HDL warning at sg_uart_rx.v(49): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/sg_uart_rx.v Line: 49
+Warning (10273): Verilog HDL warning at sg_uart_rx.v(53): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/sg_uart_rx.v Line: 53
+Warning (10273): Verilog HDL warning at sg_uart_rx.v(58): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/sg_uart_rx.v Line: 58
+Warning (10273): Verilog HDL warning at rx_dp.v(25): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/rx_dp.v Line: 25
+Warning (10273): Verilog HDL warning at rx_dp.v(27): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/rx_dp.v Line: 27
+Warning (10273): Verilog HDL warning at rx_dp.v(29): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/rx_dp.v Line: 29
+Warning (10268): Verilog HDL information at rx_dp.v(23): always construct contains both blocking and non-blocking assignments File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/rx_dp.v Line: 23
+Warning (10273): Verilog HDL warning at rx_cp.v(22): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/rx_cp.v Line: 22
+Warning (10273): Verilog HDL warning at rx_cp.v(24): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/rx_cp.v Line: 24
+Warning (10273): Verilog HDL warning at rx_cp.v(26): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/rx_cp.v Line: 26
+Warning (10273): Verilog HDL warning at rx_cp.v(28): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART_SG/apb_uart/rx_cp.v Line: 28

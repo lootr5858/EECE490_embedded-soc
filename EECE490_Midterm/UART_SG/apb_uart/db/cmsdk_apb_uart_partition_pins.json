@@ -1,0 +1,157 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PREADY",
+					"strict" : false
+				},
+				{
+					"name" : "TXD",
+					"strict" : false
+				},
+				{
+					"name" : "TXEN",
+					"strict" : false
+				},
+				{
+					"name" : "PRESETn",
+					"strict" : false
+				},
+				{
+					"name" : "PSEL",
+					"strict" : false
+				},
+				{
+					"name" : "PENABLE",
+					"strict" : false
+				},
+				{
+					"name" : "PADDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PADDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PADDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PADDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PADDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PADDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PADDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PADDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PADDR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PADDR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PCLK",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[16]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[18]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[19]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PWDATA[14]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,22 @@
+module uart_cp
+(
+	input wire			rst,
+	input wire			sel,
+	input wire			enable,
+	input wire [11:2]	addr,
+	input wire [31:0] data_out,
+	input wire [6:0]	tr_ctrl,			// transmit receive control
+	
+	output wire	[7:0]	 reg_sel,
+	output wire [31:0] reg_d,
+	output wire			 ready
+);
+
+always @ *
+begin
+
+	casex ({rst, sel, enable, addr, data_out})
+	
+	{1'b1, 1'bx, 1'bx, 10'dx, 32'hxxxx_xxxx}: {ready, reg_sel, reg_d} = {1'b0, 8'dx, 
+	
+	

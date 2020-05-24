@@ -1,0 +1,31 @@
+module uart_combine_cp
+(
+	input wire			rst,
+	input wire			sel,
+	input wire			enable,
+	input wire [11:2] addr,
+	
+	output reg data_ptr,
+	output reg ctrl_ptr,
+	output reg baud_ptr,
+	output reg encode_ptr,
+	output reg ready
+);
+
+always @ *
+begin
+	
+	casex ( { rst, sel, enable, addr } )
+	
+	{ 1'b1, 1'bx, 1'bx, 1'bx }
+	begin
+		
+		data_ptr   <= 1'b0;
+		ctrl_ptr   <= 1'b0;
+		baud_ptr   <= 1'b0;
+		encode_ptr <= 1'b0;
+		ready		  <= 1'b0;
+		
+	end
+	
+	

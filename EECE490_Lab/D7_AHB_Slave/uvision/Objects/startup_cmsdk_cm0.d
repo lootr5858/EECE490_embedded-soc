@@ -1,0 +1,1 @@
+.\objects\startup_cmsdk_cm0.o: D:\OneDrive\OneDrive - Singapore University of Technology and Design\SUTD_Study\Y3T6-GEXP\EECE490_Embedded_SOC\EECE490E_Lab\D07_Q_project_AHB_Slave\software\cmsis\Device\ARM\CMSDK_CM0\Source\ARM\startup_CMSDK_CM0.s

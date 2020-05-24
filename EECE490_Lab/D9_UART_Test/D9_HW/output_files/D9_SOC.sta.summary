@@ -1,0 +1,229 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'SW[0]'
+Slack : -7.713
+TNS   : -39.282
+
+Type  : Slow 1100mV 85C Model Setup 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : -6.449
+TNS   : -35.016
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK2_50'
+Slack : -3.194
+TNS   : -36.556
+
+Type  : Slow 1100mV 85C Model Setup 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : -2.304
+TNS   : -16.345
+
+Type  : Slow 1100mV 85C Model Hold 'SW[0]'
+Slack : -2.040
+TNS   : -2.040
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK2_50'
+Slack : -0.115
+TNS   : -1.108
+
+Type  : Slow 1100mV 85C Model Hold 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : 0.764
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : -3.385
+TNS   : -11.737
+
+Type  : Slow 1100mV 85C Model Removal 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 1.136
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : -0.394
+TNS   : -7.437
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SW[0]'
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'SW[0]'
+Slack : -7.427
+TNS   : -38.070
+
+Type  : Slow 1100mV 0C Model Setup 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : -6.423
+TNS   : -35.118
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK2_50'
+Slack : -2.921
+TNS   : -33.057
+
+Type  : Slow 1100mV 0C Model Setup 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : -2.214
+TNS   : -15.986
+
+Type  : Slow 1100mV 0C Model Hold 'SW[0]'
+Slack : -1.968
+TNS   : -1.968
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK2_50'
+Slack : -0.319
+TNS   : -3.128
+
+Type  : Slow 1100mV 0C Model Hold 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : 0.641
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : -3.343
+TNS   : -11.613
+
+Type  : Slow 1100mV 0C Model Removal 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 1.100
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : -0.394
+TNS   : -7.928
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SW[0]'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 0.259
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'SW[0]'
+Slack : -5.464
+TNS   : -26.144
+
+Type  : Fast 1100mV 85C Model Setup 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : -3.360
+TNS   : -17.110
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK2_50'
+Slack : -2.345
+TNS   : -27.562
+
+Type  : Fast 1100mV 85C Model Setup 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : -1.009
+TNS   : -6.039
+
+Type  : Fast 1100mV 85C Model Hold 'SW[0]'
+Slack : -1.139
+TNS   : -1.186
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK2_50'
+Slack : -0.063
+TNS   : -0.622
+
+Type  : Fast 1100mV 85C Model Hold 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : 0.544
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : -2.005
+TNS   : -6.512
+
+Type  : Fast 1100mV 85C Model Removal 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 0.889
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : -0.082
+TNS   : -1.132
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SW[0]'
+Slack : -0.012
+TNS   : -0.033
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'SW[0]'
+Slack : -4.818
+TNS   : -23.213
+
+Type  : Fast 1100mV 0C Model Setup 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : -3.101
+TNS   : -15.924
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK2_50'
+Slack : -1.836
+TNS   : -22.009
+
+Type  : Fast 1100mV 0C Model Setup 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : -0.872
+TNS   : -4.846
+
+Type  : Fast 1100mV 0C Model Hold 'SW[0]'
+Slack : -1.127
+TNS   : -1.150
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK2_50'
+Slack : -0.236
+TNS   : -2.346
+
+Type  : Fast 1100mV 0C Model Hold 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : 0.442
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : -1.932
+TNS   : -6.331
+
+Type  : Fast 1100mV 0C Model Removal 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 0.870
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : -0.084
+TNS   : -1.162
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SW[0]'
+Slack : -0.008
+TNS   : -0.030
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'sg_uart_tx:sg_uart_tx|INDEX_Q[1]'
+Slack : 0.466
+TNS   : 0.000
+
+------------------------------------------------------------

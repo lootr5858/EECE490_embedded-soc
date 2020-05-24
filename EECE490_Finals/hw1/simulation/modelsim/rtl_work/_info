@@ -1,0 +1,832 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Verilog/EECE490_Finals/hw1/simulation/modelsim
+vcm0_dbg_reset_sync
+Z1 !s110 1575403765
+!i10b 1
+!s100 ?L@^Ln2A29nD39]SSDL9i0
+I[1YAgKQ5D3<YiRm[4nz4n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1573450799
+8D:/Verilog/EECE490_Finals/hw1/hardware/cm0_dbg_reset_sync.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cm0_dbg_reset_sync.v
+Z4 L0 23
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1575403765.000000
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cm0_dbg_reset_sync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cm0_dbg_reset_sync.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+D:/Verilog/EECE490_Finals/hw1/hardware
+Z9 tCvgOpt 0
+vcmsdk_ahb_counter
+Z10 !s110 1575403762
+!i10b 1
+!s100 Cla_B_bJ[K`FWMaP8d9ei0
+IPb5PA`9C<:RHl=UQGI>l12
+R2
+R0
+w1573795147
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_counter.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_counter.v
+L0 10
+R5
+r1
+!s85 0
+31
+Z11 !s108 1575403762.000000
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_counter.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_cs_rom_table
+R1
+!i10b 1
+!s100 ^iEHELFecKAV<?^T`ci[f2
+IRUP^A_N1hNFGfeB1PLAl31
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_cs_rom_table.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_cs_rom_table.v
+L0 66
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_cs_rom_table.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_cs_rom_table.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_default_slave
+R1
+!i10b 1
+!s100 m3Cd@AXWG9:D7okE6S1Ii2
+Ihe2`nI@Pg_LoL39229SHT1
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_default_slave.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_default_slave.v
+Z12 L0 31
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_default_slave.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_default_slave.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_gpio
+R1
+!i10b 1
+!s100 :3PV1A7HLVUDAK2k5L<;N2
+InGf9lQH8zIW1[1@UjAWKA2
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_gpio.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_gpio.v
+L0 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_gpio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_gpio.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_ram
+Z13 !s110 1575403766
+!i10b 1
+!s100 GXU`LBaI5kTTgh1dVd5EP1
+IW5PZc]CU7MQ<3JbaSPMWi0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_ram.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_ram.v
+L0 49
+R5
+r1
+!s85 0
+31
+Z14 !s108 1575403766.000000
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_ram.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_ram_beh
+R1
+!i10b 1
+!s100 H0Wd2_ST7W@BgbnKElUjz3
+IfT8O=?M@W;h]IU]C4>VOh0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_ram_beh.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_ram_beh.v
+Z15 L0 27
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_ram_beh.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_ram_beh.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_rom
+R13
+!i10b 1
+!s100 `hAP;W994SJ2mAl43FlkM2
+ICf=Yi2jCD3>k1C;Tj@zSW2
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_rom.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_rom.v
+L0 50
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_rom.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_slave_mux
+R1
+!i10b 1
+!s100 AcXzVKF>bZELIKbngFPe@3
+I6MIQaWbJ5<8EShY8LD0V11
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_slave_mux.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_slave_mux.v
+Z16 L0 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_slave_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_slave_mux.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_to_apb
+R1
+!i10b 1
+!s100 hL3mP:fecl0gEKf3;=g9^3
+I=ihXK=VOX`k<VkD^E:7Bl2
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_to_apb.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_to_apb.v
+Z17 L0 32
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_to_apb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_to_apb.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_to_iop
+Z18 !s110 1575403764
+!i10b 1
+!s100 P4Qm<3YfNf:1GlR58e]Rg2
+IlnjU^W^jUb7Yg=o5kB7mo1
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_to_iop.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_to_iop.v
+Z19 L0 28
+R5
+r1
+!s85 0
+31
+Z20 !s108 1575403764.000000
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_to_iop.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_to_iop.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_dualtimers
+R13
+!i10b 1
+!s100 o6>3J?kY8Y0c5kngH6X]T1
+IH=kET<Dhh7NOOmzIG46`@2
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers.v
+Z21 FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers_defs.v
+Z22 L0 34
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_dualtimers_frc
+R13
+!i10b 1
+!s100 bZ`MGdAJc98XmWRzcH>H11
+IQl[RCiS1g`]lW^`5nVz8?1
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers_frc.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers_frc.v
+R21
+L0 35
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers_frc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_dualtimers_frc.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_slave_mux
+R18
+!i10b 1
+!s100 2VHHzVZR0_f`Gc;bai1No1
+I];AH>Z@dEeIEd;W4QW9PH0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_slave_mux.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_slave_mux.v
+R15
+R5
+r1
+!s85 0
+31
+R20
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_slave_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_slave_mux.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_subsystem
+R18
+!i10b 1
+!s100 :lQBhdEn9kN2IKFUQ_aQ<0
+ID=N;To_kQKa7`PKJ<QE9m0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_subsystem.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_subsystem.v
+R15
+R5
+r1
+!s85 0
+31
+R20
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_subsystem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_subsystem.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_test_slave
+R18
+!i10b 1
+!s100 zjQVGi<:3WoUSW^23d:HU3
+IGUUA97Qd:YL3b^kUbXmcK3
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_test_slave.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_test_slave.v
+Z23 L0 42
+R5
+r1
+!s85 0
+31
+R20
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_test_slave.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_test_slave.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_timer
+R18
+!i10b 1
+!s100 R>QzPYo4aNIejk2nY46C@1
+IgQmV9UihVN[Zf=8dn21z61
+R2
+R0
+R3
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_timer.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_timer.v
+R23
+R5
+r1
+!s85 0
+31
+R20
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_timer.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_uart
+R18
+!i10b 1
+!s100 YKY2lQ4AmdBJ[<X4;jEcG0
+I@DE3VC^UNDKeSRFM@:4FC3
+R2
+R0
+Z24 w1573450800
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_uart.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_uart.v
+L0 53
+R5
+r1
+!s85 0
+31
+R20
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_uart.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_uart.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_watchdog
+R13
+!i10b 1
+!s100 IeWf@]lhZz<zAbYD9:5dX0
+I0bXD<6oUDBeEd3EoFaomE2
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog.v
+Z25 FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog_defs.v
+R12
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_watchdog_frc
+R13
+!i10b 1
+!s100 `0JoM?i8i4GZnZ<T4LEY=0
+I72Ie5bmTKkiT5N2C>iZh]2
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog_frc.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog_frc.v
+R25
+R22
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog_frc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_apb_watchdog_frc.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_clkreset
+R18
+!i10b 1
+!s100 ;7^BBeRD95hfVHORZ3jb=3
+Im]e8U2l;1cD6N;ic_fQfo2
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_clkreset.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_clkreset.v
+R16
+R5
+r1
+!s85 0
+31
+R20
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_clkreset.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_clkreset.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_iop_gpio
+Z26 !s110 1575403763
+!i10b 1
+!s100 _cIB3nf7KoK]g<A`Biiga3
+IlGjcIcfig;<6DXCdmK[fd2
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_iop_gpio.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_iop_gpio.v
+L0 47
+R5
+r1
+!s85 0
+31
+Z27 !s108 1575403763.000000
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_iop_gpio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_iop_gpio.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu
+Z28 !s110 1575403767
+!i10b 1
+!s100 8iG_M23X4kcOcgT6lf7P=3
+IoCzj`hEdK0XKDK19HzeG03
+R2
+R0
+w1575390433
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu.v
+R12
+R5
+r1
+!s85 0
+31
+Z29 !s108 1575403767.000000
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_addr_decode
+R28
+!i10b 1
+!s100 l4OjlFXW2f9C?3m@60X102
+ITLLj@hhjD]Q^:JQDV23;;3
+R2
+R0
+w1573737633
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_addr_decode.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_addr_decode.v
+R17
+R5
+r1
+!s85 0
+31
+R29
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_addr_decode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_addr_decode.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_clkctrl
+R28
+!i10b 1
+!s100 zK?kU;c0g1fNEk?=P]^PD3
+I[[8Obba`]HV?BCQn_:4b`2
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_clkctrl.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_clkctrl.v
+R17
+R5
+r1
+!s85 0
+31
+R29
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_clkctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_clkctrl.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_pin_mux
+R26
+!i10b 1
+!s100 ]kM3dm`^AKlTlMbVfIL1F3
+ITcZ2eLa3U6REWzkI2kCJh1
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_pin_mux.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_pin_mux.v
+R16
+R5
+r1
+!s85 0
+31
+R27
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_pin_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_pin_mux.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_stclkctrl
+R26
+!i10b 1
+!s100 GBTlUkFe]UO2j6Ji:SdRW3
+IglCXRc?cCi5PmVz0cfMWK1
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_stclkctrl.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_stclkctrl.v
+R19
+R5
+r1
+!s85 0
+31
+R27
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_stclkctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_stclkctrl.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_sysctrl
+R13
+!i10b 1
+!s100 [5>ijY^B3E8RTN5WOM]VH2
+Id?0gQho<aE;lhOVEiXAKK1
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_sysctrl.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_sysctrl.v
+L0 45
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_sysctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_sysctrl.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_system
+R13
+!i10b 1
+!s100 ^CA=_D>Y^aZLRF2;]V=jP0
+IfRG`^_IoF?I;h<5j5N1Ai0
+R2
+R0
+w1573774911
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_system.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_system.v
+R22
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_system.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_system.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_uart_capture
+R26
+!i10b 1
+!s100 f```A?ASmCj;RVH;DQ`L<2
+IUZfJZ<d72@L5^4V4H72in1
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_uart_capture.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_uart_capture.v
+L0 44
+R5
+r1
+!s85 0
+31
+R27
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_uart_capture.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_uart_capture.v|
+!i113 1
+R7
+R8
+R9
+vcortexm0_wic
+R26
+!i10b 1
+!s100 kBCMG0R4_Y6embVOn@=UE3
+IjMjQeYzUXlkP?VLHdod=>3
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cortexm0_wic.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cortexm0_wic.v
+L0 26
+R5
+r1
+!s85 0
+31
+R27
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cortexm0_wic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cortexm0_wic.v|
+!i113 1
+R7
+R8
+R9
+vCORTEXM0DAP
+R26
+!i10b 1
+!s100 Mng>S8:UWhbV0=zV5G=l50
+Ii1=LAU8eP8N61_<_JC^D10
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0DAP.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0DAP.v
+R4
+R5
+r1
+!s85 0
+31
+R27
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0DAP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0DAP.v|
+!i113 1
+R7
+R8
+R9
+n@c@o@r@t@e@x@m0@d@a@p
+vCORTEXM0DS
+R26
+!i10b 1
+!s100 <]=k?zD7=0flZ>1]`URQK3
+I6YhYQ;CAJn6WU7n5;fNGT3
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0DS.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0DS.v
+R19
+R5
+r1
+!s85 0
+31
+R27
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0DS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0DS.v|
+!i113 1
+R7
+R8
+R9
+n@c@o@r@t@e@x@m0@d@s
+vcortexm0ds_logic
+R10
+!i10b 1
+!s100 `kd7:9[bc7>J<5C0aOYk:1
+Iaa8;<Pg5Y<k=Pg5W8]EMZ0
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/cortexm0ds_logic.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/cortexm0ds_logic.v
+R15
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cortexm0ds_logic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/cortexm0ds_logic.v|
+!i113 1
+R7
+R8
+R9
+vCORTEXM0INTEGRATION
+R10
+!i10b 1
+!s100 K?FXCFYm==mBz6na4^G<n2
+InEAL<6fS@SVG97bdPMi940
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0INTEGRATION.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0INTEGRATION.v
+R17
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0INTEGRATION.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/CORTEXM0INTEGRATION.v|
+!i113 1
+R7
+R8
+R9
+n@c@o@r@t@e@x@m0@i@n@t@e@g@r@a@t@i@o@n
+vM0_Simulation
+R10
+!i10b 1
+!s100 RHman4L00Q^^33eRgO]mk1
+ISO_S]hjc^:V@DICaEB_az0
+R2
+R0
+w1573784780
+8D:/Verilog/EECE490_Finals/hw1/hardware/M0_Simulation.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/M0_Simulation.v
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/M0_Simulation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/M0_Simulation.v|
+!i113 1
+R7
+R8
+R9
+n@m0_@simulation
+vtb_cmsdk_mcu
+R28
+!i10b 1
+!s100 zS_NJX_m8?D6_0kMQfL380
+I75zd]?KL0hleU?zWXC?ak3
+R2
+R0
+R24
+8D:/Verilog/EECE490_Finals/hw1/hardware/tb_cmsdk_mcu.v
+FD:/Verilog/EECE490_Finals/hw1/hardware/tb_cmsdk_mcu.v
+R12
+R5
+r1
+!s85 0
+31
+R29
+!s107 D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Finals/hw1/hardware/tb_cmsdk_mcu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Finals/hw1/hardware|D:/Verilog/EECE490_Finals/hw1/hardware/tb_cmsdk_mcu.v|
+!i113 1
+R7
+R8
+R9

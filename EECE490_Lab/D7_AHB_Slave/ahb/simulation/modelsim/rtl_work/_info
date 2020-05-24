@@ -1,0 +1,832 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/simulation/modelsim
+vcm0_dbg_reset_sync
+Z1 !s110 1575384504
+!i10b 1
+!s100 ?L@^Ln2A29nD39]SSDL9i0
+I_NGz::9gI]oRaVocRkR1F1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1467180046
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cm0_dbg_reset_sync.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cm0_dbg_reset_sync.v
+Z4 L0 23
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1575384504.000000
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cm0_dbg_reset_sync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cm0_dbg_reset_sync.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb
+Z9 tCvgOpt 0
+vcmsdk_ahb_cs_rom_table
+R1
+!i10b 1
+!s100 ^iEHELFecKAV<?^T`ci[f2
+IBb>D`=R4Z@<:L6f=15F5N1
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_cs_rom_table.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_cs_rom_table.v
+L0 66
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_cs_rom_table.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_cs_rom_table.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_default_slave
+R1
+!i10b 1
+!s100 m3Cd@AXWG9:D7okE6S1Ii2
+I7GWVWnC5V?0=F^zVgj_g?3
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_default_slave.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_default_slave.v
+Z10 L0 31
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_default_slave.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_default_slave.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_gpio
+R1
+!i10b 1
+!s100 :3PV1A7HLVUDAK2k5L<;N2
+I1cGOoizYZGBEMcX;NFzWV0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_gpio.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_gpio.v
+L0 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_gpio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_gpio.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_ram
+Z11 !s110 1575384505
+!i10b 1
+!s100 GXU`LBaI5kTTgh1dVd5EP1
+I55X@[>R>3cMi;O2_IVz6c2
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram.v
+L0 49
+R5
+r1
+!s85 0
+31
+Z12 !s108 1575384505.000000
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_ram_beh
+R1
+!i10b 1
+!s100 H0Wd2_ST7W@BgbnKElUjz3
+Id;fTBR7D>M^<EnLO??lDZ3
+R2
+R0
+w1490773982
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram_beh.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram_beh.v
+Z13 L0 27
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram_beh.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_ram_beh.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_rom
+R11
+!i10b 1
+!s100 `hAP;W994SJ2mAl43FlkM2
+Ic4c3MGehANmS;W125<M8Z1
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_rom.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_rom.v
+L0 50
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_rom.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_slave_mux
+R1
+!i10b 1
+!s100 AcXzVKF>bZELIKbngFPe@3
+IISRQhhFYIRnnW:g36R8]R3
+R2
+R0
+Z14 w1493090517
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_slave_mux.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_slave_mux.v
+Z15 L0 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_slave_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_slave_mux.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_to_apb
+R1
+!i10b 1
+!s100 hL3mP:fecl0gEKf3;=g9^3
+I=F<GKDWWiZgmokFfa:l640
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_apb.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_apb.v
+Z16 L0 32
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_apb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_apb.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_ahb_to_iop
+R1
+!i10b 1
+!s100 P4Qm<3YfNf:1GlR58e]Rg2
+IZb@=SZOQaUT:oVQJFiAXR0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_iop.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_iop.v
+Z17 L0 28
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_iop.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_to_iop.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_dualtimers
+R11
+!i10b 1
+!s100 o6>3J?kY8Y0c5kngH6X]T1
+I5^d_Tb;@fH`_X;?K5HNf[0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers.v
+Z18 FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers_defs.v
+Z19 L0 34
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_dualtimers_frc
+R11
+!i10b 1
+!s100 bZ`MGdAJc98XmWRzcH>H11
+IPN4hdX<^K=AML9gR^oNMU1
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers_frc.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers_frc.v
+R18
+L0 35
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers_frc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_dualtimers_frc.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_slave_mux
+Z20 !s110 1575384503
+!i10b 1
+!s100 2VHHzVZR0_f`Gc;bai1No1
+IWeWde=PWO<1`;8OebAc]]0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_slave_mux.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_slave_mux.v
+R13
+R5
+r1
+!s85 0
+31
+Z21 !s108 1575384503.000000
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_slave_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_slave_mux.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_subsystem
+R20
+!i10b 1
+!s100 :lQBhdEn9kN2IKFUQ_aQ<0
+I47oXg8]@bmX=QYVe_;[Xh2
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v
+R13
+R5
+r1
+!s85 0
+31
+R21
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_subsystem.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_test_slave
+R20
+!i10b 1
+!s100 zjQVGi<:3WoUSW^23d:HU3
+IIF2^UO_QGR;H0fjfiae^L2
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_test_slave.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_test_slave.v
+Z22 L0 42
+R5
+r1
+!s85 0
+31
+R21
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_test_slave.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_test_slave.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_timer
+R20
+!i10b 1
+!s100 R>QzPYo4aNIejk2nY46C@1
+IOf_I>d<2Y:NkTKk<FQ8QS3
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_timer.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_timer.v
+R22
+R5
+r1
+!s85 0
+31
+R21
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_timer.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_uart
+R20
+!i10b 1
+!s100 YKY2lQ4AmdBJ[<X4;jEcG0
+IKbEIm@WB`]]SD8[V]HPf13
+R2
+R0
+w1490745490
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_uart.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_uart.v
+L0 53
+R5
+r1
+!s85 0
+31
+R21
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_uart.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_uart.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_watchdog
+R11
+!i10b 1
+!s100 IeWf@]lhZz<zAbYD9:5dX0
+IIQ0eCSdd@ico[k90L=Kmn0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog.v
+Z23 FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog_defs.v
+R10
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_apb_watchdog_frc
+R11
+!i10b 1
+!s100 `0JoM?i8i4GZnZ<T4LEY=0
+I_]?_3]HNiZ0M=ozFUn0i82
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog_frc.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog_frc.v
+R23
+R19
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog_frc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_apb_watchdog_frc.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_clkreset
+R20
+!i10b 1
+!s100 ;7^BBeRD95hfVHORZ3jb=3
+IHH]ZUd1HMCS7KJ@5W5]=H0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_clkreset.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_clkreset.v
+R15
+R5
+r1
+!s85 0
+31
+R21
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_clkreset.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_clkreset.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_iop_gpio
+R20
+!i10b 1
+!s100 _cIB3nf7KoK]g<A`Biiga3
+IP=W=5F>HmPYgb`NedS37b0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_iop_gpio.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_iop_gpio.v
+L0 47
+R5
+r1
+!s85 0
+31
+R21
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_iop_gpio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_iop_gpio.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu
+Z24 !s110 1575384506
+!i10b 1
+!s100 K5WEY]>Y3J9NZB;7MR5121
+I@45om;FB7Rhl90QfnP4:`0
+R2
+R0
+w1573623583
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v
+R10
+R5
+r1
+!s85 0
+31
+Z25 !s108 1575384506.000000
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_addr_decode
+R24
+!i10b 1
+!s100 jmddlTodK4XT:4@70jmMP1
+I`ncXOI5`@MWi?PVe7AnV[2
+R2
+R0
+R14
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_addr_decode.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_addr_decode.v
+R16
+R5
+r1
+!s85 0
+31
+R25
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_addr_decode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_addr_decode.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_clkctrl
+R24
+!i10b 1
+!s100 zK?kU;c0g1fNEk?=P]^PD3
+IGnGHW^J4z=5b]JWQD[zM?2
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_clkctrl.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_clkctrl.v
+R16
+R5
+r1
+!s85 0
+31
+R25
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_clkctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_clkctrl.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_pin_mux
+R20
+!i10b 1
+!s100 ]kM3dm`^AKlTlMbVfIL1F3
+IWPIMXGbnW7[B597k[kkI<1
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_pin_mux.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_pin_mux.v
+R15
+R5
+r1
+!s85 0
+31
+Z26 !s108 1575384502.000000
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_pin_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_pin_mux.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_stclkctrl
+Z27 !s110 1575384502
+!i10b 1
+!s100 GBTlUkFe]UO2j6Ji:SdRW3
+IU[i7UHCo?BoOab^SJH@ZO3
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_stclkctrl.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_stclkctrl.v
+R17
+R5
+r1
+!s85 0
+31
+R26
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_stclkctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_stclkctrl.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_sysctrl
+R24
+!i10b 1
+!s100 [5>ijY^B3E8RTN5WOM]VH2
+IWY6lPUOH2]M9?hS@SgZam1
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_sysctrl.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_sysctrl.v
+L0 45
+R5
+r1
+!s85 0
+31
+R25
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_sysctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_sysctrl.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_mcu_system
+R11
+!i10b 1
+!s100 J3R8@zF3>]A5_;@`3M2hi3
+Ibkj0MRf:oz=1^l1W?lBlj3
+R2
+R0
+w1493107551
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v
+R19
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_system.v|
+!i113 1
+R7
+R8
+R9
+vcmsdk_uart_capture
+R27
+!i10b 1
+!s100 f```A?ASmCj;RVH;DQ`L<2
+Igf^NIoME8kPd2L6SB2FDR0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v
+L0 44
+R5
+r1
+!s85 0
+31
+R26
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v|
+!i113 1
+R7
+R8
+R9
+vcortexm0_wic
+R27
+!i10b 1
+!s100 kBCMG0R4_Y6embVOn@=UE3
+IK11RS5QdRkBb@:F:j:ARo1
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0_wic.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0_wic.v
+L0 26
+R5
+r1
+!s85 0
+31
+R26
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0_wic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0_wic.v|
+!i113 1
+R7
+R8
+R9
+vCORTEXM0DAP
+R27
+!i10b 1
+!s100 Mng>S8:UWhbV0=zV5G=l50
+I^LI^m7]@Kc<G4Z3a857;I1
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DAP.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DAP.v
+R4
+R5
+r1
+!s85 0
+31
+R26
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DAP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DAP.v|
+!i113 1
+R7
+R8
+R9
+n@c@o@r@t@e@x@m0@d@a@p
+vCORTEXM0DS
+R27
+!i10b 1
+!s100 <]=k?zD7=0flZ>1]`URQK3
+Ibd8g36F8_]9OecbS8_LVK0
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v
+R17
+R5
+r1
+!s85 0
+31
+R26
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0DS.v|
+!i113 1
+R7
+R8
+R9
+n@c@o@r@t@e@x@m0@d@s
+vcortexm0ds_logic
+R27
+!i10b 1
+!s100 `kd7:9[bc7>J<5C0aOYk:1
+I6cmB2?[`I^XmMUCang@591
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v
+R13
+R5
+r1
+!s85 0
+31
+R26
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cortexm0ds_logic.v|
+!i113 1
+R7
+R8
+R9
+vCORTEXM0INTEGRATION
+Z28 !s110 1575384501
+!i10b 1
+!s100 K?FXCFYm==mBz6na4^G<n2
+ICJoX;DIDK`U8KjTijO__l2
+R2
+R0
+R3
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v
+R16
+R5
+r1
+!s85 0
+31
+Z29 !s108 1575384501.000000
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/CORTEXM0INTEGRATION.v|
+!i113 1
+R7
+R8
+R9
+n@c@o@r@t@e@x@m0@i@n@t@e@g@r@a@t@i@o@n
+vexample
+R28
+!i10b 1
+!s100 ]eX`1z[eVXK^1Ci`U9l;I1
+IdzMSPK1]Ci=gGBWM3iIJ?2
+R2
+R0
+w1493170575
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/Example.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/Example.v
+L0 1
+R5
+r1
+!s85 0
+31
+R29
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/Example.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/Example.v|
+!i113 1
+R7
+R8
+R9
+vM0_Simulation
+R28
+!i10b 1
+!s100 IQF@J7<o8Hg:eEJgGNzgS0
+IKSQnD<LRKGFz?E7YddEYI1
+R2
+R0
+w1490742042
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v
+L0 1
+R5
+r1
+!s85 0
+31
+R29
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/M0_Simulation.v|
+!i113 1
+R7
+R8
+R9
+n@m0_@simulation
+vtb_cmsdk_mcu
+R24
+!i10b 1
+!s100 zS_NJX_m8?D6_0kMQfL380
+IOAQSSfVQkWofTCAno=n0U0
+R2
+R0
+w1490773612
+8D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/tb_cmsdk_mcu.v
+FD:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/tb_cmsdk_mcu.v
+R10
+R5
+r1
+!s85 0
+31
+R25
+!s107 D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_ahb_memory_models_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_mcu_defs.v|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/tb_cmsdk_mcu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb|D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/tb_cmsdk_mcu.v|
+!i113 1
+R7
+R8
+R9

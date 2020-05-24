@@ -1,0 +1,289 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "data_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ready",
+					"strict" : false
+				},
+				{
+					"name" : "tx_out",
+					"strict" : false
+				},
+				{
+					"name" : "tx_en",
+					"strict" : false
+				},
+				{
+					"name" : "bit_cnt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bit_cnt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bit_cnt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bit_cnt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_d[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_d[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_d[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_d[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_d[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_d[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_d[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_d[9]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_d[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_d[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_d[4]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_d[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_d[6]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_d[7]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_d[8]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_d[9]",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "sel",
+					"strict" : false
+				},
+				{
+					"name" : "addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[16]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[17]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[18]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[19]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

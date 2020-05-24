@@ -1,0 +1,10 @@
+module uart_rx
+(
+	input wire			clk,
+	input wire			rst,
+	input wire			rx_en,
+	input wire [19:0] baud,
+	
+	output wire rx_in
+);
+

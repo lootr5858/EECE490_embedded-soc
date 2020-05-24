@@ -1,0 +1,201 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "rx_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_o[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_o[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_o[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_o[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_o[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_o[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data_o[9]",
+					"strict" : false
+				},
+				{
+					"name" : "bit_cnt_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bit_cnt_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bit_cnt_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bit_cnt_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "baud_clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "rx_en",
+					"strict" : false
+				},
+				{
+					"name" : "baud[18]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[19]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[15]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[16]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[17]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[12]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[13]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[14]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[9]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[10]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[11]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[6]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[7]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[8]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[0]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[1]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[2]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[3]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[4]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[5]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in",
+					"strict" : false
+				},
+				{
+					"name" : "sel",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

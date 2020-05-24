@@ -1,0 +1,229 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'PRESETn'
+Slack : -7.274
+TNS   : -57.135
+
+Type  : Slow 1100mV 85C Model Setup 'PENABLE'
+Slack : -7.191
+TNS   : -35.662
+
+Type  : Slow 1100mV 85C Model Setup 'PADDR[10]'
+Slack : -4.551
+TNS   : -17.466
+
+Type  : Slow 1100mV 85C Model Setup 'PCLK'
+Slack : -2.205
+TNS   : -8.810
+
+Type  : Slow 1100mV 85C Model Hold 'PCLK'
+Slack : -0.608
+TNS   : -1.808
+
+Type  : Slow 1100mV 85C Model Hold 'PRESETn'
+Slack : 1.175
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'PADDR[10]'
+Slack : 1.318
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'PENABLE'
+Slack : 1.499
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'PENABLE'
+Slack : -3.238
+TNS   : -24.714
+
+Type  : Slow 1100mV 85C Model Removal 'PENABLE'
+Slack : 1.429
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PCLK'
+Slack : -0.394
+TNS   : -2.096
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PENABLE'
+Slack : 0.028
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PRESETn'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PADDR[10]'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'PRESETn'
+Slack : -7.141
+TNS   : -56.028
+
+Type  : Slow 1100mV 0C Model Setup 'PENABLE'
+Slack : -7.081
+TNS   : -35.041
+
+Type  : Slow 1100mV 0C Model Setup 'PADDR[10]'
+Slack : -4.476
+TNS   : -17.034
+
+Type  : Slow 1100mV 0C Model Setup 'PCLK'
+Slack : -2.003
+TNS   : -8.002
+
+Type  : Slow 1100mV 0C Model Hold 'PCLK'
+Slack : -0.772
+TNS   : -2.297
+
+Type  : Slow 1100mV 0C Model Hold 'PADDR[10]'
+Slack : 1.056
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'PRESETn'
+Slack : 1.188
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'PENABLE'
+Slack : 1.474
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'PENABLE'
+Slack : -3.121
+TNS   : -23.630
+
+Type  : Slow 1100mV 0C Model Removal 'PENABLE'
+Slack : 1.396
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PCLK'
+Slack : -0.394
+TNS   : -2.266
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PENABLE'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PRESETn'
+Slack : 0.239
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PADDR[10]'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'PRESETn'
+Slack : -4.583
+TNS   : -37.303
+
+Type  : Fast 1100mV 85C Model Setup 'PENABLE'
+Slack : -4.521
+TNS   : -22.234
+
+Type  : Fast 1100mV 85C Model Setup 'PADDR[10]'
+Slack : -3.156
+TNS   : -12.430
+
+Type  : Fast 1100mV 85C Model Setup 'PCLK'
+Slack : -1.681
+TNS   : -6.722
+
+Type  : Fast 1100mV 85C Model Hold 'PCLK'
+Slack : -0.424
+TNS   : -1.248
+
+Type  : Fast 1100mV 85C Model Hold 'PRESETn'
+Slack : 0.622
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'PENABLE'
+Slack : 0.753
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'PADDR[10]'
+Slack : 0.895
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'PENABLE'
+Slack : -1.753
+TNS   : -13.167
+
+Type  : Fast 1100mV 85C Model Removal 'PENABLE'
+Slack : 0.778
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PENABLE'
+Slack : -0.188
+TNS   : -5.778
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PCLK'
+Slack : -0.081
+TNS   : -0.322
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PRESETn'
+Slack : -0.046
+TNS   : -0.189
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PADDR[10]'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'PRESETn'
+Slack : -4.143
+TNS   : -33.709
+
+Type  : Fast 1100mV 0C Model Setup 'PENABLE'
+Slack : -4.099
+TNS   : -20.096
+
+Type  : Fast 1100mV 0C Model Setup 'PADDR[10]'
+Slack : -2.842
+TNS   : -11.158
+
+Type  : Fast 1100mV 0C Model Setup 'PCLK'
+Slack : -1.476
+TNS   : -5.902
+
+Type  : Fast 1100mV 0C Model Hold 'PCLK'
+Slack : -0.472
+TNS   : -1.395
+
+Type  : Fast 1100mV 0C Model Hold 'PRESETn'
+Slack : 0.576
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'PENABLE'
+Slack : 0.703
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'PADDR[10]'
+Slack : 0.721
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'PENABLE'
+Slack : -1.491
+TNS   : -11.187
+
+Type  : Fast 1100mV 0C Model Removal 'PENABLE'
+Slack : 0.645
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PENABLE'
+Slack : -0.153
+TNS   : -4.614
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PCLK'
+Slack : -0.082
+TNS   : -0.324
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PRESETn'
+Slack : -0.026
+TNS   : -0.043
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PADDR[10]'
+Slack : 0.034
+TNS   : 0.000
+
+------------------------------------------------------------
