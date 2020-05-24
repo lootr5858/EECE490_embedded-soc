@@ -1,0 +1,1043 @@
+Analysis & Synthesis report for D9_SOC
+Sun Dec 01 20:09:46 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt
+ 13. Parameter Settings for User Entity Instance: cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt
+ 14. Parameter Settings for User Entity Instance: cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:bit_cnt
+ 15. Parameter Settings for User Entity Instance: cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:baud_cnt
+ 16. Port Connectivity Checks: "sg_uart_tx:sg_uart_tx"
+ 17. Port Connectivity Checks: "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:baud_cnt"
+ 18. Port Connectivity Checks: "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:bit_cnt"
+ 19. Port Connectivity Checks: "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt"
+ 20. Port Connectivity Checks: "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt"
+ 21. Port Connectivity Checks: "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp"
+ 22. Port Connectivity Checks: "cmsdk_apb_uart:uart0"
+ 23. Post-Synthesis Netlist Statistics for Top Partition
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
+ 26. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Dec 01 20:09:46 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; D9_SOC                                      ;
+; Top-level Entity Name           ; D9_SOC                                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 14                                          ;
+; Total pins                      ; 241                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; D9_SOC             ; D9_SOC             ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
+; ../../../common/REGISTER.v       ; yes             ; User Verilog HDL File  ; D:/Verilog/common/REGISTER.v                                    ;         ;
+; uart/uart_tx.v                   ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_tx.v        ;         ;
+; uart/uart_rx.v                   ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_rx.v        ;         ;
+; uart/uart_b_dp.v                 ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v      ;         ;
+; uart/uart_b_cp.v                 ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v      ;         ;
+; uart/tx_dp.v                     ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_dp.v          ;         ;
+; uart/tx_cp.v                     ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v          ;         ;
+; uart/rx_dp.v                     ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v          ;         ;
+; uart/rx_cp.v                     ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v          ;         ;
+; uart/baud_counter.v              ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/baud_counter.v   ;         ;
+; D9_SOC.v                         ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v              ;         ;
+; rtl_sim/sg_uart_tx.v             ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v  ;         ;
+; uart/cmsdk_apb_uart.v            ; yes             ; User Verilog HDL File  ; D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/cmsdk_apb_uart.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 34          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 65          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 2           ;
+;     -- 5 input functions                    ; 15          ;
+;     -- 4 input functions                    ; 10          ;
+;     -- <=3 input functions                  ; 38          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 14          ;
+;                                             ;             ;
+; I/O pins                                    ; 241         ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[0]~input ;
+; Maximum fan-out                             ; 15          ;
+; Total fan-out                               ; 612         ;
+; Average fan-out                             ; 0.93        ;
++---------------------------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Entity Name    ; Library Name ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------+----------------+--------------+
+; |D9_SOC                       ; 65 (0)              ; 14 (0)                    ; 0                 ; 0          ; 241  ; 0            ; |D9_SOC                                                                        ; D9_SOC         ; work         ;
+;    |cmsdk_apb_uart:uart0|     ; 41 (0)              ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |D9_SOC|cmsdk_apb_uart:uart0                                                   ; cmsdk_apb_uart ; work         ;
+;       |uart_b_cp:uart_cp|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |D9_SOC|cmsdk_apb_uart:uart0|uart_b_cp:uart_cp                                 ; uart_b_cp      ; work         ;
+;       |uart_b_dp:uart_dp|     ; 34 (13)             ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |D9_SOC|cmsdk_apb_uart:uart0|uart_b_dp:uart_dp                                 ; uart_b_dp      ; work         ;
+;          |uart_tx:uart_tx|    ; 21 (0)              ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |D9_SOC|cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx                 ; uart_tx        ; work         ;
+;             |PipeReg:bit_cnt| ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |D9_SOC|cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt ; PipeReg        ; work         ;
+;             |tx_cp:tx_cp|     ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |D9_SOC|cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp     ; tx_cp          ; work         ;
+;             |tx_dp:tx_dp|     ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |D9_SOC|cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_dp:tx_dp     ; tx_dp          ; work         ;
+;    |sg_uart_tx:sg_uart_tx|    ; 24 (24)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |D9_SOC|sg_uart_tx:sg_uart_tx                                                  ; sg_uart_tx     ; work         ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                                                   ;
++--------------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------------+
+; Latch Name                                                                     ; Latch Enable Signal                                                         ; Free of Timing Hazards ;
++--------------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------------+
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|tx_en       ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor4 ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|sel_t                                   ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|sel_t                                ; yes                    ;
+; sg_uart_tx:sg_uart_tx|PENABLE                                                  ; sg_uart_tx:sg_uart_tx|WideNor7                                              ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|baud[4]                                 ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|baud[5]                                 ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|baud[6]                                 ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|baud[0]                              ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_dp:tx_dp|tx_out      ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_dp:tx_dp|WideNor1 ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[0]                              ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[1]                              ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[4]                              ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[5]                              ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[6]                              ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[0]                           ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr                                  ; cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|always0                              ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[0] ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor4 ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[1] ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor4 ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[2] ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor4 ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[3] ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor4 ; yes                    ;
+; sg_uart_tx:sg_uart_tx|PWDATA[4]                                                ; sg_uart_tx:sg_uart_tx|WideNor7                                              ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_baud                                ; cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|always0                              ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_ctrl                                ; cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|always0                              ; yes                    ;
+; sg_uart_tx:sg_uart_tx|PWDATA[5]                                                ; sg_uart_tx:sg_uart_tx|WideNor7                                              ; yes                    ;
+; sg_uart_tx:sg_uart_tx|PWDATA[6]                                                ; sg_uart_tx:sg_uart_tx|WideNor7                                              ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[6]                                  ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[5]                                  ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[4]                                  ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[1]                                  ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[0]                                  ; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[1]                               ; yes                    ;
+; sg_uart_tx:sg_uart_tx|PWDATA[0]                                                ; sg_uart_tx:sg_uart_tx|WideNor7                                              ; yes                    ;
+; sg_uart_tx:sg_uart_tx|PWDATA[1]                                                ; sg_uart_tx:sg_uart_tx|WideNor7                                              ; yes                    ;
+; sg_uart_tx:sg_uart_tx|PADDR[3]                                                 ; sg_uart_tx:sg_uart_tx|WideNor7                                              ; yes                    ;
+; sg_uart_tx:sg_uart_tx|PADDR[4]                                                 ; sg_uart_tx:sg_uart_tx|WideNor7                                              ; yes                    ;
+; sg_uart_tx:sg_uart_tx|INDEX_INC                                                ; sg_uart_tx:sg_uart_tx|WideNor7                                              ; yes                    ;
+; Number of user-specified and inferred latches = 32                             ;                                                                             ;                        ;
++--------------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                        ;
++----------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                    ; Reason for Removal                     ;
++----------------------------------------------------------------------------------+----------------------------------------+
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt|Q[4..9]   ; Stuck at GND due to stuck port data_in ;
+; cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt|Q[0..19] ; Lost fanout                            ;
+; Total Number of Removed Registers = 26                                           ;                                        ;
++----------------------------------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 14    ;
+; Number of registers using Synchronous Clear  ; 10    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |D9_SOC|sg_uart_tx:sg_uart_tx|INDEX_Q[9]                                             ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |D9_SOC|cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt|Q[6] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; BITWIDTH       ; 10    ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; BITWIDTH       ; 20    ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:bit_cnt ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; BITWIDTH       ; 10    ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:baud_cnt ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; BITWIDTH       ; 20    ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sg_uart_tx:sg_uart_tx"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; PSEL ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:baud_cnt" ;
++------+-------+----------+---------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                   ;
++------+-------+----------+---------------------------------------------------------------------------+
+; EN   ; Input ; Info     ; Stuck at VCC                                                              ;
++------+-------+----------+---------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx|PipeReg:bit_cnt" ;
++------+-------+----------+--------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                  ;
++------+-------+----------+--------------------------------------------------------------------------+
+; EN   ; Input ; Info     ; Stuck at VCC                                                             ;
++------+-------+----------+--------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt" ;
++------+-------+----------+---------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                   ;
++------+-------+----------+---------------------------------------------------------------------------+
+; EN   ; Input ; Info     ; Stuck at VCC                                                              ;
++------+-------+----------+---------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt" ;
++------+-------+----------+--------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                  ;
++------+-------+----------+--------------------------------------------------------------------------+
+; EN   ; Input ; Info     ; Stuck at VCC                                                             ;
++------+-------+----------+--------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp"                                                                                        ;
++---------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                     ;
++---------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; bit_cnt ; Output ; Warning  ; Output or bidir port (10 bits) is wider than the port expression (1 bits) it drives; bit(s) "bit_cnt[9..1]" have no fanouts ;
+; bit_cnt ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                         ;
++---------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cmsdk_apb_uart:uart0"                                                                 ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; PREADY ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 14                          ;
+;     ENA SCLR          ; 10                          ;
+;     plain             ; 4                           ;
+; arriav_io_obuf        ; 96                          ;
+; arriav_lcell_comb     ; 66                          ;
+;     arith             ; 10                          ;
+;         1 data inputs ; 10                          ;
+;     normal            ; 56                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 23                          ;
+;         4 data inputs ; 10                          ;
+;         5 data inputs ; 15                          ;
+;         6 data inputs ; 2                           ;
+; boundary_port         ; 241                         ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.20                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sun Dec 01 20:09:36 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off D9_SOC -c D9_SOC
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 6 design units, including 6 entities, in source file /verilog/common/register.v
+    Info (12023): Found entity 1: REG File: D:/Verilog/common/REGISTER.v Line: 29
+    Info (12023): Found entity 2: LatchN File: D:/Verilog/common/REGISTER.v Line: 46
+    Info (12023): Found entity 3: LatchN_gate File: D:/Verilog/common/REGISTER.v Line: 60
+    Info (12023): Found entity 4: SyncRegN File: D:/Verilog/common/REGISTER.v Line: 78
+    Info (12023): Found entity 5: PipeRegS File: D:/Verilog/common/REGISTER.v Line: 92
+    Info (12023): Found entity 6: PipeReg File: D:/Verilog/common/REGISTER.v Line: 109
+Info (12021): Found 1 design units, including 1 entities, in source file uart/uart_tx.v
+    Info (12023): Found entity 1: uart_tx File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_tx.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart/uart_rx.v
+    Info (12023): Found entity 1: uart_rx File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_rx.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart/uart_b_dp.v
+    Info (12023): Found entity 1: uart_b_dp File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart/uart_b_cp.v
+    Info (12023): Found entity 1: uart_b_cp File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart/tx_dp.v
+    Info (12023): Found entity 1: tx_dp File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_dp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart/tx_cp.v
+    Info (12023): Found entity 1: tx_cp File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart/rx_dp.v
+    Info (12023): Found entity 1: rx_dp File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart/rx_cp.v
+    Info (12023): Found entity 1: rx_cp File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uart/baud_counter.v
+    Info (12023): Found entity 1: baud_counter File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/baud_counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file d9_soc.v
+    Info (12023): Found entity 1: D9_SOC File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file rtl_sim/sg_uart_tx.v
+    Info (12023): Found entity 1: sg_uart_tx File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file uart/cmsdk_apb_uart.v
+    Info (12023): Found entity 1: cmsdk_apb_uart File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/cmsdk_apb_uart.v Line: 30
+Info (12127): Elaborating entity "D9_SOC" for the top level hierarchy
+Warning (10034): Output port "DRAM_ADDR" at D9_SOC.v(65) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+Warning (10034): Output port "DRAM_BA" at D9_SOC.v(66) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 66
+Warning (10034): Output port "HEX0" at D9_SOC.v(90) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 90
+Warning (10034): Output port "HEX1" at D9_SOC.v(93) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 93
+Warning (10034): Output port "HEX2" at D9_SOC.v(96) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 96
+Warning (10034): Output port "HEX3" at D9_SOC.v(99) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 99
+Warning (10034): Output port "HEX4" at D9_SOC.v(102) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 102
+Warning (10034): Output port "HEX5" at D9_SOC.v(105) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 105
+Warning (10034): Output port "LEDR[9..2]" at D9_SOC.v(171) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 171
+Warning (10034): Output port "VGA_B" at D9_SOC.v(190) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 190
+Warning (10034): Output port "VGA_G" at D9_SOC.v(193) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 193
+Warning (10034): Output port "VGA_R" at D9_SOC.v(195) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 195
+Warning (10034): Output port "ADC_CONVST" at D9_SOC.v(39) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 39
+Warning (10034): Output port "ADC_DIN" at D9_SOC.v(40) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 40
+Warning (10034): Output port "ADC_SCLK" at D9_SOC.v(42) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 42
+Warning (10034): Output port "AUD_DACDAT" at D9_SOC.v(48) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 48
+Warning (10034): Output port "AUD_XCK" at D9_SOC.v(50) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 50
+Warning (10034): Output port "DRAM_CAS_N" at D9_SOC.v(67) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 67
+Warning (10034): Output port "DRAM_CKE" at D9_SOC.v(68) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 68
+Warning (10034): Output port "DRAM_CLK" at D9_SOC.v(69) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 69
+Warning (10034): Output port "DRAM_CS_N" at D9_SOC.v(70) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 70
+Warning (10034): Output port "DRAM_LDQM" at D9_SOC.v(72) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 72
+Warning (10034): Output port "DRAM_RAS_N" at D9_SOC.v(73) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 73
+Warning (10034): Output port "DRAM_UDQM" at D9_SOC.v(74) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 74
+Warning (10034): Output port "DRAM_WE_N" at D9_SOC.v(75) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 75
+Warning (10034): Output port "FAN_CTRL" at D9_SOC.v(78) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 78
+Warning (10034): Output port "FPGA_I2C_SCLK" at D9_SOC.v(81) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 81
+Warning (10034): Output port "IRDA_TXD" at D9_SOC.v(165) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 165
+Warning (10034): Output port "TD_RESET_N" at D9_SOC.v(186) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 186
+Warning (10034): Output port "VGA_BLANK_N" at D9_SOC.v(191) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 191
+Warning (10034): Output port "VGA_CLK" at D9_SOC.v(192) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 192
+Warning (10034): Output port "VGA_HS" at D9_SOC.v(194) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 194
+Warning (10034): Output port "VGA_SYNC_N" at D9_SOC.v(196) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 196
+Warning (10034): Output port "VGA_VS" at D9_SOC.v(198) has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 198
+Info (12128): Elaborating entity "cmsdk_apb_uart" for hierarchy "cmsdk_apb_uart:uart0" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 234
+Info (12128): Elaborating entity "uart_b_cp" for hierarchy "cmsdk_apb_uart:uart0|uart_b_cp:uart_cp" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/cmsdk_apb_uart.v Line: 66
+Warning (10272): Verilog HDL Case Statement warning at uart_b_cp.v(29): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 29
+Warning (10270): Verilog HDL Case Statement warning at uart_b_cp.v(17): incomplete case statement has no default case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at uart_b_cp.v(17): inferring latch(es) for variable "sel_tr", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at uart_b_cp.v(17): inferring latch(es) for variable "sel_ctrl", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at uart_b_cp.v(17): inferring latch(es) for variable "sel_baud", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at uart_b_cp.v(17): inferring latch(es) for variable "ready", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 17
+Info (10041): Inferred latch for "ready" at uart_b_cp.v(17) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 17
+Info (10041): Inferred latch for "sel_baud" at uart_b_cp.v(17) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 17
+Info (10041): Inferred latch for "sel_ctrl" at uart_b_cp.v(17) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 17
+Info (10041): Inferred latch for "sel_tr" at uart_b_cp.v(17) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 17
+Info (12128): Elaborating entity "uart_b_dp" for hierarchy "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/cmsdk_apb_uart.v Line: 83
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "data_in", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "sel_t", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "sel_r", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "din", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "tr_ctrl", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 55
+Warning (10240): Verilog HDL Always Construct warning at uart_b_dp.v(55): inferring latch(es) for variable "baud", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 55
+Info (10041): Inferred latch for "tr_ctrl[0]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[1]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[2]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[3]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[4]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[5]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "tr_ctrl[6]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "sel_r" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "sel_t" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[0]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[1]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[2]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[3]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[4]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[5]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[6]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[7]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[8]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[9]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[10]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[11]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[12]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[13]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[14]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[15]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[16]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[17]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[18]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "baud[19]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[0]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[1]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[2]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[3]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[4]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[5]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[6]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[7]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[8]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[9]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[10]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[11]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[12]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[13]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[14]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[15]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[16]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[17]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[18]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[19]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[20]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[21]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[22]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[23]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[24]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[25]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[26]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[27]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[28]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[29]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[30]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "data_in[31]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[0]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[1]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[2]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[3]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[4]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[5]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[6]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (10041): Inferred latch for "din[7]" at uart_b_dp.v(70) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Info (12128): Elaborating entity "uart_tx" for hierarchy "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 37
+Info (12128): Elaborating entity "tx_cp" for hierarchy "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_tx.v Line: 31
+Warning (10270): Verilog HDL Case Statement warning at tx_cp.v(21): incomplete case statement has no default case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at tx_cp.v(21): inferring latch(es) for variable "tx_en", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at tx_cp.v(21): inferring latch(es) for variable "bit_cntn", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[0]" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[1]" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[2]" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[3]" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[4]" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[5]" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[6]" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[7]" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[8]" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "bit_cntn[9]" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (10041): Inferred latch for "tx_en" at tx_cp.v(21) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+Info (12128): Elaborating entity "tx_dp" for hierarchy "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_dp:tx_dp" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_tx.v Line: 41
+Warning (10270): Verilog HDL Case Statement warning at tx_dp.v(14): incomplete case statement has no default case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_dp.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at tx_dp.v(14): inferring latch(es) for variable "tx_out", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_dp.v Line: 14
+Info (10041): Inferred latch for "tx_out" at tx_dp.v(14) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_dp.v Line: 14
+Info (12128): Elaborating entity "baud_counter" for hierarchy "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|baud_counter:baud_counter" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_tx.v Line: 52
+Warning (10036): Verilog HDL or VHDL warning at baud_counter.v(14): object "valid_baud" assigned a value but never read File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/baud_counter.v Line: 14
+Info (12128): Elaborating entity "PipeReg" for hierarchy "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:bit_cnt" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_tx.v Line: 61
+Info (12128): Elaborating entity "PipeReg" for hierarchy "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|PipeReg:baud_cnt" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_tx.v Line: 70
+Info (12128): Elaborating entity "uart_rx" for hierarchy "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 50
+Info (12128): Elaborating entity "rx_cp" for hierarchy "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx|rx_cp:rx_cp" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_rx.v Line: 32
+Warning (10270): Verilog HDL Case Statement warning at rx_cp.v(20): incomplete case statement has no default case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at rx_cp.v(20): inferring latch(es) for variable "bit_cntn", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[0]" at rx_cp.v(20) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[1]" at rx_cp.v(20) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[2]" at rx_cp.v(20) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[3]" at rx_cp.v(20) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[4]" at rx_cp.v(20) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[5]" at rx_cp.v(20) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[6]" at rx_cp.v(20) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[7]" at rx_cp.v(20) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[8]" at rx_cp.v(20) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (10041): Inferred latch for "bit_cntn[9]" at rx_cp.v(20) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_cp.v Line: 20
+Info (12128): Elaborating entity "rx_dp" for hierarchy "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_rx:uart_rx|rx_dp:rx_dp" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_rx.v Line: 41
+Warning (10935): Verilog HDL Casex/Casez warning at rx_dp.v(27): casex/casez item expression overlaps with a previous casex/casez item expression File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 27
+Warning (10272): Verilog HDL Case Statement warning at rx_dp.v(29): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 29
+Warning (10272): Verilog HDL Case Statement warning at rx_dp.v(31): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 31
+Warning (10272): Verilog HDL Case Statement warning at rx_dp.v(32): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 32
+Warning (10272): Verilog HDL Case Statement warning at rx_dp.v(33): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 33
+Warning (10272): Verilog HDL Case Statement warning at rx_dp.v(34): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 34
+Warning (10272): Verilog HDL Case Statement warning at rx_dp.v(35): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 35
+Warning (10272): Verilog HDL Case Statement warning at rx_dp.v(36): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 36
+Warning (10272): Verilog HDL Case Statement warning at rx_dp.v(37): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 37
+Warning (10272): Verilog HDL Case Statement warning at rx_dp.v(38): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 38
+Warning (10272): Verilog HDL Case Statement warning at rx_dp.v(39): case item expression covers a value already covered by a previous case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 39
+Warning (10763): Verilog HDL warning at rx_dp.v(23): case statement has overlapping case item expressions with non-constant or don't care bits - unable to check case statement for completeness File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 23
+Warning (10270): Verilog HDL Case Statement warning at rx_dp.v(23): incomplete case statement has no default case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/rx_dp.v Line: 23
+Info (12128): Elaborating entity "sg_uart_tx" for hierarchy "sg_uart_tx:sg_uart_tx" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 249
+Warning (10270): Verilog HDL Case Statement warning at sg_uart_tx.v(35): incomplete case statement has no default case item File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at sg_uart_tx.v(35): inferring latch(es) for variable "PADDR", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at sg_uart_tx.v(35): inferring latch(es) for variable "PWRITE", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at sg_uart_tx.v(35): inferring latch(es) for variable "PSEL", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at sg_uart_tx.v(35): inferring latch(es) for variable "PENABLE", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at sg_uart_tx.v(35): inferring latch(es) for variable "PWDATA", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at sg_uart_tx.v(35): inferring latch(es) for variable "INDEX_INC", which holds its previous value in one or more paths through the always construct File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "INDEX_INC" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[0]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[1]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[2]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[3]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[4]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[5]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[6]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[7]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[8]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[9]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[10]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[11]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[12]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[13]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[14]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[15]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[16]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[17]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[18]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[19]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[20]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[21]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[22]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[23]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[24]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[25]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[26]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[27]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[28]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[29]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[30]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWDATA[31]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PENABLE" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PSEL" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PWRITE" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PADDR[2]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PADDR[3]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PADDR[4]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PADDR[5]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PADDR[6]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PADDR[7]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PADDR[8]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PADDR[9]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PADDR[10]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Info (10041): Inferred latch for "PADDR[11]" at sg_uart_tx.v(35) File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_0[0]" and its non-tri-state driver. File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "AUD_ADCLRCK" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 46
+    Warning (13040): bidirectional pin "AUD_BCLK" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 47
+    Warning (13040): bidirectional pin "AUD_DACLRCK" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 49
+    Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[2]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[3]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[4]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[5]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[6]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[7]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[8]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[9]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[10]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[11]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[12]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[13]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[14]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "DRAM_DQ[15]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 71
+    Warning (13040): bidirectional pin "FPGA_I2C_SDAT" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 82
+    Warning (13040): bidirectional pin "GPIO_0[1]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[2]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[3]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[4]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[5]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[6]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[7]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[8]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[9]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[10]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[11]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[12]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[13]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[14]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[15]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[16]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[17]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[18]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[19]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[20]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[21]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[22]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[23]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[24]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[25]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[26]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[27]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[28]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[29]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[30]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[31]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[32]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[33]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[34]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_0[35]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+    Warning (13040): bidirectional pin "GPIO_1[0]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[1]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[2]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[3]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[4]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[5]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[6]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[7]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[8]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[9]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[10]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[11]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[12]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[13]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[14]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[15]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[16]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[17]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[18]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[19]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[20]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[21]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[22]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[23]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[24]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[25]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[26]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[27]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[28]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[29]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[30]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[31]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[32]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[33]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[34]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "GPIO_1[35]" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 86
+    Warning (13040): bidirectional pin "PS2_CLK" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 174
+    Warning (13040): bidirectional pin "PS2_CLK2" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 175
+    Warning (13040): bidirectional pin "PS2_DAT" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 176
+    Warning (13040): bidirectional pin "PS2_DAT2" has no driver File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 177
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "sg_uart_tx:sg_uart_tx|PWDATA[6]" merged with LATCH primitive "sg_uart_tx:sg_uart_tx|PWDATA[4]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+    Info (13026): Duplicate LATCH primitive "sg_uart_tx:sg_uart_tx|PWDATA[1]" merged with LATCH primitive "sg_uart_tx:sg_uart_tx|PWDATA[4]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+    Info (13026): Duplicate LATCH primitive "sg_uart_tx:sg_uart_tx|PADDR[4]" merged with LATCH primitive "sg_uart_tx:sg_uart_tx|PWDATA[5]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+    Info (13026): Duplicate LATCH primitive "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[4]" merged with LATCH primitive "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[6]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+    Info (13026): Duplicate LATCH primitive "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[1]" merged with LATCH primitive "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|din[6]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+    Info (13026): Duplicate LATCH primitive "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|baud[6]" merged with LATCH primitive "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|baud[4]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+    Info (13026): Duplicate LATCH primitive "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[4]" merged with LATCH primitive "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[1]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+    Info (13026): Duplicate LATCH primitive "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[6]" merged with LATCH primitive "cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[1]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Warning (13012): Latch cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|tx_en has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0] File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+Warning (13012): Latch cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|sel_t has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|tr_ctrl[0] File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_dp.v Line: 70
+Warning (13012): Latch sg_uart_tx:sg_uart_tx|PENABLE has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sg_uart_tx:sg_uart_tx|INDEX_Q[9] File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 25
+Warning (13012): Latch cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_dp:tx_dp|tx_out has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_dp.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0] File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+Warning (13012): Latch cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_tr has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0] File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+Warning (13012): Latch cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[0] has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0] File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+Warning (13012): Latch cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[1] has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor3 File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 61
+Warning (13012): Latch cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[2] has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0] File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+Warning (13012): Latch cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|bit_cntn[3] has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cmsdk_apb_uart:uart0|uart_b_dp:uart_dp|uart_tx:uart_tx|tx_cp:tx_cp|WideNor3 File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/tx_cp.v Line: 61
+Warning (13012): Latch sg_uart_tx:sg_uart_tx|PWDATA[4] has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sg_uart_tx:sg_uart_tx|WideNor5 File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 46
+Warning (13012): Latch cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_baud has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0] File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+Warning (13012): Latch cmsdk_apb_uart:uart0|uart_b_cp:uart_cp|sel_ctrl has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/uart/uart_b_cp.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0] File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+Warning (13012): Latch sg_uart_tx:sg_uart_tx|PWDATA[5] has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sg_uart_tx:sg_uart_tx|WideNor3 File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 42
+Warning (13012): Latch sg_uart_tx:sg_uart_tx|PWDATA[0] has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sg_uart_tx:sg_uart_tx|WideNor3 File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 42
+Warning (13012): Latch sg_uart_tx:sg_uart_tx|PADDR[3] has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 35
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sg_uart_tx:sg_uart_tx|WideNor3 File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 42
+Warning (13012): Latch sg_uart_tx:sg_uart_tx|INDEX_INC has unsafe behavior File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sg_uart_tx:sg_uart_tx|WideNor6 File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/rtl_sim/sg_uart_tx.v Line: 49
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "GPIO_0[0]~synth" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 85
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ADC_CONVST" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 39
+    Warning (13410): Pin "ADC_DIN" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 40
+    Warning (13410): Pin "ADC_SCLK" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 42
+    Warning (13410): Pin "AUD_DACDAT" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 48
+    Warning (13410): Pin "AUD_XCK" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 50
+    Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[7]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[8]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[9]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[10]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[11]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 65
+    Warning (13410): Pin "DRAM_BA[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 66
+    Warning (13410): Pin "DRAM_BA[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 66
+    Warning (13410): Pin "DRAM_CAS_N" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 67
+    Warning (13410): Pin "DRAM_CKE" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 68
+    Warning (13410): Pin "DRAM_CLK" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 69
+    Warning (13410): Pin "DRAM_CS_N" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 70
+    Warning (13410): Pin "DRAM_LDQM" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 72
+    Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 73
+    Warning (13410): Pin "DRAM_UDQM" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 74
+    Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 75
+    Warning (13410): Pin "FAN_CTRL" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 78
+    Warning (13410): Pin "FPGA_I2C_SCLK" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 81
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 90
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 90
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 90
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 90
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 90
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 90
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 90
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 93
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 93
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 93
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 93
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 93
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 93
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 93
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 96
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 96
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 96
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 96
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 96
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 96
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 96
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 99
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 99
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 99
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 99
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 99
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 99
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 99
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 102
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 102
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 102
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 102
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 102
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 102
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 102
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 105
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 105
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 105
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 105
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 105
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 105
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 105
+    Warning (13410): Pin "IRDA_TXD" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 165
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 171
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 171
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 171
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 171
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 171
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 171
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 171
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 171
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 171
+    Warning (13410): Pin "TD_RESET_N" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 186
+    Warning (13410): Pin "VGA_B[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 190
+    Warning (13410): Pin "VGA_B[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 190
+    Warning (13410): Pin "VGA_B[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 190
+    Warning (13410): Pin "VGA_B[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 190
+    Warning (13410): Pin "VGA_B[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 190
+    Warning (13410): Pin "VGA_B[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 190
+    Warning (13410): Pin "VGA_B[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 190
+    Warning (13410): Pin "VGA_B[7]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 190
+    Warning (13410): Pin "VGA_BLANK_N" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 191
+    Warning (13410): Pin "VGA_CLK" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 192
+    Warning (13410): Pin "VGA_G[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 193
+    Warning (13410): Pin "VGA_G[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 193
+    Warning (13410): Pin "VGA_G[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 193
+    Warning (13410): Pin "VGA_G[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 193
+    Warning (13410): Pin "VGA_G[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 193
+    Warning (13410): Pin "VGA_G[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 193
+    Warning (13410): Pin "VGA_G[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 193
+    Warning (13410): Pin "VGA_G[7]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 193
+    Warning (13410): Pin "VGA_HS" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 194
+    Warning (13410): Pin "VGA_R[0]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 195
+    Warning (13410): Pin "VGA_R[1]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 195
+    Warning (13410): Pin "VGA_R[2]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 195
+    Warning (13410): Pin "VGA_R[3]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 195
+    Warning (13410): Pin "VGA_R[4]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 195
+    Warning (13410): Pin "VGA_R[5]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 195
+    Warning (13410): Pin "VGA_R[6]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 195
+    Warning (13410): Pin "VGA_R[7]" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 195
+    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 196
+    Warning (13410): Pin "VGA_VS" is stuck at GND File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 198
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 20 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/output_files/D9_SOC.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 28 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ADC_DOUT" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 41
+    Warning (15610): No output dependent on input pin "AUD_ADCDAT" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 45
+    Warning (15610): No output dependent on input pin "CLOCK3_50" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 56
+    Warning (15610): No output dependent on input pin "CLOCK4_50" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 59
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 62
+    Warning (15610): No output dependent on input pin "IRDA_RXD" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 164
+    Warning (15610): No output dependent on input pin "KEY[0]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 168
+    Warning (15610): No output dependent on input pin "KEY[1]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 168
+    Warning (15610): No output dependent on input pin "KEY[2]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 168
+    Warning (15610): No output dependent on input pin "KEY[3]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 168
+    Warning (15610): No output dependent on input pin "SW[3]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+    Warning (15610): No output dependent on input pin "SW[4]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+    Warning (15610): No output dependent on input pin "SW[5]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+    Warning (15610): No output dependent on input pin "SW[6]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+    Warning (15610): No output dependent on input pin "SW[7]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+    Warning (15610): No output dependent on input pin "SW[8]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+    Warning (15610): No output dependent on input pin "SW[9]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 180
+    Warning (15610): No output dependent on input pin "TD_CLK27" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 183
+    Warning (15610): No output dependent on input pin "TD_DATA[0]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 184
+    Warning (15610): No output dependent on input pin "TD_DATA[1]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 184
+    Warning (15610): No output dependent on input pin "TD_DATA[2]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 184
+    Warning (15610): No output dependent on input pin "TD_DATA[3]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 184
+    Warning (15610): No output dependent on input pin "TD_DATA[4]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 184
+    Warning (15610): No output dependent on input pin "TD_DATA[5]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 184
+    Warning (15610): No output dependent on input pin "TD_DATA[6]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 184
+    Warning (15610): No output dependent on input pin "TD_DATA[7]" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 184
+    Warning (15610): No output dependent on input pin "TD_HS" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 185
+    Warning (15610): No output dependent on input pin "TD_VS" File: D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/D9_SOC.v Line: 187
+Info (21057): Implemented 306 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 32 input pins
+    Info (21059): Implemented 113 output pins
+    Info (21060): Implemented 96 bidirectional pins
+    Info (21061): Implemented 65 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 350 warnings
+    Info: Peak virtual memory: 4872 megabytes
+    Info: Processing ended: Sun Dec 01 20:09:46 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/Verilog/EECE490_Lab/D9_UART_Test/D9_HW/output_files/D9_SOC.map.smsg.
+
+

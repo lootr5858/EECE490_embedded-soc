@@ -1,0 +1,32 @@
+module tx_dp
+(
+	input wire			rst,
+	input wire			tx_en,
+	input wire [7:0]  din,
+	input wire [9:0]  bit_cnto,
+
+	input reg tx_out
+);
+
+always @ *
+begin
+	casex ({rst, tx_en, bit_cnto})
+	
+	{1'b1, 1'bx, 10'bxxxxx_xxxxx}: tx_out = 1'b1;	// reset control
+	
+	{1'b0, 1'b0, 10'bxxxxx_xxxxx}: tx_out = 1'b1;	// No tx
+	
+	{1'b0, 1'b1, 10'b00000_00000}: tx_out = 1'b0;	// TX start
+	{1'b0, 1'b1, 10'b00000_00001}: tx_out = din[0];
+	{1'b0, 1'b1, 10'b00000_00010}: tx_out = din[1];
+	{1'b0, 1'b1, 10'b00000_00100}: tx_out = din[2];
+	{1'b0, 1'b1, 10'b00000_01000}: tx_out = din[3];
+	{1'b0, 1'b1, 10'b00000_10000}: tx_out = din[4];
+	{1'b0, 1'b1, 10'b00001_00000}: tx_out = din[5];
+	{1'b0, 1'b1, 10'b00010_00000}: tx_out = din[6];
+	{1'b0, 1'b1, 10'b00100_00000}: tx_out = din[7];
+	{1'b0, 1'b1, 10'b01000_00000}: tx_out = 1'b1;	// TX end
+	
+	endcase
+end
+	

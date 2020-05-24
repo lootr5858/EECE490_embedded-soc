@@ -1,0 +1,10 @@
+.\objects\matrix_multiplication.o: matrix_multiplication.c
+.\objects\matrix_multiplication.o: ..\..\EECE490_Lab\D07_Q_project_AHB_Slave\software\cmsis\Device\ARM\CMSDK_CM0\Include\CMSDK_CM0.h
+.\objects\matrix_multiplication.o: ..\..\EECE490_Lab\D07_Q_project_AHB_Slave\software\cmsis\CMSIS\Include\core_cm0.h
+.\objects\matrix_multiplication.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\matrix_multiplication.o: ..\..\EECE490_Lab\D07_Q_project_AHB_Slave\software\cmsis\CMSIS\Include\core_cmInstr.h
+.\objects\matrix_multiplication.o: ..\..\EECE490_Lab\D07_Q_project_AHB_Slave\software\cmsis\CMSIS\Include\core_cmFunc.h
+.\objects\matrix_multiplication.o: ..\..\EECE490_Lab\D07_Q_project_AHB_Slave\software\cmsis\Device\ARM\CMSDK_CM0\Include\system_CMSDK_CM0.h
+.\objects\matrix_multiplication.o: ..\..\EECE490_Lab\D07_Q_project_AHB_Slave\software\cmsis\CMSIS\Include\core_cm0.h
+.\objects\matrix_multiplication.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\matrix_multiplication.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

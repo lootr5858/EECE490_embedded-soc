@@ -1,0 +1,11 @@
+.\objects\a3_software.o: A3_Software.c
+.\objects\a3_software.o: .\software\cmsis\Device\ARM\CMSDK_CM0\Include\CMSDK_CM0.h
+.\objects\a3_software.o: .\software\cmsis\CMSIS\Include\core_cm0.h
+.\objects\a3_software.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\a3_software.o: .\software\cmsis\CMSIS\Include\core_cmInstr.h
+.\objects\a3_software.o: .\software\cmsis\CMSIS\Include\core_cmFunc.h
+.\objects\a3_software.o: .\software\cmsis\Device\ARM\CMSDK_CM0\Include\system_CMSDK_CM0.h
+.\objects\a3_software.o: .\software\cmsis\CMSIS\Include\core_cm0.h
+.\objects\a3_software.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\a3_software.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\a3_software.o: .\software\common\retarget\uart_stdout.h

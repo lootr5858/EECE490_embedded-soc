@@ -1,0 +1,35 @@
+module rx_dp
+(
+	input wire			rst,
+	input wire			rx_en,
+	input wire			rx_in,
+	input wire [9:0]  bit_cnto,
+	
+	output reg	[7:0] rx_data
+);
+
+always @ *
+begin
+
+	casex ({rst, rx_en, bit_cnto})
+	
+	{1'b1, 1'bx, 10'dx, 1'bx}: rx_data = 8'b0;
+	
+	//{1'b0, 1'b0, 10'dx}: rx_data = 8'bx;
+	
+	//{1'b0, 1'b1, 10'd0}: rx_data = 8'bx;
+	
+	{1'b0, 1'b1, 10'd1}: rx_data[0] = rx_in;
+	{1'b0, 1'b1, 10'd2}: rx_data[1] = rx_in;
+	{1'b0, 1'b1, 10'd3}: rx_data[2] = rx_in;
+	{1'b0, 1'b1, 10'd4}: rx_data[3] = rx_in;
+	{1'b0, 1'b1, 10'd5}: rx_data[4] = rx_in;
+	{1'b0, 1'b1, 10'd6}: rx_data[5] = rx_in;
+	{1'b0, 1'b1, 10'd7}: rx_data[6] = rx_in;
+	{1'b0, 1'b1, 10'd8}: rx_data[7] = rx_in;
+	
+	endcase
+	
+end
+
+endmodule

@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sun Dec 01 20:09:46 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : D9_SOC
+Top-level Entity Name : D9_SOC
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 14
+Total pins : 241
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

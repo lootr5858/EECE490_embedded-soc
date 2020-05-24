@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/rx_ten_eight {D:/Verilog/EECE490_Midterm/UART/rx_ten_eight/baud_counter.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/common {D:/Verilog/common/REGISTER.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/rx_ten_eight {D:/Verilog/EECE490_Midterm/UART/rx_ten_eight/rx_ten_eight.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/rx_ten_eight {D:/Verilog/EECE490_Midterm/UART/rx_ten_eight/rx_ten_eight_cp.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/rx_ten_eight {D:/Verilog/EECE490_Midterm/UART/rx_ten_eight/rx_ten_eight_dp.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/rx_ten_eight {D:/Verilog/EECE490_Midterm/UART/rx_ten_eight/ten_eight.v}
+

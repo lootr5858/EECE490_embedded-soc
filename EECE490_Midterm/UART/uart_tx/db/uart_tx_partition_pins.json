@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tx_en",
+					"strict" : false
+				},
+				{
+					"name" : "tx_out",
+					"strict" : false
+				},
+				{
+					"name" : "sel",
+					"strict" : false
+				},
+				{
+					"name" : "set",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "din[6]",
+					"strict" : false
+				},
+				{
+					"name" : "din[2]",
+					"strict" : false
+				},
+				{
+					"name" : "din[5]",
+					"strict" : false
+				},
+				{
+					"name" : "din[1]",
+					"strict" : false
+				},
+				{
+					"name" : "din[0]",
+					"strict" : false
+				},
+				{
+					"name" : "din[7]",
+					"strict" : false
+				},
+				{
+					"name" : "din[3]",
+					"strict" : false
+				},
+				{
+					"name" : "din[4]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "baud[18]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[19]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[6]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[7]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[8]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[16]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[17]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[5]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[14]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[15]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[3]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[4]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[11]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[12]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[0]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[1]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[2]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[9]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[10]",
+					"strict" : false
+				},
+				{
+					"name" : "baud[13]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,280 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Verilog/EECE490_Midterm/UART/tx_eight_ten/simulation/modelsim
+vbaud_counter
+!s110 1572367708
+!i10b 1
+!s100 ZI92TSWamA`94eBHC8hBX1
+IGXXc8n;gC`DUFHk@l7Pda3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1572268851
+8D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/baud_counter.v
+FD:/Verilog/EECE490_Midterm/UART/tx_eight_ten/baud_counter.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1572367708.000000
+!s107 D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/baud_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten|D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/baud_counter.v|
+!i113 1
+Z3 o-vlog01compat -work work
+Z4 !s92 -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten
+Z5 tCvgOpt 0
+veight_ten
+Z6 !s110 1572367710
+!i10b 1
+!s100 RnK_L7g73OIYdEocN8VK23
+I5n=a?zKFJ:;<dY[i;H2YV1
+R1
+R0
+w1572366784
+8D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/eight_ten.v
+FD:/Verilog/EECE490_Midterm/UART/tx_eight_ten/eight_ten.v
+L0 1
+R2
+r1
+!s85 0
+31
+Z7 !s108 1572367709.000000
+!s107 D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/eight_ten.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten|D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/eight_ten.v|
+!i113 1
+R3
+R4
+R5
+vLatchN
+Z8 !s110 1572367709
+!i10b 1
+!s100 3[hQ_<[;Wb:h`^::hnfhE1
+I`ST:@`2]:gl1o2FV?_YBf3
+R1
+R0
+Z9 w1378073400
+Z10 8D:/Verilog/common/REGISTER.v
+Z11 FD:/Verilog/common/REGISTER.v
+L0 46
+R2
+r1
+!s85 0
+31
+R7
+Z12 !s107 D:/Verilog/common/REGISTER.v|
+Z13 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/common|D:/Verilog/common/REGISTER.v|
+!i113 1
+R3
+Z14 !s92 -vlog01compat -work work +incdir+D:/Verilog/common
+R5
+n@latch@n
+vLatchN_gate
+R8
+!i10b 1
+!s100 8AjaWP2?8EM=>1jIeHlXj3
+InG4ha?GR7K<af9>BfQ5nW3
+R1
+R0
+R9
+R10
+R11
+L0 60
+R2
+r1
+!s85 0
+31
+R7
+R12
+R13
+!i113 1
+R3
+R14
+R5
+n@latch@n_gate
+vPipeReg
+R8
+!i10b 1
+!s100 z?>;_AV<idaVeCUE_z7o[1
+I]5BQzAeVz2@COQ?R;GIj=3
+R1
+R0
+R9
+R10
+R11
+L0 109
+R2
+r1
+!s85 0
+31
+R7
+R12
+R13
+!i113 1
+R3
+R14
+R5
+n@pipe@reg
+vPipeRegS
+R8
+!i10b 1
+!s100 R6:ajSQU@jb^R<hea@V;43
+I:T<FDRl=DFD`NTOK=@W5=3
+R1
+R0
+R9
+R10
+R11
+L0 92
+R2
+r1
+!s85 0
+31
+R7
+R12
+R13
+!i113 1
+R3
+R14
+R5
+n@pipe@reg@s
+vREG
+R8
+!i10b 1
+!s100 O?`YJiQ0f1[5;FW1hUJYI3
+Ic=FLUz4YAk`odcVKL@8E13
+R1
+R0
+R9
+R10
+R11
+L0 29
+R2
+r1
+!s85 0
+31
+R7
+R12
+R13
+!i113 1
+R3
+R14
+R5
+n@r@e@g
+vSyncRegN
+R8
+!i10b 1
+!s100 fi0E3?3CM25Y5dHfGiY543
+IlPhTJS9`c:Ofoi<EgE9Pf3
+R1
+R0
+R9
+R10
+R11
+L0 78
+R2
+r1
+!s85 0
+31
+R7
+R12
+R13
+!i113 1
+R3
+R14
+R5
+n@sync@reg@n
+vtx_eight_ten
+R8
+!i10b 1
+!s100 ZEK3Z5O9CZ7`SklEBi4>D1
+IllVKo?X7Rj^Sf4EU[?jb@1
+R1
+R0
+w1572366589
+8D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten.v
+FD:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten.v
+L0 1
+R2
+r1
+!s85 0
+31
+R7
+!s107 D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten|D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten.v|
+!i113 1
+R3
+R4
+R5
+vtx_eight_ten_cp
+R8
+!i10b 1
+!s100 BIEl0Ph=g^kHbidc360FQ0
+I2b@cCJ0][b_O?Oz0HNACa3
+R1
+R0
+w1572365584
+8D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_cp.v
+FD:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_cp.v
+L0 1
+R2
+r1
+!s85 0
+31
+R7
+!s107 D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_cp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten|D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_cp.v|
+!i113 1
+R3
+R4
+R5
+vtx_eight_ten_dp
+R8
+!i10b 1
+!s100 GK?mjS128H=P5[FQeJPFk1
+IXeNLHL>WGhi`JZENh6KCD1
+R1
+R0
+w1572366865
+8D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_dp.v
+FD:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_dp.v
+L0 1
+R2
+r1
+!s85 0
+31
+R7
+!s107 D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_dp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten|D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_dp.v|
+!i113 1
+R3
+R4
+R5
+vtx_eight_ten_tb
+R6
+!i10b 1
+!s100 cOY9AM6m3j`Sac9FSlPUK1
+I>8;<QD?m`9fl1BEePihb73
+R1
+R0
+w1572367152
+8D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_tb.v
+FD:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1572367710.000000
+!s107 D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/tx_eight_ten|D:/Verilog/EECE490_Midterm/UART/tx_eight_ten/tx_eight_ten_tb.v|
+!i113 1
+R3
+R4
+R5

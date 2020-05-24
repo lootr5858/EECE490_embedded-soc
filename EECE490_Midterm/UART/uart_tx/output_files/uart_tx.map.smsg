@@ -1,0 +1,5 @@
+Warning (10273): Verilog HDL warning at tx_cp.v(18): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART/uart_tx/tx_cp.v Line: 18
+Warning (10273): Verilog HDL warning at tx_cp.v(20): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART/uart_tx/tx_cp.v Line: 20
+Warning (10273): Verilog HDL warning at tx_cp.v(22): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART/uart_tx/tx_cp.v Line: 22
+Warning (10273): Verilog HDL warning at tx_dp.v(16): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART/uart_tx/tx_dp.v Line: 16
+Warning (10273): Verilog HDL warning at tx_dp.v(18): extended using "x" or "z" File: D:/Verilog/EECE490_Midterm/UART/uart_tx/tx_dp.v Line: 18

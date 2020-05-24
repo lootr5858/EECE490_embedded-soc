@@ -1,0 +1,30 @@
+module tx_tb();
+
+localparam period = 5;
+localparam cycle = period * 2;
+
+reg 		  clk;
+reg 		  rst;
+reg 		  set;
+reg [7:0]  din;
+reg [19:0] baud;
+
+wire tx_en;
+wire tx_out;
+
+uart_tx uart_tx
+(
+	.clk	  (clk),
+	.rst	  (rst),
+	.set	  (set),
+	.din	  (din),
+	.baud   (baud),
+	.tx_en  (tx_en),
+	.tx_out (tx_out)
+);
+
+/* ------ !! ------
+	Clock generation
+	------ !! ------ */
+initial clk = 1'1b;
+always #(period) clk = ~clk;

@@ -1,0 +1,19 @@
+module uart_b_dp
+(
+	input wire			clk,
+	input wire			rst,
+	input wire			sel_tr,
+	input wire			sel_crtl,
+	input wire			sel_baud,
+	input wire			ready,
+	input wire [31:0] data_out,
+	
+	output wire [31:0] data_in,
+	output wire			 tx_en,
+	output wire			 tx_out
+);
+
+reg [7:0] din;
+reg [6:0] tr_crtl;
+reg [19:0] baud;
+

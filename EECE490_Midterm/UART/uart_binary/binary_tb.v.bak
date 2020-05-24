@@ -1,0 +1,14 @@
+module  binary_tb();
+
+reg			clk,
+reg			rst,
+reg			sel,			// select device
+reg			enable,		// enable operations
+reg [11:2] addr,			// retrieve register position
+reg [31:0] data_out,	// data from uart to peripherals
+reg			rx_in,
+	
+wire [31:0] data_in,	// data from peripherals to uart
+wire			 ready,
+wire			 tx_out,
+wire			 tx_en

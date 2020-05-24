@@ -1,0 +1,481 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do M0_Simulation_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:39 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_counter.v 
+# -- Compiling module cmsdk_ahb_counter
+# 
+# Top level modules:
+# 	cmsdk_ahb_counter
+# End time: 23:54:39 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/M0_Simulation.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:39 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/M0_Simulation.v 
+# -- Compiling module M0_Simulation
+# 
+# Top level modules:
+# 	M0_Simulation
+# End time: 23:54:39 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/CORTEXM0INTEGRATION.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:39 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/CORTEXM0INTEGRATION.v 
+# -- Compiling module CORTEXM0INTEGRATION
+# 
+# Top level modules:
+# 	CORTEXM0INTEGRATION
+# End time: 23:54:39 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cortexm0ds_logic.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:39 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cortexm0ds_logic.v 
+# -- Compiling module cortexm0ds_logic
+# 
+# Top level modules:
+# 	cortexm0ds_logic
+# End time: 23:54:40 on Dec 03,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/CORTEXM0DS.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:40 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/CORTEXM0DS.v 
+# -- Compiling module CORTEXM0DS
+# 
+# Top level modules:
+# 	CORTEXM0DS
+# End time: 23:54:40 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/CORTEXM0DAP.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:40 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/CORTEXM0DAP.v 
+# -- Compiling module CORTEXM0DAP
+# 
+# Top level modules:
+# 	CORTEXM0DAP
+# End time: 23:54:40 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cortexm0_wic.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:40 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cortexm0_wic.v 
+# -- Compiling module cortexm0_wic
+# 
+# Top level modules:
+# 	cortexm0_wic
+# End time: 23:54:40 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_uart_capture.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:40 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_uart_capture.v 
+# -- Compiling module cmsdk_uart_capture
+# 
+# Top level modules:
+# 	cmsdk_uart_capture
+# End time: 23:54:40 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_stclkctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:40 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_stclkctrl.v 
+# -- Compiling module cmsdk_mcu_stclkctrl
+# 
+# Top level modules:
+# 	cmsdk_mcu_stclkctrl
+# End time: 23:54:40 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_pin_mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:40 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_pin_mux.v 
+# -- Compiling module cmsdk_mcu_pin_mux
+# 
+# Top level modules:
+# 	cmsdk_mcu_pin_mux
+# End time: 23:54:40 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_iop_gpio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:40 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_iop_gpio.v 
+# -- Compiling module cmsdk_iop_gpio
+# 
+# Top level modules:
+# 	cmsdk_iop_gpio
+# End time: 23:54:40 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_clkreset.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:40 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_clkreset.v 
+# -- Compiling module cmsdk_clkreset
+# 
+# Top level modules:
+# 	cmsdk_clkreset
+# End time: 23:54:41 on Dec 03,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_watchdog_defs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:41 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_watchdog_defs.v 
+# End time: 23:54:41 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_uart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:41 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_uart.v 
+# -- Compiling module cmsdk_apb_uart
+# 
+# Top level modules:
+# 	cmsdk_apb_uart
+# End time: 23:54:41 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_timer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:41 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_timer.v 
+# -- Compiling module cmsdk_apb_timer
+# 
+# Top level modules:
+# 	cmsdk_apb_timer
+# End time: 23:54:41 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_test_slave.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:41 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_test_slave.v 
+# -- Compiling module cmsdk_apb_test_slave
+# 
+# Top level modules:
+# 	cmsdk_apb_test_slave
+# End time: 23:54:41 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_subsystem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:41 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_subsystem.v 
+# -- Compiling module cmsdk_apb_subsystem
+# 
+# Top level modules:
+# 	cmsdk_apb_subsystem
+# End time: 23:54:41 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_slave_mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:41 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_slave_mux.v 
+# -- Compiling module cmsdk_apb_slave_mux
+# 
+# Top level modules:
+# 	cmsdk_apb_slave_mux
+# End time: 23:54:41 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_dualtimers_defs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:41 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_dualtimers_defs.v 
+# End time: 23:54:41 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_to_iop.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:41 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_to_iop.v 
+# -- Compiling module cmsdk_ahb_to_iop
+# 
+# Top level modules:
+# 	cmsdk_ahb_to_iop
+# End time: 23:54:41 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_to_apb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:41 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_to_apb.v 
+# -- Compiling module cmsdk_ahb_to_apb
+# 
+# Top level modules:
+# 	cmsdk_ahb_to_apb
+# End time: 23:54:41 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_slave_mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:42 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_slave_mux.v 
+# -- Compiling module cmsdk_ahb_slave_mux
+# 
+# Top level modules:
+# 	cmsdk_ahb_slave_mux
+# End time: 23:54:42 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_ram_beh.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:42 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_ram_beh.v 
+# -- Compiling module cmsdk_ahb_ram_beh
+# 
+# Top level modules:
+# 	cmsdk_ahb_ram_beh
+# End time: 23:54:42 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_memory_models_defs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:42 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_memory_models_defs.v 
+# End time: 23:54:42 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_gpio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:42 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_gpio.v 
+# -- Compiling module cmsdk_ahb_gpio
+# 
+# Top level modules:
+# 	cmsdk_ahb_gpio
+# End time: 23:54:42 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_default_slave.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:42 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_default_slave.v 
+# -- Compiling module cmsdk_ahb_default_slave
+# 
+# Top level modules:
+# 	cmsdk_ahb_default_slave
+# End time: 23:54:42 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_cs_rom_table.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:42 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_cs_rom_table.v 
+# -- Compiling module cmsdk_ahb_cs_rom_table
+# 
+# Top level modules:
+# 	cmsdk_ahb_cs_rom_table
+# End time: 23:54:42 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cm0_dbg_reset_sync.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:42 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cm0_dbg_reset_sync.v 
+# -- Compiling module cm0_dbg_reset_sync
+# 
+# Top level modules:
+# 	cm0_dbg_reset_sync
+# End time: 23:54:42 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_defs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:42 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_defs.v 
+# End time: 23:54:42 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_watchdog_frc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:42 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_watchdog_frc.v 
+# -- Compiling module cmsdk_apb_watchdog_frc
+# 
+# Top level modules:
+# 	cmsdk_apb_watchdog_frc
+# End time: 23:54:43 on Dec 03,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_watchdog.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:43 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_watchdog.v 
+# -- Compiling module cmsdk_apb_watchdog
+# 
+# Top level modules:
+# 	cmsdk_apb_watchdog
+# End time: 23:54:43 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_dualtimers_frc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:43 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_dualtimers_frc.v 
+# -- Compiling module cmsdk_apb_dualtimers_frc
+# 
+# Top level modules:
+# 	cmsdk_apb_dualtimers_frc
+# End time: 23:54:43 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_dualtimers.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:43 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_apb_dualtimers.v 
+# -- Compiling module cmsdk_apb_dualtimers
+# 
+# Top level modules:
+# 	cmsdk_apb_dualtimers
+# End time: 23:54:43 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_rom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:43 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_rom.v 
+# -- Compiling module cmsdk_ahb_rom
+# 
+# Top level modules:
+# 	cmsdk_ahb_rom
+# End time: 23:54:43 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:43 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_ram.v 
+# -- Compiling module cmsdk_ahb_ram
+# 
+# Top level modules:
+# 	cmsdk_ahb_ram
+# End time: 23:54:43 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_system.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:43 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_system.v 
+# -- Compiling module cmsdk_mcu_system
+# 
+# Top level modules:
+# 	cmsdk_mcu_system
+# End time: 23:54:43 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_sysctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:43 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_sysctrl.v 
+# -- Compiling module cmsdk_mcu_sysctrl
+# 
+# Top level modules:
+# 	cmsdk_mcu_sysctrl
+# End time: 23:54:43 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_clkctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:43 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_clkctrl.v 
+# -- Compiling module cmsdk_mcu_clkctrl
+# 
+# Top level modules:
+# 	cmsdk_mcu_clkctrl
+# End time: 23:54:44 on Dec 03,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_addr_decode.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:44 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu_addr_decode.v 
+# -- Compiling module cmsdk_mcu_addr_decode
+# 
+# Top level modules:
+# 	cmsdk_mcu_addr_decode
+# End time: 23:54:44 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:44 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu.v 
+# -- Compiling module cmsdk_mcu
+# 
+# Top level modules:
+# 	cmsdk_mcu
+# End time: 23:54:44 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware {D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/tb_cmsdk_mcu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:44 on Dec 03,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware" D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/tb_cmsdk_mcu.v 
+# -- Compiling module tb_cmsdk_mcu
+# 
+# Top level modules:
+# 	tb_cmsdk_mcu
+# End time: 23:54:44 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_cmsdk_mcu
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_cmsdk_mcu 
+# Start time: 23:54:44 on Dec 03,2019
+# Loading work.tb_cmsdk_mcu
+# Loading work.M0_Simulation
+# Loading work.cmsdk_mcu
+# Loading work.cmsdk_mcu_clkctrl
+# Loading work.cmsdk_mcu_system
+# Loading work.CORTEXM0INTEGRATION
+# Loading work.cm0_dbg_reset_sync
+# Loading work.CORTEXM0DS
+# Loading work.cortexm0ds_logic
+# Loading work.CORTEXM0DAP
+# Loading work.cortexm0_wic
+# Loading work.cmsdk_mcu_addr_decode
+# Loading work.cmsdk_ahb_slave_mux
+# Loading work.cmsdk_ahb_default_slave
+# Loading work.cmsdk_ahb_counter
+# Loading work.cmsdk_ahb_cs_rom_table
+# Loading work.cmsdk_mcu_sysctrl
+# Loading work.cmsdk_ahb_gpio
+# Loading work.cmsdk_ahb_to_iop
+# Loading work.cmsdk_iop_gpio
+# Loading work.cmsdk_apb_subsystem
+# Loading work.cmsdk_ahb_to_apb
+# Loading work.cmsdk_apb_slave_mux
+# Loading work.cmsdk_mcu_stclkctrl
+# Loading work.cmsdk_ahb_rom
+# Loading work.cmsdk_ahb_ram
+# Loading work.cmsdk_mcu_pin_mux
+# Loading work.cmsdk_clkreset
+# Loading work.cmsdk_uart_capture
+# Loading work.cmsdk_apb_timer
+# Loading work.cmsdk_apb_dualtimers
+# Loading work.cmsdk_apb_dualtimers_frc
+# Loading work.cmsdk_apb_watchdog
+# Loading work.cmsdk_apb_watchdog_frc
+# Loading work.cmsdk_apb_uart
+# Loading work.cmsdk_apb_test_slave
+# Loading work.cmsdk_ahb_ram_beh
+# ** Warning: (vsim-3017) D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/tb_cmsdk_mcu.v(41): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1 File: D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/M0_Simulation.v
+# ** Warning: (vsim-3722) D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/tb_cmsdk_mcu.v(41): [TFMPC] - Missing connection for port 'TDO'.
+# ** Warning: (vsim-3015) D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu.v(308): [PCDPC] - Port size (14) does not match connection size (16) for port 'HADDR'. The port definition is at: D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_rom.v(65).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_rom File: D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_rom.v
+# ** Warning: (vsim-3015) D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_mcu.v(332): [PCDPC] - Port size (14) does not match connection size (16) for port 'HADDR'. The port definition is at: D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_ram.v(61).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram File: D:/Verilog/EECE490_Assignment/Assignment_3/Luo_Hua_Yu/AHB_Register/hardware/cmsdk_ahb_ram.v
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: epch  Hostname: DESKTOP-IF80GT9  ProcessID: 10536
+#           Attempting to use alternate WLF file "./wlft0081tf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0081tf
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint  \
+{sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/ram_data[0]} \
+{sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/ram_data[1]} \
+{sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/ram_data[2]} \
+{sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/ram_data[3]} \
+{sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/ram_data[4]} \
+{sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/ram_data[5]} \
+{sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/ram_data[6]} \
+{sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/ram_data[7]} \
+{sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/ram_data[8]} \
+{sim:/tb_cmsdk_mcu/uut1/u_cmsdk_mcu/u_ahb_ram/genblk2/u_ahb_ram_beh/ram_data[9]}
+run -all
+# End time: 00:05:23 on Dec 04,2019, Elapsed time: 0:10:39
+# Errors: 0, Warnings: 6

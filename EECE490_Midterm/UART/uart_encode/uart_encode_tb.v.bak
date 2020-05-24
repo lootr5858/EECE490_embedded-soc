@@ -1,0 +1,344 @@
+module  uart_encode_tb();
+
+localparam period = 5;
+localparam cycle = period * 2;
+
+reg			clk;
+reg			rst;
+reg			u0_sel;			// select device
+reg			u0_enable;		// enable operations
+reg [11:2]  u0_addr; 		// retrieve register position
+reg [31:0]  u0_data_out;	// data from uart to peripherals
+reg			u0_rx_in;
+	
+wire [31:0]  u0_data_in;	// data from peripherals to uart
+wire			 u0_ready;
+wire			 u0_tx_out;
+wire			 u0_tx_en;
+wire [9:0]   u0_bit_cnt;
+
+reg			u1_sel;			// select device
+reg			u1_enable;		// enable operations
+reg [11:2]  u1_addr;			// retrieve register position
+reg [31:0]  u1_data_out;	// data from uart to peripherals
+reg			u1_rx_in;
+	
+wire [31:0]  u1_data_in;		// data from peripherals to uart
+wire			 u1_ready;
+wire			 u1_tx_out;
+wire			 u1_tx_en;
+wire [9:0]   u1_bit_cnt;
+
+// master
+uart_binary uart0
+(
+	.clk		 (clk),
+	.rst		 (rst),
+	.sel		 (u0_sel),
+	.enable   (u0_enable),
+	.addr		 (u0_addr),
+	.data_out (u0_data_out),
+	.rx_in	 (u0_rx_in),
+	
+	.data_in (u0_data_in),
+	.ready	(u0_ready),
+	.tx_out  (u0_tx_out),
+	.tx_en   (u0_tx_en),
+	.bit_cnt (u0_bit_cnt)
+);
+
+// slave
+uart_binary uart1
+(
+	.clk		 (clk),
+	.rst		 (rst),
+	.sel		 (u1_sel),
+	.enable   (u1_enable),
+	.addr		 (u1_addr),
+	.data_out (u1_data_out),
+	.rx_in	 (u1_rx_in),
+	
+	.data_in (u1_data_in),
+	.ready	(u1_ready),
+	.tx_out  (u1_tx_out),
+	.tx_en   (u1_tx_en),
+	.bit_cnt (u1_bit_cnt)
+);
+
+/* ------ !! ------
+	Clock generation
+	------ !! ------ */
+initial clk <= 1'b1;
+always #(period) clk <= ~clk;
+
+/* ------ !! ------
+	 Reset COntrol
+	------ !! ------ */
+initial
+begin
+	
+	rst <= 1'b1;
+	
+	#(cycle * 2)
+	
+	rst <= 1'b0;
+
+end
+
+/* ------ !! ------
+	 SIMULATION !!!
+	------ !! ------ */
+// for receiving
+always @ *
+begin
+	
+	u0_rx_in = u1_tx_out;
+	u1_rx_in = u0_tx_out;
+	
+end
+	
+initial
+begin
+
+	#(cycle * 2)
+	
+	// set baudrate
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'd4;
+	u0_data_out <= 32'd20;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'd4;
+	u1_data_out <= 32'd20;
+	
+	#(cycle)
+	
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b1;
+	u0_addr	 	<= 10'd4;
+	u0_data_out <= 32'd20;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b1;
+	u1_addr	 	<= 10'd4;
+	u1_data_out <= 32'd20;
+	
+	
+	#(cycle)
+	
+	// dummy cycle
+	u0_sel	   <= 1'b0;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'dx;
+	u0_data_out <= 32'dx;
+	
+	u1_sel	   <= 1'b0;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'dx;
+	u1_data_out <= 32'dx;
+	
+	
+	#(cycle)
+	
+	// set T/R mode
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'd2;
+	u0_data_out <= 32'd1;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'd2;
+	u1_data_out <= 32'd2;
+	
+	#(cycle)
+	
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b1;
+	u0_addr	 	<= 10'd2;
+	u0_data_out <= 32'd1;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b1;
+	u1_addr	 	<= 10'd2;
+	u1_data_out <= 32'd2;
+	
+	#(cycle)
+	
+	// dummy cycle
+	u0_sel	   <= 1'b0;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'dx;
+	u0_data_out <= 32'dx;
+	
+	u1_sel	   <= 1'b0;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'dx;
+	u1_data_out <= 32'dx;
+	
+	#(cycle)
+	
+	// start tx operation
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'd0;
+	u0_data_out <= 32'd53;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'd0;
+	u1_data_out <= 32'dx;
+	
+	#(cycle)
+	
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b1;
+	u0_addr	 	<= 10'd0;
+	u0_data_out <= 32'd53;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b1;
+	u1_addr	 	<= 10'd0;
+	u1_data_out <= 32'dx;	
+	
+	#(cycle * 200)
+	
+	// end of operation ... ... RELAX
+	// dummy cycle
+	u0_sel	   <= 1'b0;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'dx;
+	u0_data_out <= 32'dx;
+	
+	u1_sel	   <= 1'b0;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'dx;
+	u1_data_out <= 32'dx;
+	
+	#(cycle * 10)
+	
+	// set baudrate
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'd4;
+	u0_data_out <= 32'd40;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'd4;
+	u1_data_out <= 32'd40;
+	
+	#(cycle)
+	
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b1;
+	u0_addr	 	<= 10'd4;
+	u0_data_out <= 32'd40;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b1;
+	u1_addr	 	<= 10'd4;
+	u1_data_out <= 32'd40;
+	
+	
+	#(cycle)
+	
+	// dummy cycle
+	u0_sel	   <= 1'b0;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'dx;
+	u0_data_out <= 32'dx;
+	
+	u1_sel	   <= 1'b0;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'dx;
+	u1_data_out <= 32'dx;
+	
+	
+	#(cycle)
+	
+	// set T/R mode
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'd2;
+	u0_data_out <= 32'd2;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'd2;
+	u1_data_out <= 32'd1;
+	
+	#(cycle)
+	
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b1;
+	u0_addr	 	<= 10'd2;
+	u0_data_out <= 32'd2;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b1;
+	u1_addr	 	<= 10'd2;
+	u1_data_out <= 32'd1;
+	
+	#(cycle)
+	
+	// dummy cycle
+	u0_sel	   <= 1'b0;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'dx;
+	u0_data_out <= 32'dx;
+	
+	u1_sel	   <= 1'b0;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'dx;
+	u1_data_out <= 32'dx;
+	
+	#(cycle)
+	
+	// start tx operation
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'd0;
+	u0_data_out <= 32'dx;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'd0;
+	u1_data_out <= 32'd10;
+	
+	#(cycle)
+	
+	u0_sel	   <= 1'b1;
+	u0_enable 	<= 1'b1;
+	u0_addr	 	<= 10'd0;
+	u0_data_out <= 32'dx;
+	
+	u1_sel	   <= 1'b1;
+	u1_enable 	<= 1'b1;
+	u1_addr	 	<= 10'd0;
+	u1_data_out <= 32'd10;
+	
+	
+	#(cycle * 400)
+	
+	// end of operation ... ... RELAX
+	// dummy cycle
+	u0_sel	   <= 1'b0;
+	u0_enable 	<= 1'b0;
+	u0_addr	 	<= 10'dx;
+	u0_data_out <= 32'dx;
+	
+	u1_sel	   <= 1'b0;
+	u1_enable 	<= 1'b0;
+	u1_addr	 	<= 10'dx;
+	u1_data_out <= 32'dx;
+	
+	#(cycle * 100)
+	
+	$finish();
+
+end
+
+endmodule

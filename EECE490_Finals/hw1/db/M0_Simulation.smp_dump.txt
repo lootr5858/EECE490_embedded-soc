@@ -1,0 +1,11 @@
+
+State Machine - |M0_Simulation|cmsdk_mcu:u_cmsdk_mcu|cmsdk_mcu_system:u_cmsdk_mcu_system|cmsdk_ahb_counter:counter0|state
+Name state.state_r_overflow state.state_r_onoff state.state_w_onoff state.state_r_arr state.state_w_arr state.state_r_cnt state.state_w_cnt state.state_idle 
+state.state_idle 0 0 0 0 0 0 0 0 
+state.state_w_cnt 0 0 0 0 0 0 1 1 
+state.state_r_cnt 0 0 0 0 0 1 0 1 
+state.state_w_arr 0 0 0 0 1 0 0 1 
+state.state_r_arr 0 0 0 1 0 0 0 1 
+state.state_w_onoff 0 0 1 0 0 0 0 1 
+state.state_r_onoff 0 1 0 0 0 0 0 1 
+state.state_r_overflow 1 0 0 0 0 0 0 1 

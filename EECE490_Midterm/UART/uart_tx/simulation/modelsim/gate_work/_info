@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Verilog/EECE490_Midterm/UART/uart_tx/simulation/modelsim
+vtx_tb
+!s110 1572309677
+!i10b 1
+!s100 GiOefSdJjnOKX52?onNET2
+Ib@EZ?Yd6bQ`2Zh:Wzj<7S2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1572279258
+8D:/Verilog/EECE490_Midterm/UART/uart_tx/tx_tb.v
+FD:/Verilog/EECE490_Midterm/UART/uart_tx/tx_tb.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1572309676.000000
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_tx/tx_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_tx|D:/Verilog/EECE490_Midterm/UART/uart_tx/tx_tb.v|
+!i113 1
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/uart_tx
+Z5 tCvgOpt 0
+vuart_tx
+!s110 1572309676
+!i10b 1
+!s100 m>ClRk^UgRc^]AGLi<o@I1
+I=]6dh^e;0l5;^`l6QLEA62
+R1
+R0
+w1572279341
+8uart_tx.vo
+Fuart_tx.vo
+L0 31
+R2
+r1
+!s85 0
+31
+R3
+!s107 uart_tx.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|uart_tx.vo|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+.
+R5

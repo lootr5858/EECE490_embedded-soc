@@ -1,0 +1,390 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Verilog/EECE490_Midterm/UART/uart_binary/simulation/modelsim
+vbaud_counter
+Z1 !s110 1572414435
+!i10b 1
+!s100 E[zGUO1?6zGEYaaiHW43Q3
+IX3RVBDSY9iFbNl?VU^KjP3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1572411764
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/baud_counter.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/baud_counter.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1572414435.000000
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/baud_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/baud_counter.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary
+Z7 tCvgOpt 0
+vbinary_tb
+Z8 !s110 1572414436
+!i10b 1
+!s100 1MFhH@`gFSMaNieKHFI:I1
+I]]KzEIj;C^J;haR_R7;221
+R2
+R0
+w1572411424
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/binary_tb.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/binary_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1572414436.000000
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/binary_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/binary_tb.v|
+!i113 1
+R5
+R6
+R7
+vLatchN
+R8
+!i10b 1
+!s100 3[hQ_<[;Wb:h`^::hnfhE1
+I`ST:@`2]:gl1o2FV?_YBf3
+R2
+R0
+Z10 w1378073400
+Z11 8D:/Verilog/common/REGISTER.v
+Z12 FD:/Verilog/common/REGISTER.v
+L0 46
+R3
+r1
+!s85 0
+31
+R9
+Z13 !s107 D:/Verilog/common/REGISTER.v|
+Z14 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/common|D:/Verilog/common/REGISTER.v|
+!i113 1
+R5
+Z15 !s92 -vlog01compat -work work +incdir+D:/Verilog/common
+R7
+n@latch@n
+vLatchN_gate
+R8
+!i10b 1
+!s100 8AjaWP2?8EM=>1jIeHlXj3
+InG4ha?GR7K<af9>BfQ5nW3
+R2
+R0
+R10
+R11
+R12
+L0 60
+R3
+r1
+!s85 0
+31
+R9
+R13
+R14
+!i113 1
+R5
+R15
+R7
+n@latch@n_gate
+vPipeReg
+R8
+!i10b 1
+!s100 z?>;_AV<idaVeCUE_z7o[1
+I]5BQzAeVz2@COQ?R;GIj=3
+R2
+R0
+R10
+R11
+R12
+L0 109
+R3
+r1
+!s85 0
+31
+R9
+R13
+R14
+!i113 1
+R5
+R15
+R7
+n@pipe@reg
+vPipeRegS
+R8
+!i10b 1
+!s100 R6:ajSQU@jb^R<hea@V;43
+I:T<FDRl=DFD`NTOK=@W5=3
+R2
+R0
+R10
+R11
+R12
+L0 92
+R3
+r1
+!s85 0
+31
+R9
+R13
+R14
+!i113 1
+R5
+R15
+R7
+n@pipe@reg@s
+vREG
+R8
+!i10b 1
+!s100 O?`YJiQ0f1[5;FW1hUJYI3
+Ic=FLUz4YAk`odcVKL@8E13
+R2
+R0
+R10
+R11
+R12
+L0 29
+R3
+r1
+!s85 0
+31
+R9
+R13
+R14
+!i113 1
+R5
+R15
+R7
+n@r@e@g
+vrx_cp
+R8
+!i10b 1
+!s100 5b;hRMmVTZ;W>bfI5]I;83
+Ic=X5IoFz>M>FXjL6b<8JZ2
+R2
+R0
+w1572411750
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_cp.v|
+!i113 1
+R5
+R6
+R7
+vrx_dp
+R8
+!i10b 1
+!s100 3FJmmH1[ACa3PboB;>kPL3
+Ic6j[e[kHzAk=fgH]IB:N51
+R2
+R0
+w1572365235
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/rx_dp.v|
+!i113 1
+R5
+R6
+R7
+vSyncRegN
+R8
+!i10b 1
+!s100 fi0E3?3CM25Y5dHfGiY543
+IlPhTJS9`c:Ofoi<EgE9Pf3
+R2
+R0
+R10
+R11
+R12
+L0 78
+R3
+r1
+!s85 0
+31
+R9
+R13
+R14
+!i113 1
+R5
+R15
+R7
+n@sync@reg@n
+vtx_cp
+R1
+!i10b 1
+!s100 OD_?P]19OkPUY;<Mz_N]R3
+I_9;]o[B9hFD<f6:c6G6HC3
+R2
+R0
+w1572411757
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_cp.v|
+!i113 1
+R5
+R6
+R7
+vtx_dp
+R1
+!i10b 1
+!s100 VBFJ6YT_NEX^T19BcW[BQ0
+I_6PWmDkDMC3Rc;Cn<XPQi3
+R2
+R0
+w1572267948
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_dp.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/tx_dp.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_dp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/tx_dp.v|
+!i113 1
+R5
+R6
+R7
+vuart_b_cp
+R8
+!i10b 1
+!s100 hn0Fh9jTn>0lGF@E=l24j0
+I8iBddDcA9818O>NeEk9Bk1
+R2
+R0
+w1572370924
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_cp.v|
+!i113 1
+R5
+R6
+R7
+vuart_b_dp
+R8
+!i10b 1
+!s100 R86Y4bG`CMAg4QHed65@83
+I[Sc]6DMB`bzKPjPDk:HaV0
+R2
+R0
+w1572364956
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_b_dp.v|
+!i113 1
+R5
+R6
+R7
+vuart_binary
+R8
+!i10b 1
+!s100 e>^ee2PkQPSXQoo>ZPoV01
+I:JBEBPhe`feh6:3N_hBXf3
+R2
+R0
+w1572328383
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_binary.v|
+!i113 1
+R5
+R6
+R7
+vuart_rx
+R1
+!i10b 1
+!s100 joU:fcY3iTLYmfW4W8]Za2
+I>Q0fi:T5lS_P`Cj:Si3D[2
+R2
+R0
+w1572410616
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_rx.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/uart_rx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_rx.v|
+!i113 1
+R5
+R6
+R7
+vuart_tx
+R1
+!i10b 1
+!s100 6nU4=oG9OL0QZ[cd7;:ZO3
+IWG;ZTWl9aCRZoNlT>M5S02
+R2
+R0
+w1572410929
+8D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v
+FD:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/EECE490_Midterm/UART/uart_binary|D:/Verilog/EECE490_Midterm/UART/uart_binary/uart_tx.v|
+!i113 1
+R5
+R6
+R7

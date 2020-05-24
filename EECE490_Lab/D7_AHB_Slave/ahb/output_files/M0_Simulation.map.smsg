@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at cmsdk_uart_capture.v(133): always construct contains both blocking and non-blocking assignments File: D:/Verilog/EECE490_Lab/D7_AHB_Slave/ahb/cmsdk_uart_capture.v Line: 133
